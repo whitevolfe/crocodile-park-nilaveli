@@ -11,14 +11,14 @@ export default function Hero({ onBook }) {
   return (
     <section id="home" className="relative flex min-h-[100svh] items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img
+        {/* <img
           src={heroImage}
           alt="Wild crocodile resting beside a Sri Lankan lagoon at sunset"
           width={1920}
           height={1088}
           fetchPriority="high"
           className="animate-kenburns h-full w-full object-cover"
-        />
+        /> */}
         <video
           className="absolute inset-0 h-full w-full object-cover"
           autoPlay
@@ -26,7 +26,6 @@ export default function Hero({ onBook }) {
           loop
           playsInline
           preload="none"
-          poster={heroImage}
           aria-hidden="true"
           onError={(e) => {
             e.currentTarget.style.display = "none";

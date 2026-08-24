@@ -1,47 +1,25 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
+
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import BookingModal from "@/components/BookingModal";
+import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
 import {
   AboutSection,
   ActivityGrid,
-  ContactSection,
-  ExperienceIntro,
-  ExperienceTimeline,
   FAQ,
   FeatureHighlights,
   FinalCTA,
   Footer,
-  Gallery,
+  ExperienceIntro,
   PricingSection,
   Testimonials,
-  VideoStory,
   WildlifeRespect,
 } from "@/components/Sections";
-import { useState, useCallback } from "react";
 
-const title = "Crocodile Park Nilaveli | Wildlife Experience in Sri Lanka";
-const description =
-  "Discover Crocodile Park Nilaveli in Trincomalee, Sri Lanka. Experience guided crocodile watching, birdlife, nature exploration and beautiful Nilaveli sunsets.";
-
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "TouristAttraction",
-  name: "Crocodile Park Nilaveli",
-  description,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Thamaraikulam Road",
-    addressLocality: "Nilaveli",
-    postalCode: "31010",
-    addressCountry: "LK",
-  },
-  telephone: "+94721080806",
-  touristType: ["Wildlife", "Nature", "Adventure"],
-};
-
-export default function App() {
+function Home() {
   const [bookingOpen, setBookingOpen] = useState(false);
   const [experience, setExperience] = useState<string | undefined>(undefined);
 
@@ -51,26 +29,35 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full overflow-x-hidden" id="root">
+    <div className="min-h-screen w-full overflow-x-hidden">
       <Navbar onBook={() => openBooking()} />
+
       <main>
         <Hero onBook={() => openBooking("Guided Wild Crocodile Experience")} />
+
         <ExperienceIntro />
+
         <FeatureHighlights />
-        <ExperienceTimeline onBook={() => openBooking("Guided Wild Crocodile Experience")} />
+
         <ActivityGrid onBook={openBooking} />
+
         <PricingSection onBook={openBooking} />
+
         <WildlifeRespect />
+
         <AboutSection />
-        <Gallery />
-        <VideoStory />
+
         <Testimonials />
+
         <FAQ />
+
         <FinalCTA onBook={openBooking} />
-        <ContactSection />
       </main>
+
       <Footer />
+
       <WhatsAppButton />
+
       <BookingModal
         open={bookingOpen}
         onClose={() => setBookingOpen(false)}
@@ -78,4 +65,8 @@ export default function App() {
       />
     </div>
   );
+}
+
+export default function App() {
+  return <Home />;
 }

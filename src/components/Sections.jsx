@@ -40,6 +40,7 @@ import aboutImage from "@/assets/about-guide.jpg";
 import sunsetImage from "@/assets/exp-sunset.jpg";
 import lagoonImage from "@/assets/gal-lagoon.jpg";
 import crocCloseImage from "@/assets/gal-croc-close.jpg";
+import { Link } from "react-router-dom";
 
 const iconMap = { croc: Waves, bird: Bird, leaf: Leaf, tuk: Car, sun: Sun };
 
@@ -172,9 +173,11 @@ export function ExperienceTimeline({ onBook }) {
 }
 
 /* ------------------------------ Activities ------------------------------- */
+
 function ActivityCard({ activity, onBook }) {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-primary/15 bg-card/60 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-[var(--shadow-lux)]">
+    <article className="group grid overflow-hidden rounded-2xl border border-primary/15 bg-card/60 transition-all duration-500 hover:border-primary/40 hover:shadow-[var(--shadow-lux)] md:grid-cols-[320px_1fr]">
+      {/* Image */}
       <div className="relative overflow-hidden">
         <img
           src={activity.image}
@@ -182,32 +185,37 @@ function ActivityCard({ activity, onBook }) {
           loading="lazy"
           width={1280}
           height={960}
-          className="aspect-[16/10] w-full object-cover transition-transform duration-[1.1s] group-hover:scale-110"
+          className="h-full min-h-[240px] w-full object-cover transition-transform duration-[1.1s] group-hover:scale-105"
         />
+
         <span className="absolute top-3 left-3 rounded-full bg-navy-deep/80 px-3 py-1 text-[0.6rem] tracking-[0.2em] text-primary uppercase ring-1 ring-primary/25">
           {activity.category}
         </span>
       </div>
-      <div className="flex flex-1 flex-col gap-3 p-5">
-        <h3 className="font-display text-xl leading-snug text-foreground">{activity.title}</h3>
-        <p className="text-sm leading-relaxed text-muted-foreground">{activity.description}</p>
-        <p className="mt-auto text-lg text-primary">{activity.price}</p>
-        <div className="flex flex-wrap gap-2 pt-1">
+
+      {/* Content */}
+      <div className="flex flex-col justify-center gap-3 p-6 sm:p-8">
+        <h3 className="font-display text-2xl leading-snug text-foreground">{activity.title}</h3>
+
+        <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          {activity.description}
+        </p>
+
+        <p className="text-xl font-medium text-primary">{activity.price}</p>
+
+        {/* Buttons */}
+        <div className="mt-2 flex flex-wrap gap-3">
+          {/* Open Activity Details Page */}
           <GhostButton
-            as="a"
-            href={waLink(
-              `Hello ${business.name}, I would like more details about the ${activity.title}.`,
-            )}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 px-4 py-2 text-[0.68rem]"
+            as={Link}
+            to={`/activities/${activity.id}`}
+            className="px-5 py-2.5 text-[0.68rem]"
           >
             View Experience
           </GhostButton>
-          <GoldButton
-            onClick={() => onBook(activity.title)}
-            className="flex-1 px-4 py-2 text-[0.68rem]"
-          >
+
+          {/* Booking */}
+          <GoldButton onClick={() => onBook(activity.title)} className="px-5 py-2.5 text-[0.68rem]">
             Book Now
           </GoldButton>
         </div>
@@ -219,7 +227,7 @@ function ActivityCard({ activity, onBook }) {
 export function ActivityGrid({ onBook }) {
   return (
     <section id="activities" className="border-y border-primary/10 bg-navy/30 py-20 sm:py-28">
-      <div className="mx-auto max-w-7xl px-5 sm:px-6">
+      <div className="mx-auto max-w-5xl px-5 sm:px-6">
         <Reveal>
           <SectionHeading
             eyebrow="Beyond the park"
@@ -227,10 +235,11 @@ export function ActivityGrid({ onBook }) {
             subtitle="Ocean, wildlife and culture — arranged with local guides across Nilaveli and Trincomalee."
           />
         </Reveal>
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {activities.map((a, i) => (
-            <Reveal key={a.id} delay={(i % 3) * 90}>
-              <ActivityCard activity={a} onBook={onBook} />
+
+        <div className="mt-14 grid grid-cols-1 gap-6">
+          {activities.map((activity, i) => (
+            <Reveal key={activity.id} delay={i * 60}>
+              <ActivityCard activity={activity} onBook={onBook} />
             </Reveal>
           ))}
         </div>
