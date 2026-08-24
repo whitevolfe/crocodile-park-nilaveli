@@ -32,16 +32,14 @@ export default function GoogleTranslate() {
     select.dispatchEvent(new Event("change", { bubbles: true }));
   };
 
-  const currentLanguage =
-    languages.find((language) => language.code === selected) ??
-    languages[0] ??
-    { code: "en", name: "English" };
+  const currentLanguage = languages.find((language) => language.code === selected) ??
+    languages[0] ?? { code: "en", name: "English" };
 
   return (
     <div
       style={{
         position: "fixed",
-        top: "20px",
+        top: "80px",
         right: "20px",
         zIndex: 999999,
       }}
