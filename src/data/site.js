@@ -20,6 +20,39 @@ import actKoneswaram from "@/assets/act-koneswaram.jpg";
 import actKanniya from "@/assets/act-kanniya.jpg";
 import actElephant from "@/assets/act-elephant.jpg";
 import actTurtle from "@/assets/act-turtle.jpg";
+import galleryimg1 from "@/assets/galleryimg1.jpeg";
+import galleryimg2 from "@/assets/galleryimg2.jpeg";
+import galleryimg3 from "@/assets/galleryimg3.jpeg";
+import galleryimg4 from "@/assets/galleryimg4.jpeg";
+import galleryimg5 from "@/assets/galleryimg5.jpeg";
+import galleryimg6 from "@/assets/galleryimg6.jpeg";
+import galleryimg7 from "@/assets/galleryimg7.jpeg";
+import galleryimg8 from "@/assets/galleryimg8.jpeg";
+import galleryimg9 from "@/assets/galleryimg9.jpeg";
+import galleryimg10 from "@/assets/galleryimg10.jpeg";
+import galleryimg11 from "@/assets/galleryimg11.jpeg";
+import galleryimg12 from "@/assets/galleryimg12.jpeg";
+import galleryimg13 from "@/assets/galleryimg13.jpeg";
+import galleryimg14 from "@/assets/galleryimg14.jpeg";
+import galleryimg15 from "@/assets/galleryimg15.jpeg";
+import galleryimg16 from "@/assets/galleryimg16.jpeg";
+import galleryimg17 from "@/assets/galleryimg17.jpeg";
+import galleryimg18 from "@/assets/galleryimg18.jpeg";
+import galleryimg19 from "@/assets/galleryimg19.jpeg";
+import galleryimg20 from "@/assets/galleryimg20.jpeg";
+import galleryimg21 from "@/assets/galleryimg21.jpeg";
+import galleryimg22 from "@/assets/galleryimg22.jpeg";
+import galleryimg23 from "@/assets/galleryimg23.jpeg";
+import galleryimg25 from "@/assets/galleryimg25.jpeg";
+import galleryimg26 from "@/assets/galleryimg26.jpeg";
+import galleryimg30 from "@/assets/galleryimg30.jpeg";
+import galleryimg31 from "@/assets/galleryimg31.jpeg";
+import galleryimg32 from "@/assets/galleryimg32.jpeg";
+import galleryimg34 from "@/assets/galleryimg34.jpeg";
+import galleryimg35 from "@/assets/galleryimg35.jpeg";
+import galleryimg36 from "@/assets/galleryimg36.jpeg";
+import galleryimg37 from "@/assets/galleryimg37.jpeg";
+import galleryimg38 from "@/assets/galleryimg38.jpeg";
 
 export const business = {
   name: "Crocodile Park Nilaveli",
@@ -591,4 +624,37 @@ export const gallery = [
   { src: galLagoon, alt: "Lagoon shoreline at dusk with birds" },
   { src: galCrocClose, alt: "Close-up of a crocodile eye in golden light" },
   { src: actTurtle, alt: "Sea turtle swimming in clear water" },
+  { src: galleryimg1, alt: "Gallery image 1" },
+  { src: galleryimg2, alt: "Gallery image 2" },
+  { src: galleryimg3, alt: "Gallery image 3" },
+  { src: galleryimg4, alt: "Gallery image 4" },
+  { src: galleryimg5, alt: "Gallery image 5" },
+  { src: galleryimg6, alt: "Gallery image 6" },
+  { src: galleryimg7, alt: "Gallery image 7" },
+  { src: galleryimg8, alt: "Gallery image 8" },
+  { src: galleryimg9, alt: "Gallery image 9" },
+  { src: galleryimg10, alt: "Gallery image 10" },
+  { src: galleryimg11, alt: "Gallery image 11" },
+  { src: galleryimg12, alt: "Gallery image 12" },
+  { src: galleryimg13, alt: "Gallery image 13" },
+  { src: galleryimg14, alt: "Gallery image 14" },
+  { src: galleryimg15, alt: "Gallery image 15" },
+  { src: galleryimg16, alt: "Gallery image 16" },
+  { src: galleryimg17, alt: "Gallery image 17" },
+  { src: galleryimg18, alt: "Gallery image 18" },
+  { src: galleryimg19, alt: "Gallery image 19" },
+  { src: galleryimg20, alt: "Gallery image 20" },
+  { src: galleryimg21, alt: "Gallery image 21" },
+  { src: galleryimg22, alt: "Gallery image 22" },
+  { src: galleryimg23, alt: "Gallery image 23" },
+  { src: galleryimg25, alt: "Gallery image 25" },
+  { src: galleryimg26, alt: "Gallery image 26" },
+  { src: galleryimg30, alt: "Gallery image 30" },
+  { src: galleryimg31, alt: "Gallery image 31" },
+  { src: galleryimg32, alt: "Gallery image 32" },
+  { src: galleryimg34, alt: "Gallery image 34" },
+  { src: galleryimg35, alt: "Gallery image 35" },
+  { src: galleryimg36, alt: "Gallery image 36" },
+  { src: galleryimg37, alt: "Gallery image 37" },
+  { src: galleryimg38, alt: "Gallery image 38" },
 ];
