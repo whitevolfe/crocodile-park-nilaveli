@@ -40,13 +40,13 @@ export const waLink = (message) =>
   `https://wa.me/${business.whatsapp}?text=${encodeURIComponent(message)}`;
 
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Experience", href: "#experience" },
-  { label: "Activities", href: "#activities" },
-  { label: "About", href: "#about" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Experience", href: "/experience" },
+  { label: "Activities", href: "/activities" },
+  { label: "About", href: "/about" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const highlights = [

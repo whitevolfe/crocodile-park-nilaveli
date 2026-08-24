@@ -5,7 +5,7 @@ import { GoldButton, GhostButton } from "@/components/ui/Primitives";
 
 // Drop a cinematic loop at public/videos/crocodile-park-hero.mp4 and it will
 // play automatically over the fallback image below.
-const HERO_VIDEO = "/videos/Crocodile_submerged_in_lagoon_water_202608172319.mp4";
+const HERO_VIDEO = "/videos/crocodile-video.mp4";
 
 export default function Hero({ onBook }) {
   return (
@@ -40,13 +40,13 @@ export default function Hero({ onBook }) {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,oklch(0.17_0.045_250/0.75)_100%)]" />
 
       <div className="relative mx-auto w-full max-w-5xl px-5 pt-28 pb-24 text-center sm:px-6">
-        <img
+        {/* <img
           src={logo}
           alt="Crocodile Park Nilaveli emblem"
           width={140}
           height={140}
           className="animate-rise mx-auto h-20 w-20 rounded-full object-cover ring-1 ring-primary/40 sm:h-24 sm:w-24"
-        />
+        /> */}
         <p
           className="animate-rise mt-6 text-[0.62rem] tracking-[0.3em] text-primary uppercase sm:text-xs sm:tracking-[0.4em]"
           style={{ animationDelay: "120ms" }}
@@ -57,7 +57,7 @@ export default function Hero({ onBook }) {
           className="animate-rise mt-5 font-display text-4xl leading-[1.05] font-light text-balance sm:text-6xl lg:text-7xl"
           style={{ animationDelay: "240ms" }}
         >
-          Discover the Wild Side of <span className="text-gold-gradient">Nilaveli</span>
+          Discover the Crocodile Park <span className="text-gold-gradient">Nilaveli</span>
         </h1>
         <p
           className="animate-rise mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-foreground/75 sm:text-base"
