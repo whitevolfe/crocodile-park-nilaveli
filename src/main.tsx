@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import ScrollToTop from "@/components/ScrollToTop";
+import GoogleTranslate from "@/components/GoogleTranslate";
 
 import App from "@/App";
 import About from "@/pages/About";
@@ -18,6 +19,7 @@ import "./styles.css";
 function Layout() {
   return (
     <>
+      <GoogleTranslate />
       <ScrollToTop />
       <Outlet />
     </>
@@ -32,37 +34,30 @@ const router = createBrowserRouter([
         path: "/",
         element: <App />,
       },
-
       {
         path: "/experience",
         element: <Experience />,
       },
-
       {
         path: "/activities",
         element: <Activities />,
       },
-
       {
         path: "/activities/:slug",
         element: <ActivityDetails />,
       },
-
       {
         path: "/about",
         element: <About />,
       },
-
       {
         path: "/gallery",
         element: <Gallery />,
       },
-
       {
         path: "/faq",
         element: <Faq />,
       },
-
       {
         path: "/contact",
         element: <Contact />,

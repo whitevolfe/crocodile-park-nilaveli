@@ -64,12 +64,13 @@ const Experience = () => {
       </main>
 
       <Footer />
+
       <WhatsAppButton />
 
       <BookingModal
         open={bookingOpen}
         onClose={() => setBookingOpen(false)}
-        initialExperience={experience}
+        {...(experience !== undefined ? { initialExperience: experience } : {})}
       />
     </div>
   );
