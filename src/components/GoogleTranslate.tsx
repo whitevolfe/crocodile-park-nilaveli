@@ -2,14 +2,15 @@ import { useState } from "react";
 
 const languages = [
   { code: "en", name: "English" },
-  { code: "si", name: "සිංහල" },
-  { code: "ta", name: "தமிழ்" },
-  { code: "hi", name: "हिन्दी" },
-  { code: "ar", name: "العربية" },
+  { code: "de", name: "Deutsch" },
   { code: "fr", name: "Français" },
-  { code: "zh-CN", name: "中文" },
-  { code: "ja", name: "日本語" },
+  { code: "es", name: "Español" },
   { code: "ru", name: "Русский" },
+  { code: "nl", name: "Nederlands" },
+  { code: "it", name: "Italiano" },
+  { code: "cs", name: "Čeština" },
+  { code: "hr", name: "Hrvatski" },
+  { code: "be", name: "Беларуская" },
 ];
 
 export default function GoogleTranslate() {
