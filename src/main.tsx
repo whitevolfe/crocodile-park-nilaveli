@@ -13,6 +13,7 @@ import Gallery from "@/pages/Gallery";
 import Faq from "@/pages/Faq";
 import Contact from "@/pages/Contact";
 import ActivityDetails from "@/pages/ActivityDetails";
+import TourismChatbot from "@/components/TourismChatbot";
 
 import "./styles.css";
 
@@ -21,7 +22,10 @@ function Layout() {
     <>
       <GoogleTranslate />
       <ScrollToTop />
+
       <Outlet />
+
+      <TourismChatbot />
     </>
   );
 }
