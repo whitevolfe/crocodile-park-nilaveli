@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/crocodile-parklogo.png";
 import { navLinks, business } from "@/data/site";
-import { GoldButton } from "@/components/ui/Primitives";
+import GoogleTranslate from "@/components/GoogleTranslate";
 import { Link } from "react-router-dom";
 
-export default function Navbar({ onBook }) {
+export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -68,9 +68,7 @@ export default function Navbar({ onBook }) {
             ))}
           </ul>
 
-          <GoldButton onClick={onBook} className="hidden px-5 py-2 text-xs sm:inline-flex">
-            Book Now
-          </GoldButton>
+          <GoogleTranslate inline />
 
           <button
             type="button"
@@ -109,15 +107,7 @@ export default function Navbar({ onBook }) {
               </li>
             ))}
             <li className="pt-6">
-              <GoldButton
-                onClick={() => {
-                  setOpen(false);
-                  onBook();
-                }}
-                className="w-full"
-              >
-                Book Now
-              </GoldButton>
+              <GoogleTranslate inline />
             </li>
           </ul>
         </div>

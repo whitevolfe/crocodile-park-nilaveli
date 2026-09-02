@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import ScrollToTop from "@/components/ScrollToTop";
-import GoogleTranslate from "@/components/GoogleTranslate";
 
 import App from "@/App";
 import About from "@/pages/About";
@@ -20,7 +19,6 @@ import "./styles.css";
 function Layout() {
   return (
     <>
-      <GoogleTranslate />
       <ScrollToTop />
 
       <Outlet />

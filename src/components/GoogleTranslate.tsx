@@ -1,19 +1,63 @@
 import { useState } from "react";
 
 const languages = [
-  { code: "en", name: "English" },
-  { code: "de", name: "Deutsch" },
-  { code: "fr", name: "Français" },
-  { code: "es", name: "Español" },
-  { code: "ru", name: "Русский" },
-  { code: "nl", name: "Nederlands" },
-  { code: "it", name: "Italiano" },
-  { code: "cs", name: "Čeština" },
-  { code: "hr", name: "Hrvatski" },
-  { code: "be", name: "Беларуская" },
+  {
+    code: "en",
+    name: "English",
+    flag: "https://flagcdn.com/w40/gb.png",
+  },
+  {
+    code: "de",
+    name: "Deutsch",
+    flag: "https://flagcdn.com/w40/de.png",
+  },
+  {
+    code: "fr",
+    name: "Français",
+    flag: "https://flagcdn.com/w40/fr.png",
+  },
+  {
+    code: "es",
+    name: "Español",
+    flag: "https://flagcdn.com/w40/es.png",
+  },
+  {
+    code: "ru",
+    name: "Русский",
+    flag: "https://flagcdn.com/w40/ru.png",
+  },
+  {
+    code: "nl",
+    name: "Nederlands",
+    flag: "https://flagcdn.com/w40/nl.png",
+  },
+  {
+    code: "it",
+    name: "Italiano",
+    flag: "https://flagcdn.com/w40/it.png",
+  },
+  {
+    code: "cs",
+    name: "Čeština",
+    flag: "https://flagcdn.com/w40/cz.png",
+  },
+  {
+    code: "hr",
+    name: "Hrvatski",
+    flag: "https://flagcdn.com/w40/hr.png",
+  },
+  {
+    code: "be",
+    name: "Беларуская",
+    flag: "https://flagcdn.com/w40/by.png",
+  },
 ];
 
-export default function GoogleTranslate() {
+export default function GoogleTranslate({
+  inline = false,
+}: {
+  inline?: boolean;
+}) {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState("en");
 
@@ -21,7 +65,9 @@ export default function GoogleTranslate() {
     setSelected(language);
     setOpen(false);
 
-    const select = document.querySelector(".goog-te-combo") as HTMLSelectElement | null;
+    const select = document.querySelector(
+      ".goog-te-combo"
+    ) as HTMLSelectElement | null;
 
     if (!select) {
       console.warn("Google Translate is not loaded yet.");
@@ -29,30 +75,38 @@ export default function GoogleTranslate() {
     }
 
     select.value = language;
-
     select.dispatchEvent(new Event("change", { bubbles: true }));
   };
 
-  const currentLanguage = languages.find((language) => language.code === selected) ??
-    languages[0] ?? { code: "en", name: "English" };
+  const currentLanguage =
+    languages.find((language) => language.code === selected) ??
+    languages[0];
 
   return (
     <div
-      style={{
-        position: "fixed",
-        top: "80px",
-        right: "20px",
-        zIndex: 999999,
-      }}
+      style={
+        inline
+          ? {
+              position: "relative",
+              zIndex: 999999,
+            }
+          : {
+              position: "fixed",
+              top: "80px",
+              right: "20px",
+              zIndex: 999999,
+            }
+      }
     >
       <div style={{ position: "relative" }}>
+        {/* Main Language Button */}
         <button
           type="button"
           onClick={() => setOpen((value) => !value)}
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "8px",
+            gap: "9px",
             padding: "10px 15px",
             borderRadius: "999px",
             border: "1px solid rgba(255,255,255,0.25)",
@@ -64,10 +118,24 @@ export default function GoogleTranslate() {
             WebkitBackdropFilter: "blur(12px)",
           }}
         >
-          {currentLanguage.name}
+          {/* Flag Image */}
+          <img
+            src={currentLanguage.flag}
+            alt={currentLanguage.name}
+            style={{
+              width: "24px",
+              height: "17px",
+              objectFit: "cover",
+              borderRadius: "2px",
+              display: "block",
+            }}
+          />
+
+          <span>{currentLanguage.name}</span>
 
           <span
             style={{
+              fontSize: "10px",
               transform: open ? "rotate(180deg)" : "none",
               transition: "0.2s",
             }}
@@ -76,13 +144,14 @@ export default function GoogleTranslate() {
           </span>
         </button>
 
+        {/* Dropdown */}
         {open && (
           <div
             style={{
               position: "absolute",
               top: "calc(100% + 8px)",
               right: 0,
-              width: "170px",
+              width: "190px",
               maxHeight: "70vh",
               overflowY: "auto",
               padding: "6px",
@@ -98,19 +167,39 @@ export default function GoogleTranslate() {
                 type="button"
                 onClick={() => translate(language.code)}
                 style={{
-                  display: "block",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
                   width: "100%",
                   padding: "10px 12px",
                   border: "none",
                   borderRadius: "9px",
-                  background: selected === language.code ? "rgba(255,255,255,0.15)" : "transparent",
+                  background:
+                    selected === language.code
+                      ? "rgba(255,255,255,0.15)"
+                      : "transparent",
                   color: "#fff",
                   textAlign: "left",
                   fontSize: "14px",
                   cursor: "pointer",
+                  transition: "background 0.2s ease",
                 }}
               >
-                {language.name}
+                {/* Flag Image */}
+                <img
+                  src={language.flag}
+                  alt={language.name}
+                  style={{
+                    width: "25px",
+                    height: "18px",
+                    objectFit: "cover",
+                    borderRadius: "2px",
+                    display: "block",
+                    flexShrink: 0,
+                  }}
+                />
+
+                <span>{language.name}</span>
               </button>
             ))}
           </div>
