@@ -116,7 +116,7 @@ const ActivityDetails = () => {
                   {activity.highlights.map((highlight) => (
                     <div
                       key={highlight}
-                      className="rounded-xl border border-primary/10 bg-card/40 p-4 text-sm text-muted-foreground transition-colors hover:border-primary/25"
+                      className="rounded-xl border border-black/10 bg-white p-4 text-sm text-black transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg"
                     >
                       <span className="mr-3 text-primary">✓</span>
                       {highlight}
@@ -138,7 +138,7 @@ const ActivityDetails = () => {
                 <div className="mt-8 space-y-5">
                   {activity.itinerary.map((step, index) => (
                     <div key={step} className="flex gap-4">
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary/30 bg-primary/10 text-sm font-medium text-primary">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary/30 bg-primary text-sm font-medium text-black shadow-sm">
                         {String(index + 1).padStart(2, "0")}
                       </div>
 
@@ -175,51 +175,43 @@ const ActivityDetails = () => {
             )}
 
             {/* SUITABLE FOR */}
-            <div className="mt-14 rounded-2xl border border-primary/10 bg-card/30 p-6 sm:p-8">
+            <div className="mt-14 rounded-2xl border border-black/10 bg-white p-6 text-black shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg sm:p-8">
               <p className="text-xs uppercase tracking-[0.25em] text-primary">Good to know</p>
 
-              <h2 className="mt-3 font-display text-2xl text-foreground">Suitable For</h2>
+              <h2 className="mt-3 font-display text-2xl text-black">Suitable For</h2>
 
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                {activity.suitableFor}
-              </p>
+              <p className="mt-4 text-sm leading-relaxed text-black/70">{activity.suitableFor}</p>
             </div>
           </div>
 
           {/* BOOKING CARD */}
           <aside className="lg:sticky lg:top-24 lg:h-fit">
-            <div className="rounded-2xl border border-primary/15 bg-card/60 p-6 shadow-[var(--shadow-lux)] sm:p-8">
+            <div className="rounded-2xl border border-black/10 bg-white p-6 text-black shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg sm:p-8">
               <p className="text-xs uppercase tracking-[0.25em] text-primary">
                 {activity.category}
               </p>
 
-              <h2 className="mt-3 font-display text-2xl leading-snug text-foreground">
+              <h2 className="mt-3 font-display text-2xl leading-snug text-black">
                 {activity.title}
               </h2>
 
-              <div className="mt-6 border-y border-primary/10 py-6">
-                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                  Starting from
-                </p>
+              <div className="mt-6 border-y border-black/10 py-6">
+                <p className="text-xs uppercase tracking-[0.2em] text-black/50">Starting from</p>
 
                 <p className="mt-2 text-3xl font-medium text-primary">{activity.price}</p>
               </div>
 
               <div className="space-y-5 py-6">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.15em] text-muted-foreground">
-                    Duration
-                  </p>
+                  <p className="text-xs uppercase tracking-[0.15em] text-black/50">Duration</p>
 
-                  <p className="mt-1 text-sm text-foreground">{activity.duration}</p>
+                  <p className="mt-1 text-sm text-black">{activity.duration}</p>
                 </div>
 
                 <div>
-                  <p className="text-xs uppercase tracking-[0.15em] text-muted-foreground">
-                    Location
-                  </p>
+                  <p className="text-xs uppercase tracking-[0.15em] text-black/50">Location</p>
 
-                  <p className="mt-1 text-sm text-foreground">{activity.location}</p>
+                  <p className="mt-1 text-sm text-black">{activity.location}</p>
                 </div>
               </div>
 
@@ -237,13 +229,13 @@ const ActivityDetails = () => {
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center rounded-full border border-primary/30 px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-primary transition-all duration-300 hover:bg-primary hover:text-navy"
+                  className="flex w-full items-center justify-center rounded-full border border-black/20 px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-black transition-all duration-300 hover:border-primary hover:bg-primary hover:text-black"
                 >
                   WhatsApp Us
                 </a>
               </div>
 
-              <p className="mt-5 text-center text-xs leading-relaxed text-muted-foreground">
+              <p className="mt-5 text-center text-xs leading-relaxed text-black/50">
                 Contact us to confirm availability for your preferred date.
               </p>
             </div>

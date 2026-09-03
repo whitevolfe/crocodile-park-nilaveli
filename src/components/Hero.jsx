@@ -47,34 +47,34 @@ export default function Hero({ onBook }) {
           className="animate-rise mx-auto h-20 w-20 rounded-full object-cover ring-1 ring-primary/40 sm:h-24 sm:w-24"
         /> */}
         <p
-          className="animate-rise mt-6 text-[0.62rem] tracking-[0.3em] text-primary uppercase sm:text-xs sm:tracking-[0.4em]"
+          className="animate-rise mb-45 text-[0.62rem] tracking-[0.3em] text-primary uppercase sm:text-xs sm:tracking-[0.4em]"
           style={{ animationDelay: "120ms" }}
         >
-          🐊 Nilaveli • Trincomalee • Sri Lanka
+          Nilaveli • Trincomalee • Sri Lanka🐊
         </p>
         <h1
-          className="animate-rise mt-5 font-display text-4xl leading-[1.05] font-light text-balance sm:text-6xl lg:text-7xl"
+          className="animate-rise font-display text-2xl leading-[1.05] font-light text-balance sm:text-6xl lg:text-7xl"
           style={{ animationDelay: "240ms" }}
         >
           Discover the Crocodile Park <span className="text-gold-gradient">Nilaveli</span>
         </h1>
-        <p
-          className="animate-rise mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-foreground/75 sm:text-base"
+        {/* <p
+          className="animate-rise mx-auto mt-25 max-w-2xl text-sm leading-relaxed text-foreground/75 sm:text-base"
           style={{ animationDelay: "360ms" }}
         >
           Crocodile watching, birdlife, nature exploration and unforgettable sunsets — guided by
           local wildlife experts.
-        </p>
+        </p> */}
         <div
-          className="animate-rise mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
+          className="animate-rise mt-45 flex flex-col items-center justify-center gap-3 sm:flex-row"
           style={{ animationDelay: "480ms" }}
         >
           <GoldButton as="a" href="#experience" className="w-full sm:w-auto">
             Explore Experiences
           </GoldButton>
-          <GhostButton onClick={onBook} className="w-full sm:w-auto">
+          {/* <GhostButton onClick={onBook} className="w-full sm:w-auto">
             Book Your Experience
-          </GhostButton>
+          </GhostButton> */}
         </div>
       </div>
 

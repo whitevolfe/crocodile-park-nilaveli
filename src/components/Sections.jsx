@@ -13,7 +13,6 @@ import {
   Play,
   Plus,
   Minus,
-  Quote,
   ShieldCheck,
   X,
   Facebook,
@@ -32,7 +31,6 @@ import {
   navLinks,
   pricing,
   respectPrinciples,
-  testimonials,
   timeline,
   waLink,
 } from "@/data/site";
@@ -121,7 +119,7 @@ export function ExperienceIntro() {
               className="aspect-[4/3] w-full object-cover transition-transform duration-[1.2s] hover:scale-105"
             />
 
-            <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy-deep to-transparent p-5 text-xs tracking-[0.2em] text-primary uppercase">
+            <figcaption className="absolute right-0 bottom-0 left-0 bg-gradient-to-t from-navy-deep to-transparent p-5 text-xs tracking-[0.2em] text-primary uppercase">
               Wild, not enclosed
             </figcaption>
           </figure>
@@ -143,14 +141,15 @@ export function FeatureHighlights() {
 
             return (
               <Reveal key={h.title} delay={i * 80}>
-                <article className="h-full rounded-2xl border border-primary/12 bg-card/50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/35">
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-primary/30 text-primary">
-                    <Icon size={20} />
+                <article className="h-full rounded-2xl border border-black/10 bg-white p-6 text-black transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg">
+                  {/* Gold Icon */}
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary text-black shadow-sm">
+                    <Icon size={20} strokeWidth={2.2} />
                   </span>
 
-                  <h3 className="mt-4 font-display text-xl text-foreground">{h.title}</h3>
+                  <h3 className="mt-4 font-display text-xl text-black">{h.title}</h3>
 
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{h.text}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-black/70">{h.text}</p>
                 </article>
               </Reveal>
             );
@@ -183,7 +182,8 @@ export function ExperienceTimeline({ onBook }) {
           {timeline.map((step, i) => (
             <Reveal key={step.no} delay={40}>
               <li className="relative grid gap-5 lg:grid-cols-[1fr_260px] lg:items-center">
-                <span className="absolute top-1 -left-[1.85rem] flex h-8 w-8 items-center justify-center rounded-full border border-primary/40 bg-navy-deep text-[0.65rem] text-primary sm:-left-[3.35rem]">
+                {/* Timeline Number */}
+                <span className="absolute top-1 -left-[1.85rem] flex h-8 w-8 items-center justify-center rounded-full border border-primary/40 bg-primary text-[0.65rem] text-black shadow-sm sm:-left-[3.35rem]">
                   {step.no}
                 </span>
 
@@ -222,7 +222,7 @@ export function ExperienceTimeline({ onBook }) {
 
 function ActivityCard({ activity, onBook }) {
   return (
-    <article className="group grid overflow-hidden rounded-2xl border border-primary/15 bg-card/60 transition-all duration-500 hover:border-primary/40 hover:shadow-[var(--shadow-lux)] md:grid-cols-[320px_1fr]">
+    <article className="group grid overflow-hidden rounded-2xl border border-black/10 bg-white text-black transition-all duration-500 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg md:grid-cols-[320px_1fr]">
       {/* Image */}
       <div className="relative overflow-hidden">
         <img
@@ -234,33 +234,30 @@ function ActivityCard({ activity, onBook }) {
           className="h-full min-h-[240px] w-full object-cover transition-transform duration-[1.1s] group-hover:scale-105"
         />
 
-        <span className="absolute top-3 left-3 rounded-full bg-navy-deep/80 px-3 py-1 text-[0.6rem] tracking-[0.2em] text-primary uppercase ring-1 ring-primary/25">
+        {/* Gold Category Badge */}
+        <span className="absolute top-3 left-3 rounded-full bg-primary px-3 py-1 text-[0.6rem] tracking-[0.2em] text-black uppercase shadow-sm">
           {activity.category}
         </span>
       </div>
 
       {/* Content */}
       <div className="flex flex-col justify-center gap-3 p-6 sm:p-8">
-        <h3 className="font-display text-2xl leading-snug text-foreground">{activity.title}</h3>
+        <h3 className="font-display text-2xl leading-snug text-black">{activity.title}</h3>
 
-        <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
-          {activity.description}
-        </p>
+        <p className="max-w-2xl text-sm leading-relaxed text-black/70">{activity.description}</p>
 
         <p className="text-xl font-medium text-primary">{activity.price}</p>
 
         {/* Buttons */}
         <div className="mt-2 flex flex-wrap gap-3">
-          {/* Open Activity Details Page */}
           <GhostButton
             as={Link}
             to={`/activities/${activity.id}`}
-            className="px-5 py-2.5 text-[0.68rem]"
+            className="border-black/20 px-5 py-2.5 text-[0.68rem] text-black hover:border-black/40 hover:bg-black/5"
           >
             View Experience
           </GhostButton>
 
-          {/* Booking */}
           <GoldButton onClick={() => onBook(activity.title)} className="px-5 py-2.5 text-[0.68rem]">
             Book Now
           </GoldButton>
@@ -316,19 +313,18 @@ export function PricingSection({ onBook }) {
           {pricing.map((p, i) => (
             <Reveal key={p.label} delay={i * 90}>
               <div
-                className={`flex h-full flex-col items-center gap-3 rounded-2xl border p-8 text-center transition-all duration-300 hover:-translate-y-1 ${
-                  p.featured
-                    ? "border-primary/50 bg-card shadow-[var(--shadow-gold)]"
-                    : "border-primary/15 bg-card/50"
+                className={`flex h-full flex-col items-center gap-3 rounded-2xl border p-8 text-center text-black transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
+                  p.featured ? "border-black/20 bg-white shadow-lg" : "border-black/10 bg-white"
                 }`}
               >
+                {/* Gold Label */}
                 <span className="text-[0.65rem] tracking-[0.3em] text-primary uppercase">
                   {p.label}
                 </span>
 
-                <span className="font-display text-5xl text-foreground">{p.price}</span>
+                <span className="font-display text-5xl text-black">{p.price}</span>
 
-                <span className="text-sm text-muted-foreground">{p.note}</span>
+                <span className="text-sm text-black/70">{p.note}</span>
               </div>
             </Reveal>
           ))}
@@ -378,9 +374,12 @@ export function WildlifeRespect() {
         <ul className="mt-12 grid gap-4 sm:grid-cols-2">
           {respectPrinciples.map((p, i) => (
             <Reveal key={p} delay={i * 70}>
-              <li className="surface-glass flex items-center gap-3 rounded-xl px-5 py-4 text-sm text-foreground/85">
-                <ShieldCheck size={18} className="shrink-0 text-primary" />
-                {p}
+              <li className="flex items-center gap-3 rounded-xl border border-black/10 bg-white px-5 py-4 text-sm text-black shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-black">
+                  <ShieldCheck size={18} />
+                </span>
+
+                <span>{p}</span>
               </li>
             </Reveal>
           ))}
@@ -431,7 +430,7 @@ export function AboutSection() {
             {pillars.map((p) => (
               <li
                 key={p}
-                className="rounded-full border border-primary/25 px-4 py-1.5 text-xs text-foreground/80"
+                className="rounded-full border border-black/10 bg-white px-4 py-1.5 text-xs text-black shadow-sm transition-all duration-300 hover:border-black/20 hover:shadow-md"
               >
                 {p}
               </li>
@@ -557,7 +556,7 @@ export function VideoStory() {
                 <span className="absolute inset-0 bg-navy-deep/45" />
 
                 <span className="absolute inset-0 flex items-center justify-center">
-                  <span className="inline-flex h-20 w-20 items-center justify-center rounded-full border border-primary/60 bg-navy-deep/60 text-primary transition-transform duration-300 group-hover:scale-110">
+                  <span className="inline-flex h-20 w-20 items-center justify-center rounded-full border border-primary/60 bg-primary text-black shadow-lg transition-transform duration-300 group-hover:scale-110">
                     <Play size={26} className="ml-1" />
                   </span>
                 </span>
@@ -619,8 +618,8 @@ export function Testimonials() {
 
         <Reveal delay={120}>
           <div className="relative mx-auto mt-10 max-w-2xl">
-            {/* Review Image */}
-            <div className="flex h-[300px] items-center justify-center overflow-hidden rounded-2xl border border-primary/20 bg-card/50 p-3 shadow-[var(--shadow-lux)] sm:h-[380px]">
+            {/* Review Image Card */}
+            <div className="flex h-[300px] items-center justify-center overflow-hidden rounded-2xl border border-black/10 bg-white p-3 shadow-lg sm:h-[380px]">
               <img
                 src={reviewImages[currentReview]}
                 alt={`Guest review ${currentReview + 1}`}
@@ -634,7 +633,7 @@ export function Testimonials() {
               type="button"
               onClick={previousReview}
               aria-label="Previous review"
-              className="absolute top-1/2 left-1 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full border border-primary/30 bg-navy-deep/90 text-primary shadow-lg transition-all duration-300 hover:border-primary hover:bg-primary hover:text-navy-deep sm:-left-5"
+              className="absolute top-1/2 left-1 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-primary/30 bg-primary text-black shadow-lg transition-all duration-300 hover:scale-105 sm:-left-5"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -656,7 +655,7 @@ export function Testimonials() {
               type="button"
               onClick={nextReview}
               aria-label="Next review"
-              className="absolute top-1/2 right-1 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full border border-primary/30 bg-navy-deep/90 text-primary shadow-lg transition-all duration-300 hover:border-primary hover:bg-primary hover:text-navy-deep sm:-right-5"
+              className="absolute top-1/2 right-1 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-primary/30 bg-primary text-black shadow-lg transition-all duration-300 hover:scale-105 sm:-right-5"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -674,7 +673,7 @@ export function Testimonials() {
             </button>
 
             {/* Counter */}
-            <div className="mt-4 text-center text-xs tracking-[0.25em] text-muted-foreground uppercase">
+            <div className="mt-4 text-center text-xs tracking-[0.25em] text-black/60 uppercase">
               Review {currentReview + 1} / {reviewImages.length}
             </div>
 
@@ -700,6 +699,7 @@ export function Testimonials() {
     </section>
   );
 }
+
 /* --------------------------------- FAQ ----------------------------------- */
 
 export function FAQ() {
@@ -712,27 +712,27 @@ export function FAQ() {
           <SectionHeading eyebrow="Good to know" title="Frequently Asked Questions" />
         </Reveal>
 
-        <div className="mt-12 divide-y divide-primary/12 border-y border-primary/12">
+        <div className="mt-12 overflow-hidden rounded-2xl border border-black/10 bg-white text-black shadow-sm">
           {faqs.map((f, i) => {
             const isOpen = open === i;
 
             return (
-              <div key={f.q}>
+              <div key={f.q} className="border-b border-black/10 last:border-b-0">
                 <button
                   type="button"
                   onClick={() => setOpen(isOpen ? -1 : i)}
                   aria-expanded={isOpen}
-                  className="flex w-full items-center justify-between gap-4 py-5 text-left"
+                  className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left transition-colors duration-300 hover:bg-black/[0.02] sm:px-6"
                 >
-                  <span className="font-display text-lg text-foreground">{f.q}</span>
+                  <span className="font-display text-lg text-black">{f.q}</span>
 
-                  <span className="shrink-0 text-primary">
-                    {isOpen ? <Minus size={18} /> : <Plus size={18} />}
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-black">
+                    {isOpen ? <Minus size={16} /> : <Plus size={16} />}
                   </span>
                 </button>
 
                 {isOpen ? (
-                  <p className="pb-5 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+                  <p className="px-5 pb-5 text-sm leading-relaxed text-black/70 sm:px-6">{f.a}</p>
                 ) : null}
               </div>
             );
@@ -806,19 +806,22 @@ export function ContactSection() {
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           <Reveal>
-            <div className="flex h-full flex-col gap-6 rounded-2xl border border-primary/15 bg-card/50 p-7">
+            <div className="flex h-full flex-col gap-6 rounded-2xl border border-black/10 bg-white p-7 text-black shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg">
               <div>
                 <h3 className="font-display text-2xl text-primary">{business.name}</h3>
 
-                <p className="mt-4 flex items-start gap-3 text-sm text-foreground/80">
+                <p className="mt-4 flex items-start gap-3 text-sm text-black/70">
                   <MapPin size={18} className="mt-0.5 shrink-0 text-primary" />
                   {business.address}
                 </p>
 
-                <p className="mt-3 flex items-center gap-3 text-sm text-foreground/80">
+                <p className="mt-3 flex items-center gap-3 text-sm text-black/70">
                   <Phone size={18} className="shrink-0 text-primary" />
 
-                  <a href={`tel:${business.phoneTel}`} className="hover:text-primary">
+                  <a
+                    href={`tel:${business.phoneTel}`}
+                    className="transition-colors hover:text-primary"
+                  >
                     {business.phoneDisplay}
                   </a>
                 </p>
@@ -859,7 +862,7 @@ export function ContactSection() {
           </Reveal>
 
           <Reveal delay={120}>
-            <div className="h-full min-h-[320px] overflow-hidden rounded-2xl border border-primary/15">
+            <div className="h-full min-h-[320px] overflow-hidden rounded-2xl border border-black/10 bg-white shadow-sm">
               <iframe
                 title={`Map showing ${business.name}`}
                 src={mapSrc}
@@ -926,7 +929,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-primary/25 text-primary hover:bg-primary/10"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-primary/25 text-primary transition-all duration-300 hover:bg-primary hover:text-black"
                 >
                   <Icon size={17} />
                 </a>
