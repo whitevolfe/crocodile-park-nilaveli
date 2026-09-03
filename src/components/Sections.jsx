@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Bird,
   Leaf,
@@ -596,6 +596,8 @@ export function Testimonials() {
   ];
 
   const [currentReview, setCurrentReview] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const resumeTimerRef = useRef(null);
 
   const nextReview = () => {
     setCurrentReview((prev) => (prev + 1) % reviewImages.length);
@@ -603,6 +605,34 @@ export function Testimonials() {
 
   const previousReview = () => {
     setCurrentReview((prev) => (prev - 1 + reviewImages.length) % reviewImages.length);
+  };
+
+  const goToReview = (i) => {
+    setCurrentReview(i);
+  };
+
+  // Auto-advance the carousel every 4 seconds
+  useEffect(() => {
+    if (paused) return;
+
+    const interval = setInterval(() => {
+      setCurrentReview((prev) => (prev + 1) % reviewImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [paused, reviewImages.length]);
+
+  // Pause on user interaction, then auto-resume after 3 seconds
+  const pause = () => {
+    setPaused(true);
+
+    if (resumeTimerRef.current) {
+      window.clearTimeout(resumeTimerRef.current);
+    }
+
+    resumeTimerRef.current = window.setTimeout(() => {
+      setPaused(false);
+    }, 3000);
   };
 
   return (
@@ -631,7 +661,10 @@ export function Testimonials() {
             {/* Previous Button */}
             <button
               type="button"
-              onClick={previousReview}
+              onClick={() => {
+                previousReview();
+                pause();
+              }}
               aria-label="Previous review"
               className="absolute top-1/2 left-1 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-primary/30 bg-primary text-black shadow-lg transition-all duration-300 hover:scale-105 sm:-left-5"
             >
