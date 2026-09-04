@@ -8,48 +8,73 @@ const languages = [
   },
   {
     code: "de",
-    name: "Deutsch",
+    name: "German",
     flag: "https://flagcdn.com/w40/de.png",
   },
   {
-    code: "fr",
-    name: "Français",
-    flag: "https://flagcdn.com/w40/fr.png",
-  },
-  {
-    code: "es",
-    name: "Español",
-    flag: "https://flagcdn.com/w40/es.png",
-  },
-  {
     code: "ru",
-    name: "Русский",
+    name: "Russian",
     flag: "https://flagcdn.com/w40/ru.png",
   },
   {
+    code: "fr",
+    name: "French",
+    flag: "https://flagcdn.com/w40/fr.png",
+  },
+  {
     code: "nl",
-    name: "Nederlands",
+    name: "Dutch",
     flag: "https://flagcdn.com/w40/nl.png",
   },
   {
+    code: "pl",
+    name: "Polish",
+    flag: "https://flagcdn.com/w40/pl.png",
+  },
+  {
     code: "it",
-    name: "Italiano",
+    name: "Italian",
     flag: "https://flagcdn.com/w40/it.png",
   },
   {
+    code: "es",
+    name: "Spanish",
+    flag: "https://flagcdn.com/w40/es.png",
+  },
+  {
+    code: "sv",
+    name: "Swedish",
+    flag: "https://flagcdn.com/w40/se.png",
+  },
+  {
+    code: "da",
+    name: "Danish",
+    flag: "https://flagcdn.com/w40/dk.png",
+  },
+  {
+    code: "no",
+    name: "Norwegian",
+    flag: "https://flagcdn.com/w40/no.png",
+  },
+  {
+    code: "fi",
+    name: "Finnish",
+    flag: "https://flagcdn.com/w40/fi.png",
+  },
+  {
     code: "cs",
-    name: "Čeština",
+    name: "Czech",
     flag: "https://flagcdn.com/w40/cz.png",
   },
   {
-    code: "hr",
-    name: "Hrvatski",
-    flag: "https://flagcdn.com/w40/hr.png",
+    code: "pt",
+    name: "Portuguese",
+    flag: "https://flagcdn.com/w40/pt.png",
   },
   {
-    code: "be",
-    name: "Беларуская",
-    flag: "https://flagcdn.com/w40/by.png",
+    code: "ro",
+    name: "Romanian",
+    flag: "https://flagcdn.com/w40/ro.png",
   },
 ];
 
