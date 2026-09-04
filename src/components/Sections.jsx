@@ -813,7 +813,7 @@ export function FinalCTA({ onBook }) {
             href={waLink(`Hello ${business.name}, I would like to book an experience.`)}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto"
+            className="w-full sm:w-auto bg-[#25D366] border-[#128C7E] text-black hover:bg-[#128C7E] hover:text-black"
           >
             <MessageCircle size={15} /> Chat on WhatsApp
           </GhostButton>
@@ -874,7 +874,7 @@ export function ContactSection() {
                   href={waLink(`Hello ${business.name}, I have a question.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-2.5 text-xs"
+                  className="px-5 py-2.5 text-xs bg-[#25D366] border-[#128C7E] text-black hover:bg-[#128C7E] hover:text-black"
                 >
                   <MessageCircle size={15} /> WhatsApp
                 </GhostButton>
@@ -1000,7 +1000,7 @@ export function Footer() {
                 href={waLink(`Hello ${business.name}!`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary"
+                className="flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-medium text-black hover:bg-[#128C7E]"
               >
                 WhatsApp
               </a>

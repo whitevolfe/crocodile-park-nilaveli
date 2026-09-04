@@ -229,7 +229,7 @@ const ActivityDetails = () => {
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center rounded-full border border-black/20 px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-black transition-all duration-300 hover:border-primary hover:bg-primary hover:text-black"
+                  className="flex w-full items-center justify-center rounded-full bg-[#25D366] border-[#128C7E] px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-black transition-all duration-300 hover:bg-[#128C7E]"
                 >
                   WhatsApp Us
                 </a>
@@ -266,7 +266,7 @@ const ActivityDetails = () => {
               )}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-primary px-7 py-3 text-xs font-medium uppercase tracking-[0.15em] text-navy transition-all duration-300 hover:brightness-110"
+              className="rounded-full bg-[#25D366] border-[#128C7E] px-7 py-3 text-xs font-medium uppercase tracking-[0.15em] text-black transition-all duration-300 hover:bg-[#128C7E]"
             >
               Ask on WhatsApp
             </a>

@@ -228,6 +228,7 @@ export default function BookingModal({ open, onClose, initialExperience }: Booki
                 href={waLink(composeMessage())}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="bg-[#25D366] border-[#128C7E] text-black hover:brightness-110"
               >
                 <MessageCircle size={16} />
                 Send on WhatsApp
@@ -363,7 +364,7 @@ export default function BookingModal({ open, onClose, initialExperience }: Booki
                 href={waLink(composeMessage())}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:flex-1"
+                className="w-full sm:flex-1 bg-[#25D366] border-[#128C7E] text-black hover:bg-[#128C7E] hover:text-black"
               >
                 <MessageCircle size={15} />
                 Book via WhatsApp
