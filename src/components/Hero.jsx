@@ -53,7 +53,7 @@ export default function Hero({ onBook }) {
             TRUST / CREDIBILITY BAR
         ====================================================== */}
         <div
-          className="animate-rise mx-auto mb-10 flex max-w-5xl flex-wrap items-center justify-center gap-x-7 gap-y-4 rounded-xl border border-white/10 bg-black/20 px-4 py-3 backdrop-blur-md sm:mb-12 sm:gap-x-8 sm:px-6"
+          className="animate-rise mx-auto mb-20 flex max-w-5xl flex-wrap items-center justify-center gap-x-7 gap-y-4 rounded-xl border border-white/10 bg-black/20 px-4 py-3 backdrop-blur-md sm:mb-12 sm:gap-x-8 sm:px-6"
           style={{ animationDelay: "80ms" }}
         >
           {/* Google Rating */}
@@ -95,25 +95,25 @@ export default function Hero({ onBook }) {
           <div className="hidden h-7 w-px bg-white/15 sm:block" />
 
           {/* WhatsApp Confirmation */}
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <Zap size={16} strokeWidth={2.5} className="text-orange-400" />
 
             <span className="text-[11px] font-medium tracking-wide text-white/80 sm:text-xs">
               Instant WhatsApp confirmation
             </span>
-          </div>
+          </div> */}
 
           {/* Divider */}
           <div className="hidden h-7 w-px bg-white/15 sm:block" />
 
           {/* Best Price Guarantee */}
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <BadgeDollarSign size={17} strokeWidth={2} className="text-emerald-300" />
 
             <span className="text-[11px] font-medium tracking-wide text-white/80 sm:text-xs">
               Best price guarantee
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Logo */}
@@ -129,7 +129,7 @@ export default function Hero({ onBook }) {
 
         {/* Location */}
         <p
-          className="animate-rise mb-6 text-[0.62rem] tracking-[0.3em] text-primary uppercase sm:text-xs sm:tracking-[0.4em]"
+          className="animate-rise mb-5 text-[0.62rem] tracking-[0.3em] text-white text-bold uppercase sm:text-xs sm:tracking-[0.4em]"
           style={{ animationDelay: "180ms" }}
         >
           Nilaveli • Trincomalee • Sri Lanka 🐊
@@ -137,7 +137,7 @@ export default function Hero({ onBook }) {
 
         {/* Main Heading */}
         <h1
-          className="animate-rise font-display text-2xl leading-[1.05] font-light text-balance sm:text-6xl lg:text-7xl"
+          className="animate-rise mt-20 font-display text-2xl leading-[1.05] font-light text-balance sm:text-6xl lg:text-7xl"
           style={{ animationDelay: "300ms" }}
         >
           Discover the Crocodile Park <span className="text-gold-gradient">Nilaveli</span>
@@ -156,10 +156,10 @@ export default function Hero({ onBook }) {
 
         {/* CTA */}
         <div
-          className="animate-rise mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row"
+          className="animate-rise mt-40 flex flex-col items-center justify-center gap-3 sm:flex-row"
           style={{ animationDelay: "480ms" }}
         >
-          <GoldButton as="a" href="#experience" className="w-full sm:w-auto">
+          <GoldButton as="a" href="#experience" className="w-52 sm:w-auto">
             Explore Experiences
           </GoldButton>
 
@@ -175,13 +175,6 @@ export default function Hero({ onBook }) {
       </div>
 
       {/* Scroll Indicator */}
-      <a
-        href="#intro"
-        className="absolute inset-x-0 bottom-6 mx-auto flex w-max flex-col items-center gap-1 text-[0.6rem] tracking-[0.3em] text-foreground/60 uppercase transition-colors hover:text-primary"
-      >
-        Scroll to Explore
-        <ChevronDown size={16} className="animate-bounce" />
-      </a>
     </section>
   );
 }
