@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { activities, business, waLink } from "@/data/site";
+import ActivityPriceCalculator from "@/components/ActivityPriceCalculator";
 
 interface Activity {
   id: string;
@@ -21,7 +22,6 @@ interface Activity {
 const ActivityDetails = () => {
   const { slug } = useParams<{ slug: string }>();
 
-  // Tell TypeScript what the JavaScript activity data looks like.
   const activity = (activities as Activity[]).find((item) => item.id === slug);
 
   if (!activity) {
@@ -47,9 +47,34 @@ const ActivityDetails = () => {
     );
   }
 
+  /*
+   * The calculator uses the existing activity price as the adult price.
+   *
+   * Current activity price examples:
+   * LKR 3,900
+   * LKR 18,500
+   * LKR 15,000
+   * etc.
+   *
+   * Child/private prices below are calculated defaults.
+   * Replace them with your real prices when required.
+   */
+
+  const basePrice = Number(activity.price.replace(/[^\d]/g, "")) || 0;
+
+  const adultPrice = basePrice;
+
+  const childPrice = Math.round(basePrice * 0.5);
+
+  const infantPrice = 0;
+
+  const privatePrice = basePrice * 2;
+
   return (
     <main className="min-h-screen bg-navy text-foreground">
-      {/* HERO */}
+      {/* =========================================================
+          HERO
+      ========================================================= */}
       <section className="relative h-[55vh] min-h-[420px] overflow-hidden">
         <img
           src={activity.image}
@@ -81,10 +106,14 @@ const ActivityDetails = () => {
         </div>
       </section>
 
-      {/* MAIN CONTENT */}
+      {/* =========================================================
+          MAIN CONTENT
+      ========================================================= */}
       <section className="mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-24">
         <div className="grid gap-12 lg:grid-cols-[1fr_360px]">
-          {/* LEFT CONTENT */}
+          {/* =====================================================
+              LEFT CONTENT
+          ===================================================== */}
           <div>
             {/* ABOUT */}
             <div>
@@ -119,6 +148,7 @@ const ActivityDetails = () => {
                       className="rounded-xl border border-black/10 bg-white p-4 text-sm text-black transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg"
                     >
                       <span className="mr-3 text-primary">✓</span>
+
                       {highlight}
                     </div>
                   ))}
@@ -167,6 +197,7 @@ const ActivityDetails = () => {
                       className="flex items-center gap-3 text-sm text-muted-foreground"
                     >
                       <span className="text-primary">✓</span>
+
                       {item}
                     </li>
                   ))}
@@ -184,7 +215,9 @@ const ActivityDetails = () => {
             </div>
           </div>
 
-          {/* BOOKING CARD */}
+          {/* =====================================================
+              BOOKING CARD
+          ===================================================== */}
           <aside className="lg:sticky lg:top-24 lg:h-fit">
             <div className="rounded-2xl border border-black/10 bg-white p-6 text-black shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg sm:p-8">
               <p className="text-xs uppercase tracking-[0.25em] text-primary">
@@ -229,7 +262,7 @@ const ActivityDetails = () => {
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center rounded-full bg-[#25D366] border-[#128C7E] px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-black transition-all duration-300 hover:bg-[#128C7E]"
+                  className="flex w-full items-center justify-center rounded-full border-[#128C7E] bg-[#25D366] px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-black transition-all duration-300 hover:bg-[#128C7E]"
                 >
                   WhatsApp Us
                 </a>
@@ -243,7 +276,25 @@ const ActivityDetails = () => {
         </div>
       </section>
 
-      {/* BOTTOM CTA */}
+      {/* =========================================================
+          INSTANT PRICE CALCULATOR
+      ========================================================= */}
+      <section className="mx-auto max-w-6xl px-5 pb-16 sm:px-6 sm:pb-24">
+        <ActivityPriceCalculator
+          activityId={activity.id}
+          activityTitle={activity.title}
+          adultPrice={adultPrice}
+          childPrice={childPrice}
+          infantPrice={infantPrice}
+          privatePrice={privatePrice}
+          whatsapp={business.whatsapp}
+          currency="LKR"
+        />
+      </section>
+
+      {/* =========================================================
+          BOTTOM CTA
+      ========================================================= */}
       <section className="border-t border-primary/10 bg-navy-deep/40 px-5 py-16 sm:py-20">
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-xs uppercase tracking-[0.3em] text-primary">
@@ -266,7 +317,7 @@ const ActivityDetails = () => {
               )}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-[#25D366] border-[#128C7E] px-7 py-3 text-xs font-medium uppercase tracking-[0.15em] text-black transition-all duration-300 hover:bg-[#128C7E]"
+              className="rounded-full border-[#128C7E] bg-[#25D366] px-7 py-3 text-xs font-medium uppercase tracking-[0.15em] text-black transition-all duration-300 hover:bg-[#128C7E]"
             >
               Ask on WhatsApp
             </a>

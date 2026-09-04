@@ -87,7 +87,7 @@ export default function Hero({ onBook }) {
             <ShieldCheck size={17} strokeWidth={2} className="text-sky-300" />
 
             <span className="text-[11px] font-medium tracking-wide text-white/80 sm:text-xs">
-              SLTDA &amp; DWC Registered
+              KUPS/NSO/TL/2026/121
             </span>
           </div>
 
