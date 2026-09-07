@@ -23,7 +23,7 @@ function Layout() {
 
       <Outlet />
 
-      <TourismChatbot />
+      {/* <TourismChatbot /> */}
     </>
   );
 }
