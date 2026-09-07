@@ -9,6 +9,7 @@ import {
   MapPin,
   Phone,
   MessageCircle,
+  Mail,
   Navigation,
   Play,
   Plus,
@@ -36,7 +37,7 @@ import {
 } from "@/data/site";
 
 import logo from "@/assets/crocodile-parklogo.png";
-import introImage from "@/assets/exp-crocodile.jpg";
+import introImage from "@/assets/exp-crocodile3.jpeg";
 import aboutImage from "@/assets/about-guide.jpg";
 import sunsetImage from "@/assets/exp-sunset.jpg";
 import lagoonImage from "@/assets/gal-lagoon.jpg";
@@ -77,53 +78,185 @@ const iconMap = {
 /* ------------------------------- Intro ---------------------------------- */
 
 export function ExperienceIntro() {
-  const points = [
-    "Wild crocodile observation",
-    "Bird watching",
-    "Nature exploration",
-    "Local Tuk Tuk travel",
-    "Periyakulam / The Big Lake",
-    "Lagoon exploration",
-    "Sunset viewing",
-  ];
-
   return (
-    <section id="intro" className="relative py-20 sm:py-28">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-6 lg:grid-cols-2 lg:gap-16">
-        <Reveal>
-          <SectionHeading
-            align="left"
-            eyebrow="The Hidden Wildlife of Nilaveli"
-            title="Experience Nilaveli Beyond the Beach"
-            subtitle="Crocodile Park Nilaveli offers visitors a unique opportunity to discover the hidden wildlife and natural beauty around Nilaveli."
-          />
+    <section id="intro" className="relative py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6">
+        {/* Main 2-column layout */}
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-10">
+          {/* =========================
+              LEFT SIDE
+          ========================== */}
 
-          <ul className="mt-8 grid gap-x-6 gap-y-3 sm:grid-cols-2">
-            {points.map((p) => (
-              <li key={p} className="flex items-start gap-2 text-sm text-foreground/80">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                {p}
-              </li>
-            ))}
-          </ul>
-        </Reveal>
+          <Reveal>
+            <div className="flex h-full flex-col gap-6">
+              {/* 01 — Crocodile Image */}
+              <div className="relative overflow-hidden rounded-3xl border border-primary/20 shadow-[var(--shadow-lux)]">
+                <img
+                  src={introImage}
+                  alt="Wild crocodile in its natural environment"
+                  loading="lazy"
+                  width={1280}
+                  height={960}
+                  className="aspect-[4/3] w-full object-cover transition-transform duration-[1.2s] hover:scale-105"
+                />
 
-        <Reveal delay={120}>
-          <figure className="relative overflow-hidden rounded-3xl border border-primary/20 shadow-[var(--shadow-lux)]">
-            <img
-              src={introImage}
-              alt="Wild crocodile in a natural Sri Lankan lagoon"
-              loading="lazy"
-              width={1280}
-              height={960}
-              className="aspect-[4/3] w-full object-cover transition-transform duration-[1.2s] hover:scale-105"
-            />
+                {/* Dark gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/20 to-transparent" />
 
-            <figcaption className="absolute right-0 bottom-0 left-0 bg-gradient-to-t from-navy-deep to-transparent p-5 text-xs tracking-[0.2em] text-primary uppercase">
-              Wild, not enclosed
-            </figcaption>
-          </figure>
-        </Reveal>
+                {/* Text on image */}
+                <div className="absolute right-0 bottom-0 left-0 p-6 sm:p-8">
+                  <span className="text-[0.65rem] tracking-[0.3em] text-primary uppercase">
+                    Wild Wildlife
+                  </span>
+
+                  <h3 className="mt-2 max-w-lg font-display text-2xl leading-tight text-white sm:text-3xl">
+                    Wild, Not Enclosed
+                  </h3>
+
+                  <p className="mt-2 max-w-md text-sm leading-relaxed text-white/80">
+                    Humans can't predict the environment.
+                  </p>
+                </div>
+              </div>
+
+              {/* 02 — Countries + Customers */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="rounded-2xl border border-primary/15 bg-navy/40 p-5">
+                  <span className="text-3xl font-display text-primary sm:text-4xl">60+</span>
+
+                  <p className="mt-1 text-sm text-foreground/80">Countries</p>
+                </div>
+
+                <div className="rounded-2xl border border-primary/15 bg-navy/40 p-5">
+                  <span className="text-3xl font-display text-primary sm:text-4xl">10,000+</span>
+
+                  <p className="mt-1 text-sm text-foreground/80">Happy Customers</p>
+                </div>
+              </div>
+
+              {/* 04 — License */}
+              <div className="flex items-center justify-between rounded-2xl border border-primary/15 bg-navy/40 p-5">
+                <div>
+                  <p className="text-sm font-medium text-foreground">
+                    License Tourist Service Provider
+                  </p>
+
+                  <p className="mt-1 text-xs text-muted-foreground">Licensed & trusted service</p>
+                </div>
+
+                <div className="text-right">
+                  <span className="font-display text-3xl text-primary">100%</span>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* =========================
+              RIGHT SIDE
+          ========================== */}
+
+          <Reveal delay={120}>
+            <div className="flex h-full flex-col gap-6">
+              {/* 03 — Google Rating */}
+              <div className="rounded-3xl border border-primary/15 bg-navy/40 p-6 sm:p-8">
+                <div className="flex items-center gap-3">
+                  {/* Google Logo */}
+                  <img
+                    src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+                    alt="Google"
+                    className="h-8 w-8"
+                  />
+
+                  <div>
+                    <p className="text-xs tracking-[0.2em] text-primary uppercase">Google Rating</p>
+
+                    <div className="mt-1 flex items-center gap-2">
+                      <span className="font-display text-4xl text-foreground">4.7</span>
+
+                      <span className="text-lg text-primary">★★★★★</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-4 border-t border-primary/10 pt-4">
+                  <p className="text-sm text-muted-foreground">
+                    Based on <span className="font-medium text-foreground">276 Google reviews</span>
+                  </p>
+                </div>
+              </div>
+
+              {/* 05 — Eco Friendly */}
+              <div className="rounded-2xl border border-primary/15 bg-navy/40 p-5">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-sm font-medium text-foreground">ECO Friendly</p>
+
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Responsible wildlife tourism
+                    </p>
+                  </div>
+
+                  <span className="font-display text-3xl text-primary">100%</span>
+                </div>
+              </div>
+
+              {/* 06 — Book First Pay Later */}
+              <div className="rounded-2xl border border-primary/15 bg-navy/40 p-6">
+                <p className="font-display text-xl text-foreground">Book First, Pay Later</p>
+
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Secure your experience first and pay later according to our booking policy.
+                </p>
+
+                {/* WhatsApp + Email */}
+                <div className="mt-5 flex items-center gap-3">
+                  <a
+                    href={waLink(
+                      `Hello ${business.name}, I would like to know more about booking first and paying later.`,
+                    )}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#25D366] text-black transition-transform duration-300 hover:scale-105"
+                  >
+                    <MessageCircle size={19} />
+                  </a>
+
+                  <a
+                    href={`mailto:${business.email ?? ""}`}
+                    aria-label="Email"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-primary/30 bg-primary/10 text-primary transition-all duration-300 hover:bg-primary hover:text-black"
+                  >
+                    <Mail size={18} />
+                  </a>
+
+                  <span className="text-xs text-muted-foreground">Contact us for details</span>
+                </div>
+              </div>
+
+              {/* 07 — Free Information & Advice */}
+              <div className="flex flex-1 flex-col justify-center rounded-3xl border border-primary/15 bg-primary p-6 text-black sm:p-8">
+                <span className="text-[0.65rem] tracking-[0.3em] uppercase opacity-70">
+                  Local Knowledge
+                </span>
+
+                <h3 className="mt-2 font-display text-2xl leading-tight sm:text-3xl">
+                  4,500+ Tours & Travels
+                </h3>
+
+                <p className="mt-2 text-sm leading-relaxed opacity-80">
+                  Information and advice services for your journey.
+                </p>
+
+                <div className="mt-5">
+                  <span className="inline-flex rounded-full bg-black px-5 py-2 text-sm font-medium text-white">
+                    FREE
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
       </div>
     </section>
   );

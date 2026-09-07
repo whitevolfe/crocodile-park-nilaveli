@@ -4,7 +4,7 @@ import logo from "@/assets/crocodile-parklogo.png";
 import { GoldButton, GhostButton } from "@/components/ui/Primitives";
 
 // Hero video
-const HERO_VIDEO = "/videos/crocodile-video.mp4";
+const HERO_VIDEO = "/videos/crocodile-video2.mp4";
 
 export default function Hero({ onBook }) {
   return (

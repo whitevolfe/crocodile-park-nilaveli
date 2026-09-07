@@ -2,7 +2,7 @@
 // EDIT THIS FILE to update business info, activities, pricing and content.
 // ---------------------------------------------------------------------------
 
-import expCrocodile from "@/assets/exp-crocodile.jpg";
+import expCrocodile from "@/assets/exp-crocodile3.jpeg";
 import expBirds from "@/assets/exp-birds.jpg";
 import expPeriyakulam from "@/assets/exp-periyakulam.jpg";
 import expSunset from "@/assets/exp-sunset.jpg";
