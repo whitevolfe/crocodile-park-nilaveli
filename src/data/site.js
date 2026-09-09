@@ -10,15 +10,15 @@ import expTuktuk from "@/assets/exp-tuktuk.jpg";
 import galLagoon from "@/assets/gal-lagoon.jpg";
 import galBeach from "@/assets/gal-beach.jpg";
 import galCrocClose from "@/assets/gal-croc-close.jpg";
-import actSnorkeling from "@/assets/act-snorkeling.jpg";
-import actFishing from "@/assets/act-fishing.jpg";
-import actScuba from "@/assets/act-scuba.jpg";
-import actBbq from "@/assets/act-bbq.jpg";
-import actTrinco from "@/assets/act-trinco.jpg";
+import actSnorkeling from "@/assets/act-snorkeling.jpeg";
+import actFishing from "@/assets/act-fishing.jpeg";
+import actScuba from "@/assets/act-scuba.jpeg";
+import actBbq from "@/assets/act-bbq.jpeg";
+import actTrinco from "@/assets/act-trinco.jpeg";
 import actDeer from "@/assets/act-deer.jpg";
 import actKoneswaram from "@/assets/act-koneswaram.jpg";
 import actKanniya from "@/assets/act-kanniya.jpg";
-import actElephant from "@/assets/act-elephant.jpg";
+import actElephant from "@/assets/act-elephant.jpeg";
 import actTurtle from "@/assets/act-turtle.jpg";
 import galleryimg1 from "@/assets/galleryimg1.jpeg";
 import galleryimg2 from "@/assets/galleryimg2.jpeg";
@@ -361,98 +361,98 @@ export const activities = [
       "Suitable for families, couples, solo travellers and visitors wanting to discover Trincomalee.",
   },
 
-  {
-    id: "deer",
-    title: "Deer Feeding Trincomalee",
-    description: "Meet the gentle deer that roam the Trincomalee area.",
-    fullDescription:
-      "Spend time observing deer around the Trincomalee area and enjoy a peaceful wildlife experience. This activity offers visitors an opportunity to see these beautiful animals and appreciate the natural surroundings.",
-    price: "LKR 3,000",
-    category: "Wildlife",
-    image: actDeer,
-    alt: "Spotted deer grazing in a green Sri Lankan landscape",
-    duration: "Approximately 1–2 hours",
-    location: "Trincomalee",
-    highlights: [
-      "Deer observation",
-      "Natural surroundings",
-      "Wildlife photography",
-      "Peaceful outdoor experience",
-    ],
-    itinerary: [
-      "Meet your local guide.",
-      "Travel to the deer viewing area.",
-      "Observe the deer from a safe distance.",
-      "Learn about the local environment.",
-      "Enjoy time for photography.",
-      "Return to the agreed location.",
-    ],
-    included: ["Local guide", "Transportation", "Wildlife observation"],
-    suitableFor: "Suitable for families, children, couples and wildlife lovers.",
-  },
+  // {
+  //   id: "deer",
+  //   title: "Deer Feeding Trincomalee",
+  //   description: "Meet the gentle deer that roam the Trincomalee area.",
+  //   fullDescription:
+  //     "Spend time observing deer around the Trincomalee area and enjoy a peaceful wildlife experience. This activity offers visitors an opportunity to see these beautiful animals and appreciate the natural surroundings.",
+  //   price: "LKR 3,000",
+  //   category: "Wildlife",
+  //   image: actDeer,
+  //   alt: "Spotted deer grazing in a green Sri Lankan landscape",
+  //   duration: "Approximately 1–2 hours",
+  //   location: "Trincomalee",
+  //   highlights: [
+  //     "Deer observation",
+  //     "Natural surroundings",
+  //     "Wildlife photography",
+  //     "Peaceful outdoor experience",
+  //   ],
+  //   itinerary: [
+  //     "Meet your local guide.",
+  //     "Travel to the deer viewing area.",
+  //     "Observe the deer from a safe distance.",
+  //     "Learn about the local environment.",
+  //     "Enjoy time for photography.",
+  //     "Return to the agreed location.",
+  //   ],
+  //   included: ["Local guide", "Transportation", "Wildlife observation"],
+  //   suitableFor: "Suitable for families, children, couples and wildlife lovers.",
+  // },
 
-  {
-    id: "koneswaram",
-    title: "Koneswaram Temple Tour",
-    description: "Visit the clifftop temple above the Indian Ocean.",
-    fullDescription:
-      "Visit the famous Koneswaram Temple and explore the dramatic coastal surroundings above the Indian Ocean. Enjoy the cultural atmosphere, architecture and spectacular ocean views from one of Trincomalee's best-known landmarks.",
-    price: "LKR 3,500",
-    category: "Culture",
-    image: actKoneswaram,
-    alt: "Colourful clifftop Hindu temple above the ocean",
-    duration: "Approximately 2 hours",
-    location: "Swami Rock, Trincomalee",
-    highlights: [
-      "Koneswaram Temple",
-      "Indian Ocean views",
-      "Swami Rock",
-      "Cultural experience",
-      "Scenic photography",
-    ],
-    itinerary: [
-      "Meet your guide.",
-      "Travel towards Koneswaram Temple.",
-      "Explore the temple surroundings.",
-      "Enjoy views from Swami Rock.",
-      "Learn about the cultural significance of the area.",
-      "Return to the agreed location.",
-    ],
-    included: ["Local guide", "Transportation", "Sightseeing"],
-    suitableFor:
-      "Suitable for families, couples and travellers interested in culture, history and scenic locations.",
-  },
+  // {
+  //   id: "koneswaram",
+  //   title: "Koneswaram Temple Tour",
+  //   description: "Visit the clifftop temple above the Indian Ocean.",
+  //   fullDescription:
+  //     "Visit the famous Koneswaram Temple and explore the dramatic coastal surroundings above the Indian Ocean. Enjoy the cultural atmosphere, architecture and spectacular ocean views from one of Trincomalee's best-known landmarks.",
+  //   price: "LKR 3,500",
+  //   category: "Culture",
+  //   image: actKoneswaram,
+  //   alt: "Colourful clifftop Hindu temple above the ocean",
+  //   duration: "Approximately 2 hours",
+  //   location: "Swami Rock, Trincomalee",
+  //   highlights: [
+  //     "Koneswaram Temple",
+  //     "Indian Ocean views",
+  //     "Swami Rock",
+  //     "Cultural experience",
+  //     "Scenic photography",
+  //   ],
+  //   itinerary: [
+  //     "Meet your guide.",
+  //     "Travel towards Koneswaram Temple.",
+  //     "Explore the temple surroundings.",
+  //     "Enjoy views from Swami Rock.",
+  //     "Learn about the cultural significance of the area.",
+  //     "Return to the agreed location.",
+  //   ],
+  //   included: ["Local guide", "Transportation", "Sightseeing"],
+  //   suitableFor:
+  //     "Suitable for families, couples and travellers interested in culture, history and scenic locations.",
+  // },
 
-  {
-    id: "kanniya",
-    title: "Kanniya Hot Water Springs",
-    description: "Experience the natural hot water wells near Trincomalee.",
-    fullDescription:
-      "Visit the Kanniya Hot Water Springs and discover one of the well-known natural attractions around Trincomalee. Explore the site, learn about its cultural background and enjoy a relaxing stop during your journey.",
-    price: "LKR 3,000",
-    category: "Nature",
-    image: actKanniya,
-    alt: "Natural hot water spring wells surrounded by palms",
-    duration: "Approximately 2 hours",
-    location: "Kanniya, Trincomalee",
-    highlights: [
-      "Natural hot water wells",
-      "Local cultural experience",
-      "Scenic surroundings",
-      "Relaxed sightseeing",
-    ],
-    itinerary: [
-      "Meet your guide.",
-      "Travel to Kanniya.",
-      "Explore the hot water spring area.",
-      "Learn about the local history and traditions.",
-      "Enjoy the surrounding environment.",
-      "Return to the agreed location.",
-    ],
-    included: ["Local guide", "Transportation", "Sightseeing"],
-    suitableFor:
-      "Suitable for families, couples, solo travellers and visitors exploring Trincomalee.",
-  },
+  // {
+  //   id: "kanniya",
+  //   title: "Kanniya Hot Water Springs",
+  //   description: "Experience the natural hot water wells near Trincomalee.",
+  //   fullDescription:
+  //     "Visit the Kanniya Hot Water Springs and discover one of the well-known natural attractions around Trincomalee. Explore the site, learn about its cultural background and enjoy a relaxing stop during your journey.",
+  //   price: "LKR 3,000",
+  //   category: "Nature",
+  //   image: actKanniya,
+  //   alt: "Natural hot water spring wells surrounded by palms",
+  //   duration: "Approximately 2 hours",
+  //   location: "Kanniya, Trincomalee",
+  //   highlights: [
+  //     "Natural hot water wells",
+  //     "Local cultural experience",
+  //     "Scenic surroundings",
+  //     "Relaxed sightseeing",
+  //   ],
+  //   itinerary: [
+  //     "Meet your guide.",
+  //     "Travel to Kanniya.",
+  //     "Explore the hot water spring area.",
+  //     "Learn about the local history and traditions.",
+  //     "Enjoy the surrounding environment.",
+  //     "Return to the agreed location.",
+  //   ],
+  //   included: ["Local guide", "Transportation", "Sightseeing"],
+  //   suitableFor:
+  //     "Suitable for families, couples, solo travellers and visitors exploring Trincomalee.",
+  // },
 
   {
     id: "elephant",
@@ -486,75 +486,75 @@ export const activities = [
       "Suitable for wildlife lovers, photographers, families and visitors interested in Sri Lankan nature.",
   },
 
-  {
-    id: "birds",
-    title: "Bird Watching",
-    description: "Spot eagles, kingfishers and wetland birds around the lagoons.",
-    fullDescription:
-      "Explore the lagoons and wetlands around Nilaveli while looking for Sri Lankan birdlife. With a local guide, discover eagles, kingfishers, crows and other birds that live around the area's waterways and natural habitats.",
-    price: "LKR 1,200",
-    category: "Wildlife",
-    image: expBirds,
-    alt: "Eagle and kingfisher beside a Sri Lankan wetland",
-    duration: "Approximately 2 hours",
-    location: "Nilaveli & Periyakulam",
-    highlights: [
-      "Eagle watching",
-      "Kingfisher spotting",
-      "Wetland birds",
-      "Lagoon exploration",
-      "Nature photography",
-    ],
-    itinerary: [
-      "Meet your local bird-watching guide.",
-      "Travel towards the lagoon or wetland.",
-      "Explore suitable bird-watching locations.",
-      "Look for eagles, kingfishers and other species.",
-      "Enjoy the natural surroundings.",
-      "Return to the agreed location.",
-    ],
-    included: ["Local guide", "Nature walk", "Bird watching"],
-    suitableFor:
-      "Suitable for bird lovers, photographers, families and travellers who enjoy peaceful nature experiences.",
-  },
+  // {
+  //   id: "birds",
+  //   title: "Bird Watching",
+  //   description: "Spot eagles, kingfishers and wetland birds around the lagoons.",
+  //   fullDescription:
+  //     "Explore the lagoons and wetlands around Nilaveli while looking for Sri Lankan birdlife. With a local guide, discover eagles, kingfishers, crows and other birds that live around the area's waterways and natural habitats.",
+  //   price: "LKR 1,200",
+  //   category: "Wildlife",
+  //   image: expBirds,
+  //   alt: "Eagle and kingfisher beside a Sri Lankan wetland",
+  //   duration: "Approximately 2 hours",
+  //   location: "Nilaveli & Periyakulam",
+  //   highlights: [
+  //     "Eagle watching",
+  //     "Kingfisher spotting",
+  //     "Wetland birds",
+  //     "Lagoon exploration",
+  //     "Nature photography",
+  //   ],
+  //   itinerary: [
+  //     "Meet your local bird-watching guide.",
+  //     "Travel towards the lagoon or wetland.",
+  //     "Explore suitable bird-watching locations.",
+  //     "Look for eagles, kingfishers and other species.",
+  //     "Enjoy the natural surroundings.",
+  //     "Return to the agreed location.",
+  //   ],
+  //   included: ["Local guide", "Nature walk", "Bird watching"],
+  //   suitableFor:
+  //     "Suitable for bird lovers, photographers, families and travellers who enjoy peaceful nature experiences.",
+  // },
 
-  {
-    id: "turtle",
-    title: "Turtle Watching",
-    description: "Watch sea turtles glide through clear tropical water.",
-    fullDescription:
-      "Enjoy a memorable ocean experience while looking for sea turtles in the clear tropical waters around the Trincomalee and Nilaveli coast. Observe marine life responsibly and enjoy the beauty of the surrounding coastline.",
-    price: "LKR 8,500",
-    category: "Ocean",
-    image: actTurtle,
-    alt: "Green sea turtle swimming in turquoise water",
-    duration: "Approximately 3 hours",
-    location: "Nilaveli Coast",
-    highlights: [
-      "Sea turtle watching",
-      "Clear tropical water",
-      "Marine life observation",
-      "Coastal scenery",
-      "Ocean adventure",
-    ],
-    itinerary: [
-      "Meet your local guide.",
-      "Travel to the selected coastal location.",
-      "Receive a safety briefing.",
-      "Enter the water or viewing area.",
-      "Look for sea turtles and other marine life.",
-      "Enjoy the surrounding coastline.",
-      "Return to shore.",
-    ],
-    included: [
-      "Local guide",
-      "Basic equipment where required",
-      "Safety briefing",
-      "Local transportation where applicable",
-    ],
-    suitableFor:
-      "Suitable for ocean lovers and families. Children should be accompanied by an adult.",
-  },
+  // {
+  //   id: "turtle",
+  //   title: "Turtle Watching",
+  //   description: "Watch sea turtles glide through clear tropical water.",
+  //   fullDescription:
+  //     "Enjoy a memorable ocean experience while looking for sea turtles in the clear tropical waters around the Trincomalee and Nilaveli coast. Observe marine life responsibly and enjoy the beauty of the surrounding coastline.",
+  //   price: "LKR 8,500",
+  //   category: "Ocean",
+  //   image: actTurtle,
+  //   alt: "Green sea turtle swimming in turquoise water",
+  //   duration: "Approximately 3 hours",
+  //   location: "Nilaveli Coast",
+  //   highlights: [
+  //     "Sea turtle watching",
+  //     "Clear tropical water",
+  //     "Marine life observation",
+  //     "Coastal scenery",
+  //     "Ocean adventure",
+  //   ],
+  //   itinerary: [
+  //     "Meet your local guide.",
+  //     "Travel to the selected coastal location.",
+  //     "Receive a safety briefing.",
+  //     "Enter the water or viewing area.",
+  //     "Look for sea turtles and other marine life.",
+  //     "Enjoy the surrounding coastline.",
+  //     "Return to shore.",
+  //   ],
+  //   included: [
+  //     "Local guide",
+  //     "Basic equipment where required",
+  //     "Safety briefing",
+  //     "Local transportation where applicable",
+  //   ],
+  //   suitableFor:
+  //     "Suitable for ocean lovers and families. Children should be accompanied by an adult.",
+  // },
 ];
 
 export const pricing = [
