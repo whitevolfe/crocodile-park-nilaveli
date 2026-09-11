@@ -293,36 +293,480 @@ export const activities = [
   },
 
   {
-    id: "bbq",
-    title: "BBQ Night Tour",
-    description: "An outdoor tropical evening BBQ under the palm trees.",
-    fullDescription:
-      "Enjoy a relaxed tropical evening with an outdoor BBQ experience surrounded by the natural atmosphere of Nilaveli. Spend time with friends and family, enjoy freshly prepared food and relax beneath the palm trees.",
-    price: "LKR 4,500",
-    category: "Evening",
-    image: actBbq,
-    alt: "Evening beach BBQ under palm trees with warm lights",
-    duration: "Approximately 2–3 hours",
-    location: "Nilaveli",
-    highlights: [
-      "Outdoor tropical BBQ",
-      "Relaxed evening atmosphere",
-      "Palm-lined surroundings",
-      "Local food experience",
-      "Perfect for groups and families",
+  id: "bbq",
+  title: "BBQ Night Tour",
+  description:
+    "Enjoy a private beach BBQ in Nilaveli with freshly prepared seafood, chicken and vegetarian options, a BBQ Assistant, sunset views and a peaceful tropical evening atmosphere.",
+
+  fullDescription:
+    "Enjoy a relaxed and memorable private BBQ on the beautiful Nilaveli beach, surrounded by fresh ocean air, stunning coastal views, palm trees and a peaceful tropical atmosphere. Your BBQ Assistant will help prepare and manage the BBQ while you relax, enjoy your food and watch the sunset by the sea.",
+
+  price: "LKR 5,200",
+  category: "Evening",
+  image: actBbq,
+  alt: "Private beach BBQ experience in Nilaveli at sunset",
+  duration: "Approximately 2–3 hours",
+  location: "Nilaveli, Trincomalee, Sri Lanka",
+
+  highlights: [
+    "Private beach BBQ experience",
+    "BBQ Assistant included",
+    "Freshly prepared BBQ",
+    "Seafood, chicken & vegetarian options",
+    "Private beach setting",
+    "Beautiful sunset atmosphere",
+    "Tropical palm-tree surroundings",
+    "Ocean views",
+    "Drinks & side dishes can be arranged",
+    "Free transportation available",
+    "Perfect for couples, families & groups",
+    "Special occasions can be arranged",
+  ],
+
+  itinerary: [
+    "Arrive at the selected Nilaveli beach location in the late afternoon.",
+    "Relax on the beach and enjoy the fresh ocean air.",
+    "Take in the coastal views and sunset atmosphere.",
+    "Your BBQ Assistant prepares and manages the BBQ setup.",
+    "Enjoy freshly prepared seafood, chicken or vegetarian BBQ.",
+    "Enjoy drinks and side dishes according to your arrangement.",
+    "Relax under the tropical evening sky.",
+    "Finish the evening and return with transportation where arranged.",
+  ],
+
+  included: [
+    "Private beach BBQ experience",
+    "BBQ Assistant",
+    "Freshly prepared BBQ",
+    "Seafood, chicken & vegetarian options",
+    "Beachside BBQ setup",
+    "Sunset & evening atmosphere",
+    "Basic side dishes",
+    "Free transportation available",
+    "Comfortable private setting",
+  ],
+
+  suitableFor:
+    "Perfect for couples, families, friends, groups and guests celebrating birthdays, anniversaries, romantic evenings or other special occasions.",
+
+  pageTitle: "Nilaveli Private Beach BBQ Experience",
+
+  pageSubtitle: "An Outdoor Tropical Evening BBQ by the Beach",
+
+  pageIntro:
+    "Enjoy a relaxed and memorable private BBQ on the beautiful Nilaveli beach, surrounded by fresh ocean air, stunning coastal views, palm trees and a peaceful tropical atmosphere.",
+
+  experienceHighlights: [
+    "🧍🏽 BBQ Assistant",
+    "🏖️ Private beach setting",
+    "🔥 Freshly prepared BBQ",
+    "🐟 Seafood, chicken & vegetarian options",
+    "🌅 Beautiful sunset atmosphere",
+    "👨‍👩‍👧‍👦 Perfect for couples, families & groups",
+    "🥤 Drinks & side dishes can be arranged",
+    "🚗 Free transportation available",
+  ],
+
+  experienceDescription:
+    "Relax by the beach, enjoy delicious BBQ and make unforgettable memories in Nilaveli.",
+
+  pricePerPerson: "LKR 5,200",
+
+  sections: {
+    bbqNightTour: {
+      title: "BBQ Night Tour",
+      subtitle: "An Outdoor Tropical Evening BBQ by the Beach",
+
+      paragraphs: [
+        "Enjoy a tropical evening BBQ under the palm trees, surrounded by the peaceful atmosphere of the Nilaveli coast.",
+
+        "Your BBQ Assistant will help with the BBQ preparation and make sure your group can relax and enjoy the experience.",
+      ],
+
+      features: [
+        "🔥 Freshly prepared BBQ",
+        "🧍🏽 BBQ Assistant",
+        "🏖️ Private beach setting",
+        "🌅 Sunset atmosphere",
+        "🌴 Tropical surroundings",
+        "🌊 Ocean views",
+        "🥤 Drinks & side dishes available",
+      ],
+
+      description:
+        "Whether you are travelling as a couple, family or group of friends, this is a great way to spend a relaxed evening by the sea.",
+    },
+
+    privateBeach: {
+      title: "Your Private Beach BBQ Experience",
+
+      paragraphs: [
+        "Forget crowded restaurants and enjoy your evening in a beautiful coastal setting.",
+
+        "Relax on the beach, enjoy the fresh ocean air and watch the sunset while your BBQ is prepared.",
+
+        "The experience is designed to provide a comfortable and private atmosphere for your group.",
+      ],
+
+      perfectFor: [
+        "❤️ Couples",
+        "👨‍👩‍👧 Families",
+        "👥 Friends",
+        "🎉 Groups",
+        "🎂 Special occasions",
+      ],
+    },
+
+    bbqAssistant: {
+      title: "BBQ Assistant",
+      subtitle: "Your BBQ Assistant Is There to Help",
+
+      description:
+        "A dedicated BBQ Assistant will be available during the experience to help prepare and manage the BBQ.",
+
+      responsibilities: [
+        "🔥 BBQ preparation",
+        "🍽️ Food serving arrangements",
+        "🥤 Basic drink arrangements",
+        "🔥 Managing the BBQ setup",
+        "🧹 Keeping the BBQ area organized",
+      ],
+
+      closing:
+        "This allows you to spend more time relaxing, enjoying your food and taking in the beach atmosphere.",
+    },
+
+    foodOptions: {
+      title: "BBQ Food Options",
+
+      seafood: {
+        title: "🐟 Seafood BBQ",
+        description:
+          "Enjoy freshly prepared seafood according to availability.",
+
+        options: [
+          "Fresh fish",
+          "Prawns",
+          "Squid",
+          "Other locally available seafood",
+        ],
+      },
+
+      chicken: {
+        title: "🍗 Chicken BBQ",
+        description:
+          "Freshly prepared chicken BBQ served hot as part of your beachside meal.",
+      },
+
+      vegetarian: {
+        title: "🥗 Vegetarian BBQ",
+        description:
+          "Vegetarian BBQ options can be arranged for guests who do not eat meat or seafood.",
+
+        options: [
+          "Grilled vegetables",
+          "Corn",
+          "Potatoes",
+          "Vegetarian side dishes",
+        ],
+      },
+
+      note: "Food selections should be confirmed when booking.",
+    },
+
+    drinks: {
+      title: "Drinks & Side Dishes",
+
+      description:
+        "Drinks and side dishes can be arranged according to your requirements.",
+
+      options: [
+        "🥤 Soft drinks",
+        "💧 Bottled water",
+        "🍉 Fresh fruits",
+        "🥗 Salads",
+        "🍽️ Other side dishes",
+      ],
+
+      note:
+        "Additional food and drinks may be available on request.",
+    },
+
+    sunset: {
+      title: "Sunset Beach Atmosphere",
+      subtitle: "Enjoy the Sunset Before Your BBQ",
+
+      paragraphs: [
+        "The late afternoon is a beautiful time to arrive at the beach.",
+
+        "Relax by the sea, enjoy the coastal views and watch the sunset before enjoying your BBQ dinner.",
+      ],
+
+      suggestedExperience: [
+        "🌅 Arrive in the late afternoon",
+        "🏖️ Relax on the beach",
+        "📸 Enjoy sunset views",
+        "🔥 BBQ preparation",
+        "🍽️ Enjoy your BBQ meal",
+        "🌴 Relax under the tropical evening sky",
+      ],
+    },
+
+    transportation: {
+      title: "Free Transportation Available",
+
+      description:
+        "Free transportation can be arranged for guests, depending on the pickup location and availability.",
+
+      pickupOptions: [
+        "🏨 Selected hotels in Nilaveli",
+        "🏨 Nearby accommodation",
+        "📍 Selected locations around the Nilaveli area",
+      ],
+
+      note:
+        "Please provide your hotel or accommodation details when booking so transportation can be confirmed.",
+    },
+
+    specialOccasions: {
+      title: "Special Occasions",
+      subtitle: "Make Your BBQ Extra Special",
+
+      description:
+        "Planning a special evening? Additional arrangements can be discussed for:",
+
+      options: [
+        "🎂 Birthday celebrations",
+        "❤️ Romantic evenings",
+        "💍 Anniversaries",
+        "🎉 Private celebrations",
+        "👨‍👩‍👧 Family gatherings",
+        "👥 Group BBQ nights",
+      ],
+
+      note:
+        "Please contact us in advance for special arrangements.",
+    },
+
+    package: {
+      title: "Private Beach BBQ Package",
+      packageName: "🔥 BBQ Night Tour",
+      price: "LKR 5,200 per person",
+
+      highlights: [
+        "Private beach BBQ experience",
+        "BBQ Assistant",
+        "Freshly prepared BBQ",
+        "Seafood, chicken & vegetarian options",
+        "Beachside BBQ setup",
+        "Sunset & evening atmosphere",
+        "Free transportation available",
+        "Basic side dishes",
+        "Comfortable private setting",
+      ],
+
+      note:
+        "Additional food, drinks or special arrangements can be requested when booking.",
+    },
+
+    gallery: {
+      title: "Experience Gallery",
+      subtitle: "A Taste of the Nilaveli Beach BBQ Experience",
+
+      items: [
+        "Nilaveli beach",
+        "Private BBQ setup",
+        "BBQ Assistant preparing food",
+        "Fresh seafood",
+        "Chicken BBQ",
+        "Vegetarian BBQ",
+        "BBQ grill",
+        "Sunset",
+        "Palm trees",
+        "Beachside dining",
+        "Evening atmosphere",
+        "Guests enjoying the experience",
+      ],
+    },
+
+    location: {
+      title: "Location",
+      address: "Nilaveli, Trincomalee, Sri Lanka",
+
+      description:
+        "Enjoy your private BBQ experience along the beautiful Nilaveli coastline in Trincomalee. The tropical beach environment, ocean breeze, palm trees and sunset atmosphere make Nilaveli an ideal location for a relaxing evening BBQ.",
+
+      highlights: [
+        "🏖️ Nilaveli Beach",
+        "🌊 Indian Ocean",
+        "🌴 Tropical surroundings",
+        "🌅 Sunset views",
+        "🌙 Peaceful evening atmosphere",
+      ],
+    },
+
+    information: {
+      title: "Experience Information",
+
+      items: [
+        ["Experience", "Private Beach BBQ"],
+        ["Location", "Nilaveli, Trincomalee, Sri Lanka"],
+        ["Price", "LKR 5,200 per person"],
+        ["Best Time", "Late afternoon & evening"],
+        ["BBQ Assistant", "Included"],
+        ["Transportation", "Free transportation available"],
+        ["Food Options", "Seafood, chicken & vegetarian"],
+        ["Suitable For", "Couples, families & groups"],
+        ["Booking", "Advance booking recommended"],
+      ],
+    },
+
+    booking: {
+      title: "How to Book",
+      subtitle: "Book Your Private Beach BBQ",
+
+      description:
+        "To arrange your BBQ experience, send us the following details:",
+
+      requirements: [
+        "Preferred date",
+        "Number of guests",
+        "Hotel or accommodation",
+        "Preferred food option",
+        "Preferred time",
+        "Any special requirements",
+      ],
+    },
+
+    importantInformation: {
+      title: "Important Information",
+
+      items: [
+        "The BBQ experience is arranged privately for your group.",
+        "A BBQ Assistant is included in the experience.",
+        "Seafood availability depends on the day's supply.",
+        "Vegetarian options are available on request.",
+        "Food preferences should be communicated when booking.",
+        "Free transportation is subject to pickup location and availability.",
+        "Special arrangements should be requested in advance.",
+        "The exact BBQ location may depend on beach conditions and local arrangements.",
+        "Weather conditions may affect the experience.",
+        "Please follow local beach rules and safety instructions.",
+        "Guests are encouraged to keep the beach clean.",
+      ],
+    },
+
+    safety: {
+      title: "Beach Safety & Responsible Tourism",
+      subtitle: "Help Us Keep Nilaveli Beautiful",
+
+      description:
+        "We want every guest to enjoy the beach while respecting the natural environment.",
+
+      principles: [
+        "✓ Keep the beach clean",
+        "✓ Dispose of waste responsibly",
+        "✓ Respect the local environment",
+        "✓ Follow beach safety guidelines",
+        "✓ Follow instructions from the BBQ Assistant or host",
+        "✓ Avoid entering the sea when conditions are unsafe",
+      ],
+
+      closing:
+        "🌱 Leave Only Footprints — Help us protect the beautiful Nilaveli coastline for future visitors and the local community.",
+    },
+
+    faq: [
+      {
+        q: "Is this a private BBQ?",
+        a: "Yes. The BBQ experience is arranged privately for your group.",
+      },
+      {
+        q: "How much does the BBQ cost?",
+        a: "The price is LKR 5,200 per person.",
+      },
+      {
+        q: "Is a BBQ Assistant included?",
+        a: "Yes. A BBQ Assistant is included to help with BBQ preparation and the setup during the experience.",
+      },
+      {
+        q: "Is transportation included?",
+        a: "Free transportation is available, depending on the pickup location and arrangements.",
+      },
+      {
+        q: "Can I choose seafood?",
+        a: "Yes. Seafood options can be arranged depending on availability.",
+      },
+      {
+        q: "Do you offer chicken BBQ?",
+        a: "Yes. Chicken BBQ is available as a food option.",
+      },
+      {
+        q: "Are vegetarian options available?",
+        a: "Yes. Vegetarian BBQ options can be arranged on request.",
+      },
+      {
+        q: "Is this suitable for families?",
+        a: "Yes. The experience is suitable for couples, families, friends and groups.",
+      },
+      {
+        q: "Can you arrange a birthday BBQ?",
+        a: "Yes. Birthday and other special arrangements can be discussed in advance.",
+      },
+      {
+        q: "What time does the BBQ start?",
+        a: "The experience is generally arranged for the late afternoon or evening so guests can enjoy the sunset and evening atmosphere.",
+      },
+      {
+        q: "Do I need to book in advance?",
+        a: "Advance booking is recommended so we can prepare the food, BBQ setup and transportation.",
+      },
+      {
+        q: "Where is the BBQ located?",
+        a: "The experience takes place at a suitable beach location in the Nilaveli area. The exact location can be confirmed when booking.",
+      },
     ],
-    itinerary: [
-      "Meet at the agreed location.",
-      "Settle into the outdoor BBQ area.",
-      "Enjoy the tropical evening surroundings.",
-      "Fresh food is prepared for the BBQ.",
-      "Enjoy dinner with friends or family.",
-      "Relax and enjoy the evening atmosphere.",
-    ],
-    included: ["BBQ meal", "Outdoor seating", "Basic BBQ setup", "Local assistance"],
-    suitableFor:
-      "Suitable for families, couples, friends and groups looking for a relaxed evening experience.",
   },
+
+  finalCta: {
+    title: "Ready for a BBQ by the Sea?",
+    description:
+      "Enjoy fresh BBQ food, beautiful sunset scenery and a peaceful tropical evening in Nilaveli.",
+
+    highlights: [
+      "🏖️ Private Beach Setting",
+      "🔥 Fresh BBQ",
+      "🧍🏽 BBQ Assistant",
+      "🐟 Seafood Options",
+      "🌅 Sunset Atmosphere",
+      "🚗 Free Transportation Available",
+    ],
+  },
+
+  seo: {
+    pageTitle:
+      "Nilaveli Private Beach BBQ | BBQ Night & Sunset Experience",
+
+    metaDescription:
+      "Enjoy a private beach BBQ in Nilaveli with a BBQ Assistant, freshly prepared seafood, chicken and vegetarian options, sunset views, tropical surroundings and free transportation. LKR 5,200 per person.",
+
+    slug: "/nilaveli-private-beach-bbq",
+
+    primaryKeyword: "Nilaveli Private Beach BBQ",
+
+    secondaryKeywords: [
+      "Nilaveli BBQ",
+      "Beach BBQ Nilaveli",
+      "Private BBQ Nilaveli",
+      "Nilaveli BBQ Night",
+      "Sri Lanka Beach BBQ",
+      "Nilaveli Sunset BBQ",
+      "Private Beach Dinner Nilaveli",
+      "BBQ Night Tour Nilaveli",
+      "Nilaveli Beach Dinner",
+    ],
+  },
+},
 
   {
     id: "trinco-city",
