@@ -149,44 +149,547 @@ export const timeline = [
 
 export const activities = [
   {
-    id: "guided-crocodile",
-    title: "Guided Wild Crocodile Experience",
-    description: "One of a kind guided wildlife experience around Crocodile Park Nilaveli.",
-    fullDescription:
-      "Discover the wild side of Nilaveli on a guided evening wildlife experience around Crocodile Park. Travel with a local guide by Tuk Tuk, explore the surroundings of Periyakulam and the lagoon, watch wild crocodiles in their natural environment and look for Sri Lankan birdlife before enjoying the beautiful sunset.",
-    price: "LKR 3,900",
-    category: "Signature",
-    image: expCrocodile,
-    alt: "Wild crocodile in a Sri Lankan lagoon at golden hour",
-    duration: "Approximately 2 hours",
-    location: "Crocodile Park Nilaveli & Periyakulam",
-    highlights: [
-      "Wild crocodile watching",
-      "Local guide experience",
-      "Tuk Tuk journey",
-      "Bird watching",
-      "Periyakulam lake exploration",
-      "Nilaveli lagoon sunset",
+  id: "guided-crocodile",
+
+  title: "Guided Wild Crocodile Experience",
+
+  description:
+    "One of a kind guided wildlife experience around Crocodile Park Nilaveli.",
+
+  fullDescription:
+    "Discover the wild side of Nilaveli on a guided evening wildlife experience around Crocodile Park. Travel with a local guide by Tuk Tuk, explore the surroundings of Periyakulam and the lagoon, watch wild crocodiles in their natural environment and look for Sri Lankan birdlife before enjoying the beautiful sunset.",
+
+  price: "USD 12",
+  category: "Signature",
+
+  image: expCrocodile,
+
+  alt: "Wild crocodile in a Sri Lankan lagoon at golden hour",
+
+  duration: "Approximately 2 hours",
+
+  location: "Crocodile Park Nilaveli & Periyakulam",
+
+  highlights: [
+    "Wild crocodile watching",
+    "Local guide experience",
+    "Private Tuk Tuk journey",
+    "Bird watching",
+    "Periyakulam lake exploration",
+    "Nilaveli lagoon sunset",
+  ],
+
+  itinerary: [
+    "Guide's House — Starting Point",
+    "Crocodile Park Nilaveli",
+    "Periyakulam — The Big Lake",
+    "Lagoon Shore & Sunset",
+    "Crocodile Park Nilaveli — After-Sunset Wildlife Experience",
+    "Guide's House — Ending Point",
+  ],
+
+  included: [
+    "Welcome drink",
+    "Private Tuktuk transportation",
+    "Private driver",
+    "Experienced wildlife guide",
+    "Torchlight",
+    "Bottled drinking water",
+    "Fresh watermelon",
+  ],
+
+  suitableFor:
+    "Families, couples, solo travellers and visitors interested in wildlife, nature and authentic local experiences.",
+
+  // ============================================================
+  // CROCODILE CUSTOM PAGE
+  // ============================================================
+
+  pageTitle:
+    "GUIDED CROCODILE WATCHING & SUNSET TOUR. 🐊 🐘 🐒 🦅 🦚 🦩",
+
+  pageSubtitle:
+    "A genuine guided wildlife experience around Crocodile Park Nilaveli",
+
+  pageIntro:
+    "More than watching crocodiles — experience natural landscapes, wildlife, birdlife, local surroundings, sunset and the peaceful evening atmosphere of Nilaveli with an experienced local guide.",
+
+  experienceHighlights: [
+    "Wild Crocodile Watching",
+    "Wildlife & Bird Watching",
+    "Periyakulam Lake",
+    "Nilaveli Sunset",
+  ],
+
+  experienceDescription:
+    "Nature decides what appears and wildlife sightings cannot be guaranteed. Every day is different. Every day is beautiful.",
+
+  sections: {
+
+    // ==========================================================
+    // TOUR ROUTE
+    // ==========================================================
+
+    tourRoute: {
+      title: "Tour Route",
+
+      subtitle: "A guided evening journey through the natural surroundings of Nilaveli",
+
+      steps: [
+        {
+          number: "01",
+          title: "Guide's House — Starting Point",
+          description:
+            "Begin your experience at the guide's home before travelling together through the local landscape."
+        },
+
+        {
+          number: "02",
+          title: "Crocodile Park Nilaveli",
+          description:
+            "Watch wild Mugger crocodiles in their natural environment and explore the surrounding wetland habitat."
+        },
+
+        {
+          number: "03",
+          title: "Periyakulam — The Big Lake",
+          description:
+            "Explore the large Periyakulam lake area where different species of wildlife and wetland birds may be seen."
+        },
+
+        {
+          number: "04",
+          title: "Lagoon Shore & Sunset",
+          description:
+            "Relax beside the peaceful lagoon and enjoy the beautiful Sri Lankan sunset away from busy tourist areas."
+        },
+
+        {
+          number: "05",
+          title: "After-Sunset Wildlife Experience",
+          description:
+            "Return towards Crocodile Park after sunset and carefully observe crocodiles resting near the water using torchlight."
+        },
+
+        {
+          number: "06",
+          title: "Guide's House — Ending Point",
+          description:
+            "Finish the experience at the guide's house and learn more about crocodiles, their behaviour and natural environment."
+        },
+      ],
+    },
+
+    // ==========================================================
+    // SAFETY
+    // ==========================================================
+
+    safety: {
+      label: "YOUR SAFETY COMES FIRST",
+
+      title: "Guest Safety Is Our Highest Priority",
+
+      description:
+        "Guest safety is our highest priority throughout the experience.",
+
+      points: [
+        "Journey between locations by private Tuktuk reserved exclusively for your group.",
+        "A safe, comfortable and practical way to travel through the local landscape and wildlife areas.",
+        "An experienced local guide accompanies the experience.",
+        "Wildlife is observed from a safe and respectful distance.",
+      ],
+    },
+
+    // ==========================================================
+    // GUIDE'S HOUSE
+    // ==========================================================
+
+    guidesHouse: {
+      title: "1. GUIDE'S HOUSE",
+
+      subtitle: "Starting Point",
+
+      arrivalTime: "4:45 PM",
+
+      departureTime: "5:00 PM",
+
+      description:
+        "The experience begins at the guide's home.",
+
+      points: [
+        "Arrive at 4:45 PM.",
+        "Enjoy a refreshing welcome drink.",
+        "Receive an English briefing covering the itinerary, safety, wildlife behaviour, route, timing and important instructions.",
+        "Departure is at 5:00 PM.",
+        "Travel by private Tuk Tuk to Crocodile Park.",
+      ],
+    },
+
+    // ==========================================================
+    // CROCODILE PARK
+    // ==========================================================
+
+    crocodilePark: {
+      title: "2. CROCODILE PARK NILAVELI",
+
+      crocodileWatching: {
+        title: "Wild Crocodile Watching",
+
+        description:
+          "Observe wild Mugger crocodiles living in their natural habitat. Your guide will explain their behaviour, habitat, lifestyle and role within the ecosystem.",
+
+        note:
+          "This is genuine natural wildlife. Crocodile sightings are not guaranteed.",
+      },
+
+      birdWatching: {
+        title: "Bird Watching",
+
+        description:
+          "Depending on the season and conditions, you may see eagles, kingfishers, crows, herons and other wetland and local birds.",
+      },
+
+      journey: {
+        title: "Journey to Periyakulam",
+
+        description:
+          "After exploring Crocodile Park, continue by private Tuk Tuk towards Periyakulam.",
+
+        possibleViews: [
+          "Rice fields",
+          "Palm trees",
+          "Lagoons",
+          "Local wildlife",
+          "Natural countryside",
+        ],
+      },
+    },
+
+    // ==========================================================
+    // PERIYAKULAM
+    // ==========================================================
+
+    periyakulam: {
+      title: "3. PERIYAKULAM — THE BIG LAKE",
+
+      description:
+        "Explore the surroundings of Periyakulam, one of the important natural areas along the journey.",
+
+      possibleSightings: [
+        "Wild crocodiles",
+        "Wild elephants",
+        "Foxes",
+        "Monkeys",
+        "Peacocks",
+        "Herons",
+        "Natural snake burrows",
+        "Wetland birds",
+        "Other wildlife",
+      ],
+
+      note:
+        "Wildlife sightings are naturally unpredictable. Every day is different and the animals you see can change depending on natural conditions.",
+
+      nextJourney:
+        "Continue by private Tuk Tuk towards the lagoon shore.",
+    },
+
+    // ==========================================================
+    // LAGOON & SUNSET
+    // ==========================================================
+
+    lagoonSunset: {
+      title: "4. LAGOON SHORE & SUNSET",
+
+      description:
+        "Spend peaceful time around the lagoon and enjoy the beautiful Sri Lankan sunset.",
+
+      highlights: [
+        "Peaceful lagoon surroundings",
+        "Sri Lankan sunset",
+        "Natural environment",
+        "Photography opportunities",
+        "Away from busy tourist areas",
+      ],
+
+      returnJourney:
+        "After sunset, travel back towards Crocodile Park by private Tuk Tuk.",
+    },
+
+    // ==========================================================
+    // AFTER SUNSET CROCODILE EXPERIENCE
+    // ==========================================================
+
+    nightCrocodile: {
+      title:
+        "5. CROCODILE PARK NILAVELI — AFTER-SUNSET WILDLIFE EXPERIENCE",
+
+      description:
+        "As darkness arrives, the wildlife experience changes completely.",
+
+      points: [
+        "Use torchlight to carefully observe the lake shore and crocodiles resting near the water.",
+        "Torchlight may catch the eyes of crocodiles, creating a distinctive red-orange reflection.",
+        "Observe wild crocodiles after sunset with an experienced local guide.",
+        "Experience the natural evening atmosphere without feeding or artificially attracting wildlife.",
+      ],
+
+      quote:
+        "No feeding. No artificial attraction. Just wildlife in its natural environment.",
+
+      return:
+        "After the experience, return to the guide's home by private Tuk Tuk.",
+    },
+
+    // ==========================================================
+    // FINAL EXPERIENCE
+    // ==========================================================
+
+    finalExperience: {
+      title: "6. GUIDE'S HOUSE — FINAL EXPERIENCE",
+
+      description:
+        "The experience finishes back at the guide's house.",
+
+      points: [
+        "See and learn about crocodile bones and specimens from crocodiles of different sizes.",
+        "The guide explains the animals, their behaviour and their natural environment.",
+        "Finish the evening with a deeper understanding of the wildlife encountered during the tour.",
+      ],
+
+      closing:
+        "A memorable end to your guided crocodile watching and sunset experience.",
+    },
+
+    // ==========================================================
+    // WHAT'S INCLUDED
+    // ==========================================================
+
+    included: {
+      title: "What's Included",
+
+      items: [
+        "Welcome drink",
+        "Private Tuktuk transportation",
+        "Private driver",
+        "Experienced wildlife guide",
+        "Torchlight",
+        "Bottled drinking water",
+        "Fresh watermelon",
+      ],
+    },
+
+    // ==========================================================
+    // TOUR FEES
+    // ==========================================================
+
+    pricing: {
+      title: "Tour Fees",
+
+      currency: "USD",
+
+      adults: {
+        label: "Adults 18+",
+        price: 12,
+        displayPrice: "USD 12 / person",
+      },
+
+      children: {
+        label: "Children 6–17",
+        price: 6,
+        displayPrice: "USD 6 / person",
+      },
+
+      infants: {
+        label: "Children under 6",
+        price: 0,
+        displayPrice: "FREE",
+      },
+    },
+
+    // ==========================================================
+    // WILDLIFE EXPERIENCE
+    // ==========================================================
+
+    wildlifeExperience: {
+      title: "A Genuine Guided Crocodile Watching & Sunset Tour",
+
+      description:
+        "More than watching crocodiles; experience natural landscapes, wildlife, birdlife, the local environment, sunset and the evening atmosphere with a local guide.",
+
+      possibleWildlife: [
+        "Crocodiles",
+        "Elephants",
+        "Birds",
+        "Monkeys",
+        "Peacocks",
+        "Foxes",
+        "Herons",
+        "Other wildlife",
+      ],
+
+      importantNote:
+        "Nature decides what appears. Wildlife sightings cannot be guaranteed.",
+
+      closing:
+        "Every day is different. Every day is beautiful.",
+    },
+
+    // ==========================================================
+    // INFORMATION
+    // ==========================================================
+
+    information: {
+      title: "Tour Information",
+
+      duration: "Approximately 2 hours",
+
+      startingPoint: "Guide's House",
+
+      startingTime: "4:45 PM",
+
+      departureTime: "5:00 PM",
+
+      transportation: "Private Tuktuk",
+
+      guide: "Musharaf",
+
+      location: "Crocodile Park Nilaveli & Periyakulam",
+    },
+
+    // ==========================================================
+    // BOOKING
+    // ==========================================================
+
+    booking: {
+      title: "Booking Information",
+
+      description:
+        "Contact Crocodile Park Nilaveli to check availability and book your guided crocodile watching and sunset tour.",
+
+      whatsappMessage:
+        "Hello Crocodile Park Nilaveli, I would like to book the Guided Crocodile Watching & Sunset Tour. Please send me availability and booking details.",
+    },
+
+    // ==========================================================
+    // IMPORTANT INFORMATION
+    // ==========================================================
+
+    importantInformation: {
+      title: "Important Information",
+
+      points: [
+        "Wildlife sightings are naturally unpredictable.",
+        "Crocodile sightings are not guaranteed.",
+        "Elephant, bird and other wildlife sightings depend on natural conditions.",
+        "Please follow the instructions of the local wildlife guide.",
+        "Do not feed or attempt to attract wildlife.",
+        "Nature decides what appears during each experience.",
+      ],
+    },
+
+    // ==========================================================
+    // FAQ
+    // ==========================================================
+
+    faq: [
+      {
+        question: "Are crocodile sightings guaranteed?",
+
+        answer:
+          "No. The experience takes place around natural wildlife areas, so sightings are never guaranteed.",
+      },
+
+      {
+        question: "What time does the tour start?",
+
+        answer:
+          "Guests arrive at the guide's house at 4:45 PM, followed by the briefing and departure at 5:00 PM.",
+      },
+
+      {
+        question: "How do we travel between locations?",
+
+        answer:
+          "The journey between locations is by private Tuk Tuk reserved exclusively for your group.",
+      },
+
+      {
+        question: "Can we see elephants?",
+
+        answer:
+          "Wild elephants may be seen around Periyakulam, but wildlife sightings depend on natural conditions and cannot be guaranteed.",
+      },
+
+      {
+        question: "Is the sunset included?",
+
+        answer:
+          "Yes. The tour includes time at the lagoon shore to enjoy the Sri Lankan sunset.",
+      },
+
+      {
+        question: "What happens after sunset?",
+
+        answer:
+          "After sunset, the experience continues around Crocodile Park where the guide may use torchlight to carefully observe crocodiles resting near the water.",
+      },
+
+      {
+        question: "How much is the tour?",
+
+        answer:
+          "Adults aged 18+ are USD 12 per person. Children aged 6–17 are USD 6 per person. Children under 6 are free.",
+      },
     ],
-    itinerary: [
-      "Meet your local guide at the starting point.",
-      "Begin the local journey by Tuk Tuk.",
-      "Explore the surroundings of Periyakulam and the lagoon.",
-      "Observe wild crocodiles in their natural environment.",
-      "Look for eagles, kingfishers and other local birds.",
-      "Enjoy the beautiful Nilaveli sunset.",
-      "Return to Crocodile Park.",
-    ],
-    included: [
-      "Local guide",
-      "Tuk Tuk journey",
-      "Wildlife observation",
-      "Bird watching",
-      "Sunset experience",
-    ],
-    suitableFor:
-      "Suitable for families, couples, solo travellers and visitors interested in wildlife and authentic local experiences.",
+
+    // ==========================================================
+    // FINAL CTA
+    // ==========================================================
+
+    finalCta: {
+      title: "Experience the Wild Side of Nilaveli",
+
+      description:
+        "Join a genuine guided crocodile watching and sunset tour through the natural surroundings of Crocodile Park Nilaveli and Periyakulam.",
+
+      highlights: [
+        "Wild Crocodiles",
+        "Bird Watching",
+        "Periyakulam",
+        "Lagoon Sunset",
+        "Private Tuk Tuk",
+        "Local Wildlife Guide",
+      ],
+    },
+
+    // ==========================================================
+    // SEO
+    // ==========================================================
+
+    seo: {
+      pageTitle:
+        "Guided Crocodile Watching & Sunset Tour | Crocodile Park Nilaveli",
+
+      metaDescription:
+        "Experience a guided crocodile watching and sunset tour around Crocodile Park Nilaveli, Periyakulam and the lagoon with a local wildlife guide.",
+
+      slug: "guided-crocodile",
+
+      primaryKeyword:
+        "guided crocodile watching tour Nilaveli",
+
+      secondaryKeywords: [
+        "Crocodile Park Nilaveli",
+        "crocodile watching Nilaveli",
+        "Nilaveli sunset tour",
+        "wildlife tour Nilaveli",
+        "Periyakulam wildlife tour",
+        "crocodile tour Sri Lanka",
+      ],
+    },
   },
+},
 
   {
     id: "pigeon-island",
