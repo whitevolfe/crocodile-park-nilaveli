@@ -43,6 +43,12 @@ import sunsetImage from "@/assets/exp-sunset.jpg";
 import lagoonImage from "@/assets/gal-lagoon.jpg";
 import crocCloseImage from "@/assets/gal-croc-close.jpg";
 
+import featurehihlights1 from "@/assets/featurehihlights-img1.jpeg";
+import featurehihlights2 from "@/assets/featurehihlights-img2.jpeg";
+import featurehihlights3 from "@/assets/featurehihlights-img3.jpeg";
+import featurehihlights4 from "@/assets/featurehihlights-img4.jpeg";
+import featurehihlights5 from "@/assets/featurehihlights-img5.jpeg";
+
 // Review images
 import reviewimg1 from "@/assets/reviewimg1.jpeg";
 import reviewimg2 from "@/assets/reviewimg2.jpeg";
@@ -455,28 +461,45 @@ export function ExperienceIntro() {
 /* --------------------------- Feature highlights -------------------------- */
 
 export function FeatureHighlights() {
+  const featureImages = [
+    featurehihlights4, // Wildlife / crocodile
+    featurehihlights5, // Lagoon
+    featurehihlights3, // Sunset
+    featurehihlights2, // Local guide
+    featurehihlights1, // Close-up crocodile
+  ];
+
   return (
     <section className="border-y border-primary/10 bg-navy/40 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-5 sm:px-6">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-          {highlights.map((h, i) => {
-            const Icon = iconMap[h.icon] ?? Leaf;
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          {highlights.map((h, i) => (
+            <Reveal key={h.title} delay={i * 80}>
+              <article className="group relative flex h-full min-h-[260px] flex-col justify-end overflow-hidden rounded-2xl border border-white/15 p-6 text-white shadow-lg transition-all duration-500 hover:-translate-y-1 hover:border-primary/60 hover:shadow-xl">
+                {/* Background image */}
+                <img
+                  src={featureImages[i % featureImages.length]}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
 
-            return (
-              <Reveal key={h.title} delay={i * 80}>
-                <article className="h-full rounded-2xl border border-black/10 bg-white p-6 text-black transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg">
-                  {/* Gold Icon */}
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-primary text-black shadow-sm">
-                    <Icon size={20} strokeWidth={2.2} />
-                  </span>
+                {/* Dark gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/10 transition-opacity duration-300 group-hover:from-black/90" />
 
-                  <h3 className="mt-4 font-display text-xl text-black">{h.title}</h3>
+                {/* Gold accent */}
+                <span className="relative z-10 mb-3 h-1 w-10 rounded-full bg-primary transition-all duration-300 group-hover:w-16" />
 
-                  <p className="mt-2 text-sm leading-relaxed text-black/70">{h.text}</p>
-                </article>
-              </Reveal>
-            );
-          })}
+                {/* Text */}
+                <div className="relative z-10">
+                  <h3 className="font-display text-xl leading-snug text-white">{h.title}</h3>
+
+                  <p className="mt-3 text-sm leading-relaxed text-white/80">{h.text}</p>
+                </div>
+              </article>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

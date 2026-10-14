@@ -77,13 +77,12 @@ export default function Hero({ onBook }) {
           className="animate-rise mt-13 flex flex-col items-center justify-center gap-3 sm:flex-row"
           style={{ animationDelay: "480ms" }}
         >
+          <GhostButton onClick={onBook} className="w-full sm:w-auto">
+            Book Your Experience
+          </GhostButton>
           <GoldButton as="a" href="/activities/guided-crocodile" className="w-full sm:w-auto">
             Explore Experiences
           </GoldButton>
-
-          <GhostButton onClick={onBook} as="a" href="/experience" className="w-full sm:w-auto">
-            Book Your Experience
-          </GhostButton>
         </div>
 
         {/* =====================================================
@@ -115,7 +114,7 @@ export default function Hero({ onBook }) {
                 </div>
               </div>
 
-              <span className="mt-1 text-[10px] text-white/60">276 Google reviews</span>
+              <span className="mt-1 text-[10px] text-white/60">323 Google reviews</span>
             </div>
           </div>
 
