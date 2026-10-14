@@ -485,9 +485,6 @@ export function FeatureHighlights() {
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
 
-                {/* Dark gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/10 transition-opacity duration-300 group-hover:from-black/90" />
-
                 {/* Gold accent */}
                 <span className="relative z-10 mb-3 h-1 w-10 rounded-full bg-primary transition-all duration-300 group-hover:w-16" />
 
