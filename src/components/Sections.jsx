@@ -285,7 +285,7 @@ export function ExperienceIntro() {
 
                 <div className="mt-4 border-t border-primary/10 pt-4">
                   <p className="text-sm text-muted-foreground">
-                    Based on <span className="font-medium text-foreground">276 Google reviews</span>
+                    Based on <span className="font-medium text-foreground">323 Google reviews</span>
                   </p>
                 </div>
               </div>

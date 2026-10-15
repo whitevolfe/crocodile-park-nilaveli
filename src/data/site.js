@@ -149,547 +149,526 @@ export const timeline = [
 
 export const activities = [
   {
-  id: "guided-crocodile",
+    id: "guided-crocodile",
 
-  title: "Guided Wild Crocodile Experience",
+    title: "Guided Wild Crocodile Experience",
 
-  description:
-    "One of a kind guided wildlife experience around Crocodile Park Nilaveli.",
+    description: "One of a kind guided wildlife experience around Crocodile Park Nilaveli.",
 
-  fullDescription:
-    "Discover the wild side of Nilaveli on a guided evening wildlife experience around Crocodile Park. Travel with a local guide by Tuk Tuk, explore the surroundings of Periyakulam and the lagoon, watch wild crocodiles in their natural environment and look for Sri Lankan birdlife before enjoying the beautiful sunset.",
+    fullDescription:
+      "Discover the wild side of Nilaveli on a guided evening wildlife experience around Crocodile Park. Travel with a local guide by Tuk Tuk, explore the surroundings of Periyakulam and the lagoon, watch wild crocodiles in their natural environment and look for Sri Lankan birdlife before enjoying the beautiful sunset.",
 
-  price: "USD 12",
-  category: "Signature",
+    price: "LKR 3900",
+    category: "Signature",
 
-  image: expCrocodile,
+    image: expCrocodile,
 
-  alt: "Wild crocodile in a Sri Lankan lagoon at golden hour",
+    alt: "Wild crocodile in a Sri Lankan lagoon at golden hour",
 
-  duration: "Approximately 2 hours",
+    duration: "Approximately 2 hours",
 
-  location: "Crocodile Park Nilaveli & Periyakulam",
+    location: "Crocodile Park Nilaveli & Periyakulam",
 
-  highlights: [
-    "Wild crocodile watching",
-    "Local guide experience",
-    "Private Tuk Tuk journey",
-    "Bird watching",
-    "Periyakulam lake exploration",
-    "Nilaveli lagoon sunset",
-  ],
+    highlights: [
+      "Wild crocodile watching",
+      "Local guide experience",
+      "Private Tuk Tuk journey",
+      "Bird watching",
+      "Periyakulam lake exploration",
+      "Nilaveli lagoon sunset",
+    ],
 
-  itinerary: [
-    "Guide's House — Starting Point",
-    "Crocodile Park Nilaveli",
-    "Periyakulam — The Big Lake",
-    "Lagoon Shore & Sunset",
-    "Crocodile Park Nilaveli — After-Sunset Wildlife Experience",
-    "Guide's House — Ending Point",
-  ],
+    itinerary: [
+      "Guide's House — Starting Point",
+      "Crocodile Park Nilaveli",
+      "Periyakulam — The Big Lake",
+      "Lagoon Shore & Sunset",
+      "Crocodile Park Nilaveli — After-Sunset Wildlife Experience",
+      "Guide's House — Ending Point",
+    ],
 
-  included: [
-    "Welcome drink",
-    "Private Tuktuk transportation",
-    "Private driver",
-    "Experienced wildlife guide",
-    "Torchlight",
-    "Bottled drinking water",
-    "Fresh watermelon",
-  ],
+    included: [
+      "Welcome drink",
+      "Private Tuktuk transportation",
+      "Private driver",
+      "Experienced wildlife guide",
+      "Torchlight",
+      "Bottled drinking water",
+      "Fresh watermelon",
+    ],
 
-  suitableFor:
-    "Families, couples, solo travellers and visitors interested in wildlife, nature and authentic local experiences.",
+    suitableFor:
+      "Families, couples, solo travellers and visitors interested in wildlife, nature and authentic local experiences.",
 
-  // ============================================================
-  // CROCODILE CUSTOM PAGE
-  // ============================================================
+    // ============================================================
+    // CROCODILE CUSTOM PAGE
+    // ============================================================
 
-  pageTitle:
-    "GUIDED CROCODILE WATCHING & SUNSET TOUR. 🐊 🐘 🐒 🦅 🦚 🦩",
+    pageTitle: "GUIDED CROCODILE WATCHING & SUNSET TOUR. 🐊 🐘 🐒 🦅 🦚 🦩",
 
-  pageSubtitle:
-    "A genuine guided wildlife experience around Crocodile Park Nilaveli",
+    pageSubtitle: "A genuine guided wildlife experience around Crocodile Park Nilaveli",
 
-  pageIntro:
-    "More than watching crocodiles — experience natural landscapes, wildlife, birdlife, local surroundings, sunset and the peaceful evening atmosphere of Nilaveli with an experienced local guide.",
+    pageIntro:
+      "More than watching crocodiles — experience natural landscapes, wildlife, birdlife, local surroundings, sunset and the peaceful evening atmosphere of Nilaveli with an experienced local guide.",
 
-  experienceHighlights: [
-    "Wild Crocodile Watching",
-    "Wildlife & Bird Watching",
-    "Periyakulam Lake",
-    "Nilaveli Sunset",
-  ],
+    experienceHighlights: [
+      "Wild Crocodile Watching",
+      "Wildlife & Bird Watching",
+      "Periyakulam Lake",
+      "Nilaveli Sunset",
+    ],
 
-  experienceDescription:
-    "Nature decides what appears and wildlife sightings cannot be guaranteed. Every day is different. Every day is beautiful.",
+    experienceDescription:
+      "Nature decides what appears and wildlife sightings cannot be guaranteed. Every day is different. Every day is beautiful.",
 
-  sections: {
+    sections: {
+      // ==========================================================
+      // TOUR ROUTE
+      // ==========================================================
 
-    // ==========================================================
-    // TOUR ROUTE
-    // ==========================================================
+      tourRoute: {
+        title: "Tour Route",
 
-    tourRoute: {
-      title: "Tour Route",
+        subtitle: "A guided evening journey through the natural surroundings of Nilaveli",
 
-      subtitle: "A guided evening journey through the natural surroundings of Nilaveli",
+        steps: [
+          {
+            number: "01",
+            title: "Guide's House — Starting Point",
+            description:
+              "Begin your experience at the guide's home before travelling together through the local landscape.",
+          },
 
-      steps: [
-        {
-          number: "01",
-          title: "Guide's House — Starting Point",
-          description:
-            "Begin your experience at the guide's home before travelling together through the local landscape."
-        },
+          {
+            number: "02",
+            title: "Crocodile Park Nilaveli",
+            description:
+              "Watch wild Mugger crocodiles in their natural environment and explore the surrounding wetland habitat.",
+          },
 
-        {
-          number: "02",
-          title: "Crocodile Park Nilaveli",
-          description:
-            "Watch wild Mugger crocodiles in their natural environment and explore the surrounding wetland habitat."
-        },
+          {
+            number: "03",
+            title: "Periyakulam — The Big Lake",
+            description:
+              "Explore the large Periyakulam lake area where different species of wildlife and wetland birds may be seen.",
+          },
 
-        {
-          number: "03",
-          title: "Periyakulam — The Big Lake",
-          description:
-            "Explore the large Periyakulam lake area where different species of wildlife and wetland birds may be seen."
-        },
+          {
+            number: "04",
+            title: "Lagoon Shore & Sunset",
+            description:
+              "Relax beside the peaceful lagoon and enjoy the beautiful Sri Lankan sunset away from busy tourist areas.",
+          },
 
-        {
-          number: "04",
-          title: "Lagoon Shore & Sunset",
-          description:
-            "Relax beside the peaceful lagoon and enjoy the beautiful Sri Lankan sunset away from busy tourist areas."
-        },
+          {
+            number: "05",
+            title: "After-Sunset Wildlife Experience",
+            description:
+              "Return towards Crocodile Park after sunset and carefully observe crocodiles resting near the water using torchlight.",
+          },
 
-        {
-          number: "05",
-          title: "After-Sunset Wildlife Experience",
-          description:
-            "Return towards Crocodile Park after sunset and carefully observe crocodiles resting near the water using torchlight."
-        },
-
-        {
-          number: "06",
-          title: "Guide's House — Ending Point",
-          description:
-            "Finish the experience at the guide's house and learn more about crocodiles, their behaviour and natural environment."
-        },
-      ],
-    },
-
-    // ==========================================================
-    // SAFETY
-    // ==========================================================
-
-    safety: {
-      label: "YOUR SAFETY COMES FIRST",
-
-      title: "Guest Safety Is Our Highest Priority",
-
-      description:
-        "Guest safety is our highest priority throughout the experience.",
-
-      points: [
-        "Journey between locations by private Tuktuk reserved exclusively for your group.",
-        "A safe, comfortable and practical way to travel through the local landscape and wildlife areas.",
-        "An experienced local guide accompanies the experience.",
-        "Wildlife is observed from a safe and respectful distance.",
-      ],
-    },
-
-    // ==========================================================
-    // GUIDE'S HOUSE
-    // ==========================================================
-
-    guidesHouse: {
-      title: "1. GUIDE'S HOUSE",
-
-      subtitle: "Starting Point",
-
-      arrivalTime: "4:45 PM",
-
-      departureTime: "5:00 PM",
-
-      description:
-        "The experience begins at the guide's home.",
-
-      points: [
-        "Arrive at 4:45 PM.",
-        "Enjoy a refreshing welcome drink.",
-        "Receive an English briefing covering the itinerary, safety, wildlife behaviour, route, timing and important instructions.",
-        "Departure is at 5:00 PM.",
-        "Travel by private Tuk Tuk to Crocodile Park.",
-      ],
-    },
-
-    // ==========================================================
-    // CROCODILE PARK
-    // ==========================================================
-
-    crocodilePark: {
-      title: "2. CROCODILE PARK NILAVELI",
-
-      crocodileWatching: {
-        title: "Wild Crocodile Watching",
-
-        description:
-          "Observe wild Mugger crocodiles living in their natural habitat. Your guide will explain their behaviour, habitat, lifestyle and role within the ecosystem.",
-
-        note:
-          "This is genuine natural wildlife. Crocodile sightings are not guaranteed.",
+          {
+            number: "06",
+            title: "Guide's House — Ending Point",
+            description:
+              "Finish the experience at the guide's house and learn more about crocodiles, their behaviour and natural environment.",
+          },
+        ],
       },
 
-      birdWatching: {
-        title: "Bird Watching",
+      // ==========================================================
+      // SAFETY
+      // ==========================================================
 
-        description:
-          "Depending on the season and conditions, you may see eagles, kingfishers, crows, herons and other wetland and local birds.",
+      safety: {
+        label: "YOUR SAFETY COMES FIRST",
+
+        title: "Guest Safety Is Our Highest Priority",
+
+        description: "Guest safety is our highest priority throughout the experience.",
+
+        points: [
+          "Journey between locations by private Tuktuk reserved exclusively for your group.",
+          "A safe, comfortable and practical way to travel through the local landscape and wildlife areas.",
+          "An experienced local guide accompanies the experience.",
+          "Wildlife is observed from a safe and respectful distance.",
+        ],
       },
 
-      journey: {
-        title: "Journey to Periyakulam",
+      // ==========================================================
+      // GUIDE'S HOUSE
+      // ==========================================================
+
+      guidesHouse: {
+        title: "1. GUIDE'S HOUSE",
+
+        subtitle: "Starting Point",
+
+        arrivalTime: "4:45 PM",
+
+        departureTime: "5:00 PM",
+
+        description: "The experience begins at the guide's home.",
+
+        points: [
+          "Arrive at 4:45 PM.",
+          "Enjoy a refreshing welcome drink.",
+          "Receive an English briefing covering the itinerary, safety, wildlife behaviour, route, timing and important instructions.",
+          "Departure is at 5:00 PM.",
+          "Travel by private Tuk Tuk to Crocodile Park.",
+        ],
+      },
+
+      // ==========================================================
+      // CROCODILE PARK
+      // ==========================================================
+
+      crocodilePark: {
+        title: "2. CROCODILE PARK NILAVELI",
+
+        crocodileWatching: {
+          title: "Wild Crocodile Watching",
+
+          description:
+            "Observe wild Mugger crocodiles living in their natural habitat. Your guide will explain their behaviour, habitat, lifestyle and role within the ecosystem.",
+
+          note: "This is genuine natural wildlife. Crocodile sightings are not guaranteed.",
+        },
+
+        birdWatching: {
+          title: "Bird Watching",
+
+          description:
+            "Depending on the season and conditions, you may see eagles, kingfishers, crows, herons and other wetland and local birds.",
+        },
+
+        journey: {
+          title: "Journey to Periyakulam",
+
+          description:
+            "After exploring Crocodile Park, continue by private Tuk Tuk towards Periyakulam.",
+
+          possibleViews: [
+            "Rice fields",
+            "Palm trees",
+            "Lagoons",
+            "Local wildlife",
+            "Natural countryside",
+          ],
+        },
+      },
+
+      // ==========================================================
+      // PERIYAKULAM
+      // ==========================================================
+
+      periyakulam: {
+        title: "3. PERIYAKULAM — THE BIG LAKE",
 
         description:
-          "After exploring Crocodile Park, continue by private Tuk Tuk towards Periyakulam.",
+          "Explore the surroundings of Periyakulam, one of the important natural areas along the journey.",
 
-        possibleViews: [
-          "Rice fields",
-          "Palm trees",
-          "Lagoons",
-          "Local wildlife",
-          "Natural countryside",
+        possibleSightings: [
+          "Wild crocodiles",
+          "Wild elephants",
+          "Foxes",
+          "Monkeys",
+          "Peacocks",
+          "Herons",
+          "Natural snake burrows",
+          "Wetland birds",
+          "Other wildlife",
+        ],
+
+        note: "Wildlife sightings are naturally unpredictable. Every day is different and the animals you see can change depending on natural conditions.",
+
+        nextJourney: "Continue by private Tuk Tuk towards the lagoon shore.",
+      },
+
+      // ==========================================================
+      // LAGOON & SUNSET
+      // ==========================================================
+
+      lagoonSunset: {
+        title: "4. LAGOON SHORE & SUNSET",
+
+        description:
+          "Spend peaceful time around the lagoon and enjoy the beautiful Sri Lankan sunset.",
+
+        highlights: [
+          "Peaceful lagoon surroundings",
+          "Sri Lankan sunset",
+          "Natural environment",
+          "Photography opportunities",
+          "Away from busy tourist areas",
+        ],
+
+        returnJourney: "After sunset, travel back towards Crocodile Park by private Tuk Tuk.",
+      },
+
+      // ==========================================================
+      // AFTER SUNSET CROCODILE EXPERIENCE
+      // ==========================================================
+
+      nightCrocodile: {
+        title: "5. CROCODILE PARK NILAVELI — AFTER-SUNSET WILDLIFE EXPERIENCE",
+
+        description: "As darkness arrives, the wildlife experience changes completely.",
+
+        points: [
+          "Use torchlight to carefully observe the lake shore and crocodiles resting near the water.",
+          "Torchlight may catch the eyes of crocodiles, creating a distinctive red-orange reflection.",
+          "Observe wild crocodiles after sunset with an experienced local guide.",
+          "Experience the natural evening atmosphere without feeding or artificially attracting wildlife.",
+        ],
+
+        quote: "No feeding. No artificial attraction. Just wildlife in its natural environment.",
+
+        return: "After the experience, return to the guide's home by private Tuk Tuk.",
+      },
+
+      // ==========================================================
+      // FINAL EXPERIENCE
+      // ==========================================================
+
+      finalExperience: {
+        title: "6. GUIDE'S HOUSE — FINAL EXPERIENCE",
+
+        description: "The experience finishes back at the guide's house.",
+
+        points: [
+          "See and learn about crocodile bones and specimens from crocodiles of different sizes.",
+          "The guide explains the animals, their behaviour and their natural environment.",
+          "Finish the evening with a deeper understanding of the wildlife encountered during the tour.",
+        ],
+
+        closing: "A memorable end to your guided crocodile watching and sunset experience.",
+      },
+
+      // ==========================================================
+      // WHAT'S INCLUDED
+      // ==========================================================
+
+      included: {
+        title: "What's Included",
+
+        items: [
+          "Welcome drink",
+          "Private Tuktuk transportation",
+          "Private driver",
+          "Experienced wildlife guide",
+          "Torchlight",
+          "Bottled drinking water",
+          "Fresh watermelon",
+        ],
+      },
+
+      // ==========================================================
+      // TOUR FEES
+      // ==========================================================
+
+      pricing: {
+        title: "Tour Fees",
+
+        currency: "LKR",
+
+        adults: {
+          label: "Adults 18+",
+          price: 3900,
+          displayPrice: "LKR 3900 / person",
+        },
+
+        children: {
+          label: "Children 6–17",
+          price: 0,
+          displayPrice: "FREE",
+        },
+
+        infants: {
+          label: "Children under 6",
+          price: 0,
+          displayPrice: "FREE",
+        },
+      },
+
+      // ==========================================================
+      // WILDLIFE EXPERIENCE
+      // ==========================================================
+
+      wildlifeExperience: {
+        title: "A Genuine Guided Crocodile Watching & Sunset Tour",
+
+        description:
+          "More than watching crocodiles; experience natural landscapes, wildlife, birdlife, the local environment, sunset and the evening atmosphere with a local guide.",
+
+        possibleWildlife: [
+          "Crocodiles",
+          "Elephants",
+          "Birds",
+          "Monkeys",
+          "Peacocks",
+          "Foxes",
+          "Herons",
+          "Other wildlife",
+        ],
+
+        importantNote: "Nature decides what appears. Wildlife sightings cannot be guaranteed.",
+
+        closing: "Every day is different. Every day is beautiful.",
+      },
+
+      // ==========================================================
+      // INFORMATION
+      // ==========================================================
+
+      information: {
+        title: "Tour Information",
+
+        duration: "Approximately 2 hours",
+
+        startingPoint: "Guide's House",
+
+        startingTime: "4:45 PM",
+
+        departureTime: "5:00 PM",
+
+        transportation: "Private Tuktuk",
+
+        guide: "Musharaf",
+
+        location: "Crocodile Park Nilaveli & Periyakulam",
+      },
+
+      // ==========================================================
+      // BOOKING
+      // ==========================================================
+
+      booking: {
+        title: "Booking Information",
+
+        description:
+          "Contact Crocodile Park Nilaveli to check availability and book your guided crocodile watching and sunset tour.",
+
+        whatsappMessage:
+          "Hello Crocodile Park Nilaveli, I would like to book the Guided Crocodile Watching & Sunset Tour. Please send me availability and booking details.",
+      },
+
+      // ==========================================================
+      // IMPORTANT INFORMATION
+      // ==========================================================
+
+      importantInformation: {
+        title: "Important Information",
+
+        points: [
+          "Wildlife sightings are naturally unpredictable.",
+          "Crocodile sightings are not guaranteed.",
+          "Elephant, bird and other wildlife sightings depend on natural conditions.",
+          "Please follow the instructions of the local wildlife guide.",
+          "Do not feed or attempt to attract wildlife.",
+          "Nature decides what appears during each experience.",
+        ],
+      },
+
+      // ==========================================================
+      // FAQ
+      // ==========================================================
+
+      faq: [
+        {
+          question: "Are crocodile sightings guaranteed?",
+
+          answer:
+            "No. The experience takes place around natural wildlife areas, so sightings are never guaranteed.",
+        },
+
+        {
+          question: "What time does the tour start?",
+
+          answer:
+            "Guests arrive at the guide's house at 4:45 PM, followed by the briefing and departure at 5:00 PM.",
+        },
+
+        {
+          question: "How do we travel between locations?",
+
+          answer:
+            "The journey between locations is by private Tuk Tuk reserved exclusively for your group.",
+        },
+
+        {
+          question: "Can we see elephants?",
+
+          answer:
+            "Wild elephants may be seen around Periyakulam, but wildlife sightings depend on natural conditions and cannot be guaranteed.",
+        },
+
+        {
+          question: "Is the sunset included?",
+
+          answer: "Yes. The tour includes time at the lagoon shore to enjoy the Sri Lankan sunset.",
+        },
+
+        {
+          question: "What happens after sunset?",
+
+          answer:
+            "After sunset, the experience continues around Crocodile Park where the guide may use torchlight to carefully observe crocodiles resting near the water.",
+        },
+
+        {
+          question: "How much is the tour?",
+
+          answer:
+            "Adults aged 18+ are USD 12 per person. Children aged 6–17 are USD 6 per person. Children under 6 are free.",
+        },
+      ],
+
+      // ==========================================================
+      // FINAL CTA
+      // ==========================================================
+
+      finalCta: {
+        title: "Experience the Wild Side of Nilaveli",
+
+        description:
+          "Join a genuine guided crocodile watching and sunset tour through the natural surroundings of Crocodile Park Nilaveli and Periyakulam.",
+
+        highlights: [
+          "Wild Crocodiles",
+          "Bird Watching",
+          "Periyakulam",
+          "Lagoon Sunset",
+          "Private Tuk Tuk",
+          "Local Wildlife Guide",
+        ],
+      },
+
+      // ==========================================================
+      // SEO
+      // ==========================================================
+
+      seo: {
+        pageTitle: "Guided Crocodile Watching & Sunset Tour | Crocodile Park Nilaveli",
+
+        metaDescription:
+          "Experience a guided crocodile watching and sunset tour around Crocodile Park Nilaveli, Periyakulam and the lagoon with a local wildlife guide.",
+
+        slug: "guided-crocodile",
+
+        primaryKeyword: "guided crocodile watching tour Nilaveli",
+
+        secondaryKeywords: [
+          "Crocodile Park Nilaveli",
+          "crocodile watching Nilaveli",
+          "Nilaveli sunset tour",
+          "wildlife tour Nilaveli",
+          "Periyakulam wildlife tour",
+          "crocodile tour Sri Lanka",
         ],
       },
     },
-
-    // ==========================================================
-    // PERIYAKULAM
-    // ==========================================================
-
-    periyakulam: {
-      title: "3. PERIYAKULAM — THE BIG LAKE",
-
-      description:
-        "Explore the surroundings of Periyakulam, one of the important natural areas along the journey.",
-
-      possibleSightings: [
-        "Wild crocodiles",
-        "Wild elephants",
-        "Foxes",
-        "Monkeys",
-        "Peacocks",
-        "Herons",
-        "Natural snake burrows",
-        "Wetland birds",
-        "Other wildlife",
-      ],
-
-      note:
-        "Wildlife sightings are naturally unpredictable. Every day is different and the animals you see can change depending on natural conditions.",
-
-      nextJourney:
-        "Continue by private Tuk Tuk towards the lagoon shore.",
-    },
-
-    // ==========================================================
-    // LAGOON & SUNSET
-    // ==========================================================
-
-    lagoonSunset: {
-      title: "4. LAGOON SHORE & SUNSET",
-
-      description:
-        "Spend peaceful time around the lagoon and enjoy the beautiful Sri Lankan sunset.",
-
-      highlights: [
-        "Peaceful lagoon surroundings",
-        "Sri Lankan sunset",
-        "Natural environment",
-        "Photography opportunities",
-        "Away from busy tourist areas",
-      ],
-
-      returnJourney:
-        "After sunset, travel back towards Crocodile Park by private Tuk Tuk.",
-    },
-
-    // ==========================================================
-    // AFTER SUNSET CROCODILE EXPERIENCE
-    // ==========================================================
-
-    nightCrocodile: {
-      title:
-        "5. CROCODILE PARK NILAVELI — AFTER-SUNSET WILDLIFE EXPERIENCE",
-
-      description:
-        "As darkness arrives, the wildlife experience changes completely.",
-
-      points: [
-        "Use torchlight to carefully observe the lake shore and crocodiles resting near the water.",
-        "Torchlight may catch the eyes of crocodiles, creating a distinctive red-orange reflection.",
-        "Observe wild crocodiles after sunset with an experienced local guide.",
-        "Experience the natural evening atmosphere without feeding or artificially attracting wildlife.",
-      ],
-
-      quote:
-        "No feeding. No artificial attraction. Just wildlife in its natural environment.",
-
-      return:
-        "After the experience, return to the guide's home by private Tuk Tuk.",
-    },
-
-    // ==========================================================
-    // FINAL EXPERIENCE
-    // ==========================================================
-
-    finalExperience: {
-      title: "6. GUIDE'S HOUSE — FINAL EXPERIENCE",
-
-      description:
-        "The experience finishes back at the guide's house.",
-
-      points: [
-        "See and learn about crocodile bones and specimens from crocodiles of different sizes.",
-        "The guide explains the animals, their behaviour and their natural environment.",
-        "Finish the evening with a deeper understanding of the wildlife encountered during the tour.",
-      ],
-
-      closing:
-        "A memorable end to your guided crocodile watching and sunset experience.",
-    },
-
-    // ==========================================================
-    // WHAT'S INCLUDED
-    // ==========================================================
-
-    included: {
-      title: "What's Included",
-
-      items: [
-        "Welcome drink",
-        "Private Tuktuk transportation",
-        "Private driver",
-        "Experienced wildlife guide",
-        "Torchlight",
-        "Bottled drinking water",
-        "Fresh watermelon",
-      ],
-    },
-
-    // ==========================================================
-    // TOUR FEES
-    // ==========================================================
-
-    pricing: {
-      title: "Tour Fees",
-
-      currency: "USD",
-
-      adults: {
-        label: "Adults 18+",
-        price: 12,
-        displayPrice: "USD 12 / person",
-      },
-
-      children: {
-        label: "Children 6–17",
-        price: 6,
-        displayPrice: "USD 6 / person",
-      },
-
-      infants: {
-        label: "Children under 6",
-        price: 0,
-        displayPrice: "FREE",
-      },
-    },
-
-    // ==========================================================
-    // WILDLIFE EXPERIENCE
-    // ==========================================================
-
-    wildlifeExperience: {
-      title: "A Genuine Guided Crocodile Watching & Sunset Tour",
-
-      description:
-        "More than watching crocodiles; experience natural landscapes, wildlife, birdlife, the local environment, sunset and the evening atmosphere with a local guide.",
-
-      possibleWildlife: [
-        "Crocodiles",
-        "Elephants",
-        "Birds",
-        "Monkeys",
-        "Peacocks",
-        "Foxes",
-        "Herons",
-        "Other wildlife",
-      ],
-
-      importantNote:
-        "Nature decides what appears. Wildlife sightings cannot be guaranteed.",
-
-      closing:
-        "Every day is different. Every day is beautiful.",
-    },
-
-    // ==========================================================
-    // INFORMATION
-    // ==========================================================
-
-    information: {
-      title: "Tour Information",
-
-      duration: "Approximately 2 hours",
-
-      startingPoint: "Guide's House",
-
-      startingTime: "4:45 PM",
-
-      departureTime: "5:00 PM",
-
-      transportation: "Private Tuktuk",
-
-      guide: "Musharaf",
-
-      location: "Crocodile Park Nilaveli & Periyakulam",
-    },
-
-    // ==========================================================
-    // BOOKING
-    // ==========================================================
-
-    booking: {
-      title: "Booking Information",
-
-      description:
-        "Contact Crocodile Park Nilaveli to check availability and book your guided crocodile watching and sunset tour.",
-
-      whatsappMessage:
-        "Hello Crocodile Park Nilaveli, I would like to book the Guided Crocodile Watching & Sunset Tour. Please send me availability and booking details.",
-    },
-
-    // ==========================================================
-    // IMPORTANT INFORMATION
-    // ==========================================================
-
-    importantInformation: {
-      title: "Important Information",
-
-      points: [
-        "Wildlife sightings are naturally unpredictable.",
-        "Crocodile sightings are not guaranteed.",
-        "Elephant, bird and other wildlife sightings depend on natural conditions.",
-        "Please follow the instructions of the local wildlife guide.",
-        "Do not feed or attempt to attract wildlife.",
-        "Nature decides what appears during each experience.",
-      ],
-    },
-
-    // ==========================================================
-    // FAQ
-    // ==========================================================
-
-    faq: [
-      {
-        question: "Are crocodile sightings guaranteed?",
-
-        answer:
-          "No. The experience takes place around natural wildlife areas, so sightings are never guaranteed.",
-      },
-
-      {
-        question: "What time does the tour start?",
-
-        answer:
-          "Guests arrive at the guide's house at 4:45 PM, followed by the briefing and departure at 5:00 PM.",
-      },
-
-      {
-        question: "How do we travel between locations?",
-
-        answer:
-          "The journey between locations is by private Tuk Tuk reserved exclusively for your group.",
-      },
-
-      {
-        question: "Can we see elephants?",
-
-        answer:
-          "Wild elephants may be seen around Periyakulam, but wildlife sightings depend on natural conditions and cannot be guaranteed.",
-      },
-
-      {
-        question: "Is the sunset included?",
-
-        answer:
-          "Yes. The tour includes time at the lagoon shore to enjoy the Sri Lankan sunset.",
-      },
-
-      {
-        question: "What happens after sunset?",
-
-        answer:
-          "After sunset, the experience continues around Crocodile Park where the guide may use torchlight to carefully observe crocodiles resting near the water.",
-      },
-
-      {
-        question: "How much is the tour?",
-
-        answer:
-          "Adults aged 18+ are USD 12 per person. Children aged 6–17 are USD 6 per person. Children under 6 are free.",
-      },
-    ],
-
-    // ==========================================================
-    // FINAL CTA
-    // ==========================================================
-
-    finalCta: {
-      title: "Experience the Wild Side of Nilaveli",
-
-      description:
-        "Join a genuine guided crocodile watching and sunset tour through the natural surroundings of Crocodile Park Nilaveli and Periyakulam.",
-
-      highlights: [
-        "Wild Crocodiles",
-        "Bird Watching",
-        "Periyakulam",
-        "Lagoon Sunset",
-        "Private Tuk Tuk",
-        "Local Wildlife Guide",
-      ],
-    },
-
-    // ==========================================================
-    // SEO
-    // ==========================================================
-
-    seo: {
-      pageTitle:
-        "Guided Crocodile Watching & Sunset Tour | Crocodile Park Nilaveli",
-
-      metaDescription:
-        "Experience a guided crocodile watching and sunset tour around Crocodile Park Nilaveli, Periyakulam and the lagoon with a local wildlife guide.",
-
-      slug: "guided-crocodile",
-
-      primaryKeyword:
-        "guided crocodile watching tour Nilaveli",
-
-      secondaryKeywords: [
-        "Crocodile Park Nilaveli",
-        "crocodile watching Nilaveli",
-        "Nilaveli sunset tour",
-        "wildlife tour Nilaveli",
-        "Periyakulam wildlife tour",
-        "crocodile tour Sri Lanka",
-      ],
-    },
   },
-},
 
   {
     id: "pigeon-island",
@@ -796,480 +775,460 @@ export const activities = [
   },
 
   {
-  id: "bbq",
-  title: "BBQ Night Tour",
-  description:
-    "Enjoy a private beach BBQ in Nilaveli with freshly prepared seafood, chicken and vegetarian options, a BBQ Assistant, sunset views and a peaceful tropical evening atmosphere.",
-
-  fullDescription:
-    "Enjoy a relaxed and memorable private BBQ on the beautiful Nilaveli beach, surrounded by fresh ocean air, stunning coastal views, palm trees and a peaceful tropical atmosphere. Your BBQ Assistant will help prepare and manage the BBQ while you relax, enjoy your food and watch the sunset by the sea.",
-
-  price: "LKR 5,200",
-  category: "Evening",
-  image: actBbq,
-  alt: "Private beach BBQ experience in Nilaveli at sunset",
-  duration: "Approximately 2–3 hours",
-  location: "Nilaveli, Trincomalee, Sri Lanka",
-
-  highlights: [
-    "Private beach BBQ experience",
-    "BBQ Assistant included",
-    "Freshly prepared BBQ",
-    "Seafood, chicken & vegetarian options",
-    "Private beach setting",
-    "Beautiful sunset atmosphere",
-    "Tropical palm-tree surroundings",
-    "Ocean views",
-    "Drinks & side dishes can be arranged",
-    "Free transportation available",
-    "Perfect for couples, families & groups",
-    "Special occasions can be arranged",
-  ],
-
-  itinerary: [
-    "Arrive at the selected Nilaveli beach location in the late afternoon.",
-    "Relax on the beach and enjoy the fresh ocean air.",
-    "Take in the coastal views and sunset atmosphere.",
-    "Your BBQ Assistant prepares and manages the BBQ setup.",
-    "Enjoy freshly prepared seafood, chicken or vegetarian BBQ.",
-    "Enjoy drinks and side dishes according to your arrangement.",
-    "Relax under the tropical evening sky.",
-    "Finish the evening and return with transportation where arranged.",
-  ],
-
-  included: [
-    "Private beach BBQ experience",
-    "BBQ Assistant",
-    "Freshly prepared BBQ",
-    "Seafood, chicken & vegetarian options",
-    "Beachside BBQ setup",
-    "Sunset & evening atmosphere",
-    "Basic side dishes",
-    "Free transportation available",
-    "Comfortable private setting",
-  ],
-
-  suitableFor:
-    "Perfect for couples, families, friends, groups and guests celebrating birthdays, anniversaries, romantic evenings or other special occasions.",
-
-  pageTitle: "Nilaveli Private Beach BBQ Experience",
-
-  pageSubtitle: "An Outdoor Tropical Evening BBQ by the Beach",
-
-  pageIntro:
-    "Enjoy a relaxed and memorable private BBQ on the beautiful Nilaveli beach, surrounded by fresh ocean air, stunning coastal views, palm trees and a peaceful tropical atmosphere.",
-
-  experienceHighlights: [
-    "🧍🏽 BBQ Assistant",
-    "🏖️ Private beach setting",
-    "🔥 Freshly prepared BBQ",
-    "🐟 Seafood, chicken & vegetarian options",
-    "🌅 Beautiful sunset atmosphere",
-    "👨‍👩‍👧‍👦 Perfect for couples, families & groups",
-    "🥤 Drinks & side dishes can be arranged",
-    "🚗 Free transportation available",
-  ],
-
-  experienceDescription:
-    "Relax by the beach, enjoy delicious BBQ and make unforgettable memories in Nilaveli.",
-
-  pricePerPerson: "LKR 5,200",
-
-  sections: {
-    bbqNightTour: {
-      title: "BBQ Night Tour",
-      subtitle: "An Outdoor Tropical Evening BBQ by the Beach",
-
-      paragraphs: [
-        "Enjoy a tropical evening BBQ under the palm trees, surrounded by the peaceful atmosphere of the Nilaveli coast.",
-
-        "Your BBQ Assistant will help with the BBQ preparation and make sure your group can relax and enjoy the experience.",
-      ],
-
-      features: [
-        "🔥 Freshly prepared BBQ",
-        "🧍🏽 BBQ Assistant",
-        "🏖️ Private beach setting",
-        "🌅 Sunset atmosphere",
-        "🌴 Tropical surroundings",
-        "🌊 Ocean views",
-        "🥤 Drinks & side dishes available",
-      ],
-
-      description:
-        "Whether you are travelling as a couple, family or group of friends, this is a great way to spend a relaxed evening by the sea.",
-    },
-
-    privateBeach: {
-      title: "Your Private Beach BBQ Experience",
-
-      paragraphs: [
-        "Forget crowded restaurants and enjoy your evening in a beautiful coastal setting.",
-
-        "Relax on the beach, enjoy the fresh ocean air and watch the sunset while your BBQ is prepared.",
-
-        "The experience is designed to provide a comfortable and private atmosphere for your group.",
-      ],
-
-      perfectFor: [
-        "❤️ Couples",
-        "👨‍👩‍👧 Families",
-        "👥 Friends",
-        "🎉 Groups",
-        "🎂 Special occasions",
-      ],
-    },
-
-    bbqAssistant: {
-      title: "BBQ Assistant",
-      subtitle: "Your BBQ Assistant Is There to Help",
-
-      description:
-        "A dedicated BBQ Assistant will be available during the experience to help prepare and manage the BBQ.",
-
-      responsibilities: [
-        "🔥 BBQ preparation",
-        "🍽️ Food serving arrangements",
-        "🥤 Basic drink arrangements",
-        "🔥 Managing the BBQ setup",
-        "🧹 Keeping the BBQ area organized",
-      ],
-
-      closing:
-        "This allows you to spend more time relaxing, enjoying your food and taking in the beach atmosphere.",
-    },
-
-    foodOptions: {
-      title: "BBQ Food Options",
-
-      seafood: {
-        title: "🐟 Seafood BBQ",
-        description:
-          "Enjoy freshly prepared seafood according to availability.",
-
-        options: [
-          "Fresh fish",
-          "Prawns",
-          "Squid",
-          "Other locally available seafood",
-        ],
-      },
-
-      chicken: {
-        title: "🍗 Chicken BBQ",
-        description:
-          "Freshly prepared chicken BBQ served hot as part of your beachside meal.",
-      },
-
-      vegetarian: {
-        title: "🥗 Vegetarian BBQ",
-        description:
-          "Vegetarian BBQ options can be arranged for guests who do not eat meat or seafood.",
-
-        options: [
-          "Grilled vegetables",
-          "Corn",
-          "Potatoes",
-          "Vegetarian side dishes",
-        ],
-      },
-
-      note: "Food selections should be confirmed when booking.",
-    },
-
-    drinks: {
-      title: "Drinks & Side Dishes",
-
-      description:
-        "Drinks and side dishes can be arranged according to your requirements.",
-
-      options: [
-        "🥤 Soft drinks",
-        "💧 Bottled water",
-        "🍉 Fresh fruits",
-        "🥗 Salads",
-        "🍽️ Other side dishes",
-      ],
-
-      note:
-        "Additional food and drinks may be available on request.",
-    },
-
-    sunset: {
-      title: "Sunset Beach Atmosphere",
-      subtitle: "Enjoy the Sunset Before Your BBQ",
-
-      paragraphs: [
-        "The late afternoon is a beautiful time to arrive at the beach.",
-
-        "Relax by the sea, enjoy the coastal views and watch the sunset before enjoying your BBQ dinner.",
-      ],
-
-      suggestedExperience: [
-        "🌅 Arrive in the late afternoon",
-        "🏖️ Relax on the beach",
-        "📸 Enjoy sunset views",
-        "🔥 BBQ preparation",
-        "🍽️ Enjoy your BBQ meal",
-        "🌴 Relax under the tropical evening sky",
-      ],
-    },
-
-    transportation: {
-      title: "Free Transportation Available",
-
-      description:
-        "Free transportation can be arranged for guests, depending on the pickup location and availability.",
-
-      pickupOptions: [
-        "🏨 Selected hotels in Nilaveli",
-        "🏨 Nearby accommodation",
-        "📍 Selected locations around the Nilaveli area",
-      ],
-
-      note:
-        "Please provide your hotel or accommodation details when booking so transportation can be confirmed.",
-    },
-
-    specialOccasions: {
-      title: "Special Occasions",
-      subtitle: "Make Your BBQ Extra Special",
-
-      description:
-        "Planning a special evening? Additional arrangements can be discussed for:",
-
-      options: [
-        "🎂 Birthday celebrations",
-        "❤️ Romantic evenings",
-        "💍 Anniversaries",
-        "🎉 Private celebrations",
-        "👨‍👩‍👧 Family gatherings",
-        "👥 Group BBQ nights",
-      ],
-
-      note:
-        "Please contact us in advance for special arrangements.",
-    },
-
-    package: {
-      title: "Private Beach BBQ Package",
-      packageName: "🔥 BBQ Night Tour",
-      price: "LKR 5,200 per person",
-
-      highlights: [
-        "Private beach BBQ experience",
-        "BBQ Assistant",
-        "Freshly prepared BBQ",
-        "Seafood, chicken & vegetarian options",
-        "Beachside BBQ setup",
-        "Sunset & evening atmosphere",
-        "Free transportation available",
-        "Basic side dishes",
-        "Comfortable private setting",
-      ],
-
-      note:
-        "Additional food, drinks or special arrangements can be requested when booking.",
-    },
-
-    gallery: {
-      title: "Experience Gallery",
-      subtitle: "A Taste of the Nilaveli Beach BBQ Experience",
-
-      items: [
-        "Nilaveli beach",
-        "Private BBQ setup",
-        "BBQ Assistant preparing food",
-        "Fresh seafood",
-        "Chicken BBQ",
-        "Vegetarian BBQ",
-        "BBQ grill",
-        "Sunset",
-        "Palm trees",
-        "Beachside dining",
-        "Evening atmosphere",
-        "Guests enjoying the experience",
-      ],
-    },
-
-    location: {
-      title: "Location",
-      address: "Nilaveli, Trincomalee, Sri Lanka",
-
-      description:
-        "Enjoy your private BBQ experience along the beautiful Nilaveli coastline in Trincomalee. The tropical beach environment, ocean breeze, palm trees and sunset atmosphere make Nilaveli an ideal location for a relaxing evening BBQ.",
-
-      highlights: [
-        "🏖️ Nilaveli Beach",
-        "🌊 Indian Ocean",
-        "🌴 Tropical surroundings",
-        "🌅 Sunset views",
-        "🌙 Peaceful evening atmosphere",
-      ],
-    },
-
-    information: {
-      title: "Experience Information",
-
-      items: [
-        ["Experience", "Private Beach BBQ"],
-        ["Location", "Nilaveli, Trincomalee, Sri Lanka"],
-        ["Price", "LKR 5,200 per person"],
-        ["Best Time", "Late afternoon & evening"],
-        ["BBQ Assistant", "Included"],
-        ["Transportation", "Free transportation available"],
-        ["Food Options", "Seafood, chicken & vegetarian"],
-        ["Suitable For", "Couples, families & groups"],
-        ["Booking", "Advance booking recommended"],
-      ],
-    },
-
-    booking: {
-      title: "How to Book",
-      subtitle: "Book Your Private Beach BBQ",
-
-      description:
-        "To arrange your BBQ experience, send us the following details:",
-
-      requirements: [
-        "Preferred date",
-        "Number of guests",
-        "Hotel or accommodation",
-        "Preferred food option",
-        "Preferred time",
-        "Any special requirements",
-      ],
-    },
-
-    importantInformation: {
-      title: "Important Information",
-
-      items: [
-        "The BBQ experience is arranged privately for your group.",
-        "A BBQ Assistant is included in the experience.",
-        "Seafood availability depends on the day's supply.",
-        "Vegetarian options are available on request.",
-        "Food preferences should be communicated when booking.",
-        "Free transportation is subject to pickup location and availability.",
-        "Special arrangements should be requested in advance.",
-        "The exact BBQ location may depend on beach conditions and local arrangements.",
-        "Weather conditions may affect the experience.",
-        "Please follow local beach rules and safety instructions.",
-        "Guests are encouraged to keep the beach clean.",
-      ],
-    },
-
-    safety: {
-      title: "Beach Safety & Responsible Tourism",
-      subtitle: "Help Us Keep Nilaveli Beautiful",
-
-      description:
-        "We want every guest to enjoy the beach while respecting the natural environment.",
-
-      principles: [
-        "✓ Keep the beach clean",
-        "✓ Dispose of waste responsibly",
-        "✓ Respect the local environment",
-        "✓ Follow beach safety guidelines",
-        "✓ Follow instructions from the BBQ Assistant or host",
-        "✓ Avoid entering the sea when conditions are unsafe",
-      ],
-
-      closing:
-        "🌱 Leave Only Footprints — Help us protect the beautiful Nilaveli coastline for future visitors and the local community.",
-    },
-
-    faq: [
-      {
-        q: "Is this a private BBQ?",
-        a: "Yes. The BBQ experience is arranged privately for your group.",
-      },
-      {
-        q: "How much does the BBQ cost?",
-        a: "The price is LKR 5,200 per person.",
-      },
-      {
-        q: "Is a BBQ Assistant included?",
-        a: "Yes. A BBQ Assistant is included to help with BBQ preparation and the setup during the experience.",
-      },
-      {
-        q: "Is transportation included?",
-        a: "Free transportation is available, depending on the pickup location and arrangements.",
-      },
-      {
-        q: "Can I choose seafood?",
-        a: "Yes. Seafood options can be arranged depending on availability.",
-      },
-      {
-        q: "Do you offer chicken BBQ?",
-        a: "Yes. Chicken BBQ is available as a food option.",
-      },
-      {
-        q: "Are vegetarian options available?",
-        a: "Yes. Vegetarian BBQ options can be arranged on request.",
-      },
-      {
-        q: "Is this suitable for families?",
-        a: "Yes. The experience is suitable for couples, families, friends and groups.",
-      },
-      {
-        q: "Can you arrange a birthday BBQ?",
-        a: "Yes. Birthday and other special arrangements can be discussed in advance.",
-      },
-      {
-        q: "What time does the BBQ start?",
-        a: "The experience is generally arranged for the late afternoon or evening so guests can enjoy the sunset and evening atmosphere.",
-      },
-      {
-        q: "Do I need to book in advance?",
-        a: "Advance booking is recommended so we can prepare the food, BBQ setup and transportation.",
-      },
-      {
-        q: "Where is the BBQ located?",
-        a: "The experience takes place at a suitable beach location in the Nilaveli area. The exact location can be confirmed when booking.",
-      },
-    ],
-  },
-
-  finalCta: {
-    title: "Ready for a BBQ by the Sea?",
+    id: "bbq",
+    title: "BBQ Night Tour",
     description:
-      "Enjoy fresh BBQ food, beautiful sunset scenery and a peaceful tropical evening in Nilaveli.",
+      "Enjoy a private beach BBQ in Nilaveli with freshly prepared seafood, chicken and vegetarian options, a BBQ Assistant, sunset views and a peaceful tropical evening atmosphere.",
+
+    fullDescription:
+      "Enjoy a relaxed and memorable private BBQ on the beautiful Nilaveli beach, surrounded by fresh ocean air, stunning coastal views, palm trees and a peaceful tropical atmosphere. Your BBQ Assistant will help prepare and manage the BBQ while you relax, enjoy your food and watch the sunset by the sea.",
+
+    price: "LKR 5,200",
+    category: "Evening",
+    image: actBbq,
+    alt: "Private beach BBQ experience in Nilaveli at sunset",
+    duration: "Approximately 2–3 hours",
+    location: "Nilaveli, Trincomalee, Sri Lanka",
 
     highlights: [
-      "🏖️ Private Beach Setting",
-      "🔥 Fresh BBQ",
+      "Private beach BBQ experience",
+      "BBQ Assistant included",
+      "Freshly prepared BBQ",
+      "Seafood, chicken & vegetarian options",
+      "Private beach setting",
+      "Beautiful sunset atmosphere",
+      "Tropical palm-tree surroundings",
+      "Ocean views",
+      "Drinks & side dishes can be arranged",
+      "Free transportation available",
+      "Perfect for couples, families & groups",
+      "Special occasions can be arranged",
+    ],
+
+    itinerary: [
+      "Arrive at the selected Nilaveli beach location in the late afternoon.",
+      "Relax on the beach and enjoy the fresh ocean air.",
+      "Take in the coastal views and sunset atmosphere.",
+      "Your BBQ Assistant prepares and manages the BBQ setup.",
+      "Enjoy freshly prepared seafood, chicken or vegetarian BBQ.",
+      "Enjoy drinks and side dishes according to your arrangement.",
+      "Relax under the tropical evening sky.",
+      "Finish the evening and return with transportation where arranged.",
+    ],
+
+    included: [
+      "Private beach BBQ experience",
+      "BBQ Assistant",
+      "Freshly prepared BBQ",
+      "Seafood, chicken & vegetarian options",
+      "Beachside BBQ setup",
+      "Sunset & evening atmosphere",
+      "Basic side dishes",
+      "Free transportation available",
+      "Comfortable private setting",
+    ],
+
+    suitableFor:
+      "Perfect for couples, families, friends, groups and guests celebrating birthdays, anniversaries, romantic evenings or other special occasions.",
+
+    pageTitle: "Nilaveli Private Beach BBQ Experience",
+
+    pageSubtitle: "An Outdoor Tropical Evening BBQ by the Beach",
+
+    pageIntro:
+      "Enjoy a relaxed and memorable private BBQ on the beautiful Nilaveli beach, surrounded by fresh ocean air, stunning coastal views, palm trees and a peaceful tropical atmosphere.",
+
+    experienceHighlights: [
       "🧍🏽 BBQ Assistant",
-      "🐟 Seafood Options",
-      "🌅 Sunset Atmosphere",
-      "🚗 Free Transportation Available",
+      "🏖️ Private beach setting",
+      "🔥 Freshly prepared BBQ",
+      "🐟 Seafood, chicken & vegetarian options",
+      "🌅 Beautiful sunset atmosphere",
+      "👨‍👩‍👧‍👦 Perfect for couples, families & groups",
+      "🥤 Drinks & side dishes can be arranged",
+      "🚗 Free transportation available",
     ],
+
+    experienceDescription:
+      "Relax by the beach, enjoy delicious BBQ and make unforgettable memories in Nilaveli.",
+
+    pricePerPerson: "LKR 5,200",
+
+    sections: {
+      bbqNightTour: {
+        title: "BBQ Night Tour",
+        subtitle: "An Outdoor Tropical Evening BBQ by the Beach",
+
+        paragraphs: [
+          "Enjoy a tropical evening BBQ under the palm trees, surrounded by the peaceful atmosphere of the Nilaveli coast.",
+
+          "Your BBQ Assistant will help with the BBQ preparation and make sure your group can relax and enjoy the experience.",
+        ],
+
+        features: [
+          "🔥 Freshly prepared BBQ",
+          "🧍🏽 BBQ Assistant",
+          "🏖️ Private beach setting",
+          "🌅 Sunset atmosphere",
+          "🌴 Tropical surroundings",
+          "🌊 Ocean views",
+          "🥤 Drinks & side dishes available",
+        ],
+
+        description:
+          "Whether you are travelling as a couple, family or group of friends, this is a great way to spend a relaxed evening by the sea.",
+      },
+
+      privateBeach: {
+        title: "Your Private Beach BBQ Experience",
+
+        paragraphs: [
+          "Forget crowded restaurants and enjoy your evening in a beautiful coastal setting.",
+
+          "Relax on the beach, enjoy the fresh ocean air and watch the sunset while your BBQ is prepared.",
+
+          "The experience is designed to provide a comfortable and private atmosphere for your group.",
+        ],
+
+        perfectFor: [
+          "❤️ Couples",
+          "👨‍👩‍👧 Families",
+          "👥 Friends",
+          "🎉 Groups",
+          "🎂 Special occasions",
+        ],
+      },
+
+      bbqAssistant: {
+        title: "BBQ Assistant",
+        subtitle: "Your BBQ Assistant Is There to Help",
+
+        description:
+          "A dedicated BBQ Assistant will be available during the experience to help prepare and manage the BBQ.",
+
+        responsibilities: [
+          "🔥 BBQ preparation",
+          "🍽️ Food serving arrangements",
+          "🥤 Basic drink arrangements",
+          "🔥 Managing the BBQ setup",
+          "🧹 Keeping the BBQ area organized",
+        ],
+
+        closing:
+          "This allows you to spend more time relaxing, enjoying your food and taking in the beach atmosphere.",
+      },
+
+      foodOptions: {
+        title: "BBQ Food Options",
+
+        seafood: {
+          title: "🐟 Seafood BBQ",
+          description: "Enjoy freshly prepared seafood according to availability.",
+
+          options: ["Fresh fish", "Prawns", "Squid", "Other locally available seafood"],
+        },
+
+        chicken: {
+          title: "🍗 Chicken BBQ",
+          description: "Freshly prepared chicken BBQ served hot as part of your beachside meal.",
+        },
+
+        vegetarian: {
+          title: "🥗 Vegetarian BBQ",
+          description:
+            "Vegetarian BBQ options can be arranged for guests who do not eat meat or seafood.",
+
+          options: ["Grilled vegetables", "Corn", "Potatoes", "Vegetarian side dishes"],
+        },
+
+        note: "Food selections should be confirmed when booking.",
+      },
+
+      drinks: {
+        title: "Drinks & Side Dishes",
+
+        description: "Drinks and side dishes can be arranged according to your requirements.",
+
+        options: [
+          "🥤 Soft drinks",
+          "💧 Bottled water",
+          "🍉 Fresh fruits",
+          "🥗 Salads",
+          "🍽️ Other side dishes",
+        ],
+
+        note: "Additional food and drinks may be available on request.",
+      },
+
+      sunset: {
+        title: "Sunset Beach Atmosphere",
+        subtitle: "Enjoy the Sunset Before Your BBQ",
+
+        paragraphs: [
+          "The late afternoon is a beautiful time to arrive at the beach.",
+
+          "Relax by the sea, enjoy the coastal views and watch the sunset before enjoying your BBQ dinner.",
+        ],
+
+        suggestedExperience: [
+          "🌅 Arrive in the late afternoon",
+          "🏖️ Relax on the beach",
+          "📸 Enjoy sunset views",
+          "🔥 BBQ preparation",
+          "🍽️ Enjoy your BBQ meal",
+          "🌴 Relax under the tropical evening sky",
+        ],
+      },
+
+      transportation: {
+        title: "Free Transportation Available",
+
+        description:
+          "Free transportation can be arranged for guests, depending on the pickup location and availability.",
+
+        pickupOptions: [
+          "🏨 Selected hotels in Nilaveli",
+          "🏨 Nearby accommodation",
+          "📍 Selected locations around the Nilaveli area",
+        ],
+
+        note: "Please provide your hotel or accommodation details when booking so transportation can be confirmed.",
+      },
+
+      specialOccasions: {
+        title: "Special Occasions",
+        subtitle: "Make Your BBQ Extra Special",
+
+        description: "Planning a special evening? Additional arrangements can be discussed for:",
+
+        options: [
+          "🎂 Birthday celebrations",
+          "❤️ Romantic evenings",
+          "💍 Anniversaries",
+          "🎉 Private celebrations",
+          "👨‍👩‍👧 Family gatherings",
+          "👥 Group BBQ nights",
+        ],
+
+        note: "Please contact us in advance for special arrangements.",
+      },
+
+      package: {
+        title: "Private Beach BBQ Package",
+        packageName: "🔥 BBQ Night Tour",
+        price: "LKR 5,200 per person",
+
+        highlights: [
+          "Private beach BBQ experience",
+          "BBQ Assistant",
+          "Freshly prepared BBQ",
+          "Seafood, chicken & vegetarian options",
+          "Beachside BBQ setup",
+          "Sunset & evening atmosphere",
+          "Free transportation available",
+          "Basic side dishes",
+          "Comfortable private setting",
+        ],
+
+        note: "Additional food, drinks or special arrangements can be requested when booking.",
+      },
+
+      gallery: {
+        title: "Experience Gallery",
+        subtitle: "A Taste of the Nilaveli Beach BBQ Experience",
+
+        items: [
+          "Nilaveli beach",
+          "Private BBQ setup",
+          "BBQ Assistant preparing food",
+          "Fresh seafood",
+          "Chicken BBQ",
+          "Vegetarian BBQ",
+          "BBQ grill",
+          "Sunset",
+          "Palm trees",
+          "Beachside dining",
+          "Evening atmosphere",
+          "Guests enjoying the experience",
+        ],
+      },
+
+      location: {
+        title: "Location",
+        address: "Nilaveli, Trincomalee, Sri Lanka",
+
+        description:
+          "Enjoy your private BBQ experience along the beautiful Nilaveli coastline in Trincomalee. The tropical beach environment, ocean breeze, palm trees and sunset atmosphere make Nilaveli an ideal location for a relaxing evening BBQ.",
+
+        highlights: [
+          "🏖️ Nilaveli Beach",
+          "🌊 Indian Ocean",
+          "🌴 Tropical surroundings",
+          "🌅 Sunset views",
+          "🌙 Peaceful evening atmosphere",
+        ],
+      },
+
+      information: {
+        title: "Experience Information",
+
+        items: [
+          ["Experience", "Private Beach BBQ"],
+          ["Location", "Nilaveli, Trincomalee, Sri Lanka"],
+          ["Price", "LKR 5,200 per person"],
+          ["Best Time", "Late afternoon & evening"],
+          ["BBQ Assistant", "Included"],
+          ["Transportation", "Free transportation available"],
+          ["Food Options", "Seafood, chicken & vegetarian"],
+          ["Suitable For", "Couples, families & groups"],
+          ["Booking", "Advance booking recommended"],
+        ],
+      },
+
+      booking: {
+        title: "How to Book",
+        subtitle: "Book Your Private Beach BBQ",
+
+        description: "To arrange your BBQ experience, send us the following details:",
+
+        requirements: [
+          "Preferred date",
+          "Number of guests",
+          "Hotel or accommodation",
+          "Preferred food option",
+          "Preferred time",
+          "Any special requirements",
+        ],
+      },
+
+      importantInformation: {
+        title: "Important Information",
+
+        items: [
+          "The BBQ experience is arranged privately for your group.",
+          "A BBQ Assistant is included in the experience.",
+          "Seafood availability depends on the day's supply.",
+          "Vegetarian options are available on request.",
+          "Food preferences should be communicated when booking.",
+          "Free transportation is subject to pickup location and availability.",
+          "Special arrangements should be requested in advance.",
+          "The exact BBQ location may depend on beach conditions and local arrangements.",
+          "Weather conditions may affect the experience.",
+          "Please follow local beach rules and safety instructions.",
+          "Guests are encouraged to keep the beach clean.",
+        ],
+      },
+
+      safety: {
+        title: "Beach Safety & Responsible Tourism",
+        subtitle: "Help Us Keep Nilaveli Beautiful",
+
+        description:
+          "We want every guest to enjoy the beach while respecting the natural environment.",
+
+        principles: [
+          "✓ Keep the beach clean",
+          "✓ Dispose of waste responsibly",
+          "✓ Respect the local environment",
+          "✓ Follow beach safety guidelines",
+          "✓ Follow instructions from the BBQ Assistant or host",
+          "✓ Avoid entering the sea when conditions are unsafe",
+        ],
+
+        closing:
+          "🌱 Leave Only Footprints — Help us protect the beautiful Nilaveli coastline for future visitors and the local community.",
+      },
+
+      faq: [
+        {
+          q: "Is this a private BBQ?",
+          a: "Yes. The BBQ experience is arranged privately for your group.",
+        },
+        {
+          q: "How much does the BBQ cost?",
+          a: "The price is LKR 5,200 per person.",
+        },
+        {
+          q: "Is a BBQ Assistant included?",
+          a: "Yes. A BBQ Assistant is included to help with BBQ preparation and the setup during the experience.",
+        },
+        {
+          q: "Is transportation included?",
+          a: "Free transportation is available, depending on the pickup location and arrangements.",
+        },
+        {
+          q: "Can I choose seafood?",
+          a: "Yes. Seafood options can be arranged depending on availability.",
+        },
+        {
+          q: "Do you offer chicken BBQ?",
+          a: "Yes. Chicken BBQ is available as a food option.",
+        },
+        {
+          q: "Are vegetarian options available?",
+          a: "Yes. Vegetarian BBQ options can be arranged on request.",
+        },
+        {
+          q: "Is this suitable for families?",
+          a: "Yes. The experience is suitable for couples, families, friends and groups.",
+        },
+        {
+          q: "Can you arrange a birthday BBQ?",
+          a: "Yes. Birthday and other special arrangements can be discussed in advance.",
+        },
+        {
+          q: "What time does the BBQ start?",
+          a: "The experience is generally arranged for the late afternoon or evening so guests can enjoy the sunset and evening atmosphere.",
+        },
+        {
+          q: "Do I need to book in advance?",
+          a: "Advance booking is recommended so we can prepare the food, BBQ setup and transportation.",
+        },
+        {
+          q: "Where is the BBQ located?",
+          a: "The experience takes place at a suitable beach location in the Nilaveli area. The exact location can be confirmed when booking.",
+        },
+      ],
+    },
+
+    finalCta: {
+      title: "Ready for a BBQ by the Sea?",
+      description:
+        "Enjoy fresh BBQ food, beautiful sunset scenery and a peaceful tropical evening in Nilaveli.",
+
+      highlights: [
+        "🏖️ Private Beach Setting",
+        "🔥 Fresh BBQ",
+        "🧍🏽 BBQ Assistant",
+        "🐟 Seafood Options",
+        "🌅 Sunset Atmosphere",
+        "🚗 Free Transportation Available",
+      ],
+    },
+
+    seo: {
+      pageTitle: "Nilaveli Private Beach BBQ | BBQ Night & Sunset Experience",
+
+      metaDescription:
+        "Enjoy a private beach BBQ in Nilaveli with a BBQ Assistant, freshly prepared seafood, chicken and vegetarian options, sunset views, tropical surroundings and free transportation. LKR 5,200 per person.",
+
+      slug: "/nilaveli-private-beach-bbq",
+
+      primaryKeyword: "Nilaveli Private Beach BBQ",
+
+      secondaryKeywords: [
+        "Nilaveli BBQ",
+        "Beach BBQ Nilaveli",
+        "Private BBQ Nilaveli",
+        "Nilaveli BBQ Night",
+        "Sri Lanka Beach BBQ",
+        "Nilaveli Sunset BBQ",
+        "Private Beach Dinner Nilaveli",
+        "BBQ Night Tour Nilaveli",
+        "Nilaveli Beach Dinner",
+      ],
+    },
   },
-
-  seo: {
-    pageTitle:
-      "Nilaveli Private Beach BBQ | BBQ Night & Sunset Experience",
-
-    metaDescription:
-      "Enjoy a private beach BBQ in Nilaveli with a BBQ Assistant, freshly prepared seafood, chicken and vegetarian options, sunset views, tropical surroundings and free transportation. LKR 5,200 per person.",
-
-    slug: "/nilaveli-private-beach-bbq",
-
-    primaryKeyword: "Nilaveli Private Beach BBQ",
-
-    secondaryKeywords: [
-      "Nilaveli BBQ",
-      "Beach BBQ Nilaveli",
-      "Private BBQ Nilaveli",
-      "Nilaveli BBQ Night",
-      "Sri Lanka Beach BBQ",
-      "Nilaveli Sunset BBQ",
-      "Private Beach Dinner Nilaveli",
-      "BBQ Night Tour Nilaveli",
-      "Nilaveli Beach Dinner",
-    ],
-  },
-},
 
   {
     id: "trinco-city",

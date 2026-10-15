@@ -73,26 +73,15 @@ const ActivityPriceCalculator = ({
 
   const totalPeople = adults + children + infants;
 
-  /*
-   * Calculate the estimated total.
-   *
-   * If childPrice or infantPrice is 0,
-   * the adult price is used as the fallback.
-   */
-  const subtotal = useMemo(() => {
-    return (
-      adults * adultPrice +
-      children * (childPrice || adultPrice) +
-      infants * (infantPrice || adultPrice)
-    );
-  }, [adults, children, infants, adultPrice, childPrice, infantPrice]);
+  // Only infants under 5 are free.
+  // Children use their configured price, or the adult price
+  // as a fallback if their configured price is zero.
+  const effectiveChildPrice = childPrice > 0 ? childPrice : adultPrice;
 
-  /*
-   * Book through WhatsApp.
-   *
-   * The message contains the exact guest numbers
-   * and calculated total shown in the calculator.
-   */
+  const subtotal = useMemo(() => {
+    return adults * adultPrice + children * effectiveChildPrice + infants * 0;
+  }, [adults, children, infants, adultPrice, effectiveChildPrice]);
+
   const handleBookTour = () => {
     const whatsappMessage = `Hello Crocodile Park Nilaveli,
 
@@ -101,12 +90,14 @@ I would like to book the following activity:
 Activity: ${activityTitle}
 
 Adults: ${adults}
-Children: ${children}
-Infants: ${infants}
+Children (6–11): ${children}
+Infants (<5): ${infants}
 
 Total guests: ${totalPeople}
 
 Price per adult: ${formatPrice(adultPrice)}
+Price per child: ${formatPrice(effectiveChildPrice)}
+Price per infant under 5: FREE
 
 Estimated total: ${formatPrice(subtotal)}
 
@@ -125,9 +116,7 @@ Thank you.`;
     <section className="w-full">
       <div className="overflow-hidden rounded-[30px] border-[6px] border-[#173967] bg-[#173967] shadow-2xl">
         <div className="grid lg:grid-cols-[1.35fr_0.95fr]">
-          {/* =====================================================
-              LEFT SIDE
-          ===================================================== */}
+          {/* LEFT SIDE */}
           <div className="p-6 sm:p-8 lg:p-10">
             <h2 className="font-display text-3xl font-bold leading-tight text-white sm:text-4xl">
               Instant price calculator
@@ -141,7 +130,7 @@ Thank you.`;
             <div className="mt-8">
               <p className="mb-3 text-xs font-semibold text-white/80">Activity</p>
 
-              <div className="rounded-2xl border border-[#238bc9] bg-white font-bold px-4 py-5 shadow-lg">
+              <div className="rounded-2xl border border-[#238bc9] bg-white px-4 py-5 font-bold shadow-lg">
                 <p className="text-center font-semibold text-black">{activityTitle}</p>
 
                 <p className="mt-2 text-center text-sm text-black/80">
@@ -149,12 +138,12 @@ Thank you.`;
                 </p>
 
                 <p className="mt-1 text-center text-[11px] text-black/60">
-                  Price calculated based on the number of guests
+                  Infants under 5 years old go free.
                 </p>
               </div>
             </div>
 
-            {/* GUESTS */}
+            {/* GUEST COUNTERS */}
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
               <Counter
                 label="Adults"
@@ -183,14 +172,12 @@ Thank you.`;
 
             {/* PRICE INFORMATION */}
             <p className="mt-6 text-sm leading-relaxed text-[#7cc6ef]">
-              {formatPrice(adultPrice)} per person. Your estimated total updates automatically based
-              on the number of guests.
+              {formatPrice(adultPrice)} per adult. Children are charged at their configured rate.
+              Infants under 5 are free.
             </p>
           </div>
 
-          {/* =====================================================
-              RIGHT SIDE
-          ===================================================== */}
+          {/* RIGHT SIDE */}
           <div className="p-5 sm:p-8">
             <div className="h-full rounded-[24px] border border-white/20 bg-[#526a8d] p-6 sm:p-7">
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#86c9eb]">
@@ -218,18 +205,16 @@ Thank you.`;
                     <span className="text-sm text-white/70">Children × {children}</span>
 
                     <span className="text-sm font-semibold text-white">
-                      {formatPrice(children * (childPrice || adultPrice))}
+                      {formatPrice(children * effectiveChildPrice)}
                     </span>
                   </div>
                 )}
 
                 {infants > 0 && (
                   <div className="flex items-center justify-between gap-4">
-                    <span className="text-sm text-white/70">Infants × {infants}</span>
+                    <span className="text-sm text-white/70">Infants (&lt;5) × {infants}</span>
 
-                    <span className="text-sm font-semibold text-white">
-                      {formatPrice(infants * (infantPrice || adultPrice))}
-                    </span>
+                    <span className="text-sm font-semibold text-[#86c9eb]">FREE</span>
                   </div>
                 )}
               </div>
@@ -250,7 +235,7 @@ Thank you.`;
 
               <div className="my-5 h-px bg-white/20" />
 
-              {/* TOTAL */}
+              {/* GRAND TOTAL */}
               <div className="flex items-center justify-between gap-4">
                 <span className="text-base font-semibold text-white">Grand total</span>
 
@@ -272,12 +257,10 @@ Thank you.`;
                 Pay nothing now — confirm first, then pay on the day or by transfer.
               </p>
 
-              {/* WHATSAPP */}
+              {/* WHATSAPP HELP */}
               <a
                 href={`https://wa.me/${whatsapp}?text=${encodeURIComponent(
-                  `Hello Crocodile Park Nilaveli,
-
-I need help with booking the ${activityTitle}.`,
+                  `Hello Crocodile Park Nilaveli,\n\nI need help with booking the ${activityTitle}.`,
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
