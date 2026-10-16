@@ -57,9 +57,9 @@ import galleryimg38 from "@/assets/galleryimg38.jpeg";
 export const business = {
   name: "Crocodile Park Nilaveli",
   address: "Thamaraikulam Road, Nilaveli 31010, Sri Lanka",
-  phoneDisplay: "072 108 0806",
-  phoneTel: "+94721080806",
-  whatsapp: "94721080806",
+  phoneDisplay: "077 503 1800",
+  phoneTel: "+94775031800",
+  whatsapp: "94775031800",
   mapsQuery: "Thamaraikulam Road, Nilaveli 31010, Sri Lanka",
   // Set to null to hide a social link. Replace with real URLs when available.
   social: { facebook: null, instagram: null, tiktok: null },
