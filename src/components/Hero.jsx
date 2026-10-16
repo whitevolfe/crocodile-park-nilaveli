@@ -58,7 +58,7 @@ export default function Hero({ onBook }) {
           className="animate-rise mt-10 font-display text-4xl leading-[1.05] font-bold text-balance sm:text-6xl lg:text-7xl"
           style={{ animationDelay: "300ms" }}
         >
-          Discover the Crocodile Park <span className="text-gold-gradient">Trincomalee</span>
+          Discover the Crocodile Park <br /> <span className="text-gold-gradient">Nilaveli</span>
         </h1>
 
         {/* Description */}
@@ -77,9 +77,13 @@ export default function Hero({ onBook }) {
           className="animate-rise mt-13 flex flex-col items-center justify-center gap-3 sm:flex-row"
           style={{ animationDelay: "480ms" }}
         >
-          <GhostButton onClick={onBook} className="w-full sm:w-auto">
+          <GhostButton
+            onClick={onBook}
+            className="w-full sm:w-auto !border !border-white/25 !bg-black/40 !text-white backdrop-blur-xl shadow-lg shadow-black/10 transition-all duration-300 hover:!border-white/40 hover:!bg-white/20 hover:shadow-xl hover:shadow-black/20"
+          >
             Book Your Experience
           </GhostButton>
+
           <GoldButton as="a" href="/activities/guided-crocodile" className="w-full sm:w-auto">
             Explore Experiences
           </GoldButton>

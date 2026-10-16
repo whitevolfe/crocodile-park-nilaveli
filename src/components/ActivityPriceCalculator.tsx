@@ -130,14 +130,14 @@ Thank you.`;
             <div className="mt-8">
               <p className="mb-3 text-xs font-semibold text-white/80">Activity</p>
 
-              <div className="rounded-2xl border border-[#238bc9] bg-white px-4 py-5 font-bold shadow-lg">
-                <p className="text-center font-semibold text-black">{activityTitle}</p>
+              <div className="rounded-2xl border border-[#238bc9] bg-[#526a8d] px-4 py-5 font-bold shadow-lg">
+                <p className="text-center font-semibold text-white">{activityTitle}</p>
 
-                <p className="mt-2 text-center text-sm text-black/80">
+                <p className="mt-2 text-center text-sm text-white/80">
                   {formatPrice(adultPrice)} / person
                 </p>
 
-                <p className="mt-1 text-center text-[11px] text-black/60">
+                <p className="mt-1 text-center text-[11px] text-white/60">
                   Infants under 5 years old go free.
                 </p>
               </div>

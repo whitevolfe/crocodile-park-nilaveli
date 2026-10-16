@@ -565,9 +565,9 @@ export function ExperienceTimeline({ onBook }) {
 
 function ActivityCard({ activity, onBook }) {
   return (
-    <article className="group grid overflow-hidden rounded-2xl border border-primary/45 bg-navy/40 text-black transition-all duration-500 hover:-translate-y-1 hover:border-white/20 hover:shadow-lg md:grid-cols-[320px_1fr]">
+    <article className="group grid overflow-hidden rounded-2xl border border-primary/20 bg-[#101d2b] text-white shadow-md transition-all duration-500 hover:-translate-y-1 hover:border-primary/50 hover:bg-[#142437] hover:shadow-xl md:grid-cols-[320px_1fr]">
       {/* Image */}
-      <div className="relative overflow-hidden">
+      <div className="relative min-h-[240px] overflow-hidden">
         <img
           src={activity.image}
           alt={activity.alt}
@@ -578,25 +578,25 @@ function ActivityCard({ activity, onBook }) {
         />
 
         {/* Gold Category Badge */}
-        <span className="absolute top-3 left-3 rounded-full bg-primary px-3 py-1 text-[0.6rem] tracking-[0.2em] text-black uppercase shadow-sm">
+        <span className="absolute left-3 top-3 rounded-full bg-primary px-3 py-1 text-[0.6rem] uppercase tracking-[0.2em] text-black shadow-sm">
           {activity.category}
         </span>
       </div>
 
-      {/* Content */}
+      {/* Card Content */}
       <div className="flex flex-col justify-center gap-3 p-6 sm:p-8">
-        <h3 className="font-display text-2xl leading-snug text-gold">{activity.title}</h3>
+        <h3 className="font-display text-2xl leading-snug text-primary">{activity.title}</h3>
 
         <p className="max-w-2xl text-sm leading-relaxed text-white/70">{activity.description}</p>
 
-        <p className="text-xl font-medium text-primary">{activity.price}</p>
+        <p className="text-xl font-semibold text-primary">{activity.price}</p>
 
         {/* Buttons */}
         <div className="mt-2 flex flex-wrap gap-3">
           <GhostButton
             as={Link}
             to={`/activities/${activity.id}`}
-            className="border-black/20 px-5 py-2.5 text-[0.68rem] text-black hover:border-black/40 hover:bg-black/5"
+            className="border-white/25 px-5 py-2.5 text-[0.68rem] text-white hover:border-primary hover:bg-primary/10 hover:text-primary"
           >
             View Experience
           </GhostButton>
@@ -1341,14 +1341,14 @@ export function Footer() {
             </li>
 
             <li>
-              <a
+              {/* <a
                 href={waLink(`Hello ${business.name}!`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-medium text-black hover:bg-[#128C7E]"
+                className="flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-xs font-medium text-black hover:bg-[#128C7E]"
               >
                 WhatsApp
-              </a>
+              </a> */}
             </li>
 
             <li>{business.address}</li>

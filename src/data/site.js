@@ -204,7 +204,7 @@ export const activities = [
     // CROCODILE CUSTOM PAGE
     // ============================================================
 
-    pageTitle: "GUIDED CROCODILE WATCHING & SUNSET TOUR. 🐊 🐘 🐒 🦅 🦚 🦩",
+    pageTitle: "GUIDED CROCODILE WATCHING & SUNSET TOUR.",
 
     pageSubtitle: "A genuine guided wildlife experience around Crocodile Park Nilaveli",
 
@@ -481,7 +481,7 @@ export const activities = [
         children: {
           label: "Children 6–17",
           price: 0,
-          displayPrice: "FREE",
+          displayPrice: "LKR 1950 / person",
         },
 
         infants: {
