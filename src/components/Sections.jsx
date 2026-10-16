@@ -565,7 +565,7 @@ export function ExperienceTimeline({ onBook }) {
 
 function ActivityCard({ activity, onBook }) {
   return (
-    <article className="group grid overflow-hidden rounded-2xl border border-black/10 bg-white text-black transition-all duration-500 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg md:grid-cols-[320px_1fr]">
+    <article className="group grid overflow-hidden rounded-2xl border border-primary/45 bg-navy/40 text-black transition-all duration-500 hover:-translate-y-1 hover:border-white/20 hover:shadow-lg md:grid-cols-[320px_1fr]">
       {/* Image */}
       <div className="relative overflow-hidden">
         <img
@@ -585,9 +585,9 @@ function ActivityCard({ activity, onBook }) {
 
       {/* Content */}
       <div className="flex flex-col justify-center gap-3 p-6 sm:p-8">
-        <h3 className="font-display text-2xl leading-snug text-black">{activity.title}</h3>
+        <h3 className="font-display text-2xl leading-snug text-gold">{activity.title}</h3>
 
-        <p className="max-w-2xl text-sm leading-relaxed text-black/70">{activity.description}</p>
+        <p className="max-w-2xl text-sm leading-relaxed text-white/70">{activity.description}</p>
 
         <p className="text-xl font-medium text-primary">{activity.price}</p>
 
@@ -657,7 +657,9 @@ export function PricingSection({ onBook }) {
             <Reveal key={p.label} delay={i * 90}>
               <div
                 className={`flex h-full flex-col items-center gap-3 rounded-2xl border p-8 text-center text-black transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
-                  p.featured ? "border-black/20 bg-white shadow-lg" : "border-black/10 bg-white"
+                  p.featured
+                    ? "border-white/40 bg-navy/30 shadow-lg"
+                    : "border-white/40 bg-navy/30 shadow-sm"
                 }`}
               >
                 {/* Gold Label */}
@@ -665,9 +667,9 @@ export function PricingSection({ onBook }) {
                   {p.label}
                 </span>
 
-                <span className="font-display text-5xl text-black">{p.price}</span>
+                <span className="font-display text-5xl text-white">{p.price}</span>
 
-                <span className="text-sm text-black/70">{p.note}</span>
+                <span className="text-sm text-white/70">{p.note}</span>
               </div>
             </Reveal>
           ))}
@@ -717,7 +719,7 @@ export function WildlifeRespect() {
         <ul className="mt-12 grid gap-4 sm:grid-cols-2">
           {respectPrinciples.map((p, i) => (
             <Reveal key={p} delay={i * 70}>
-              <li className="flex items-center gap-3 rounded-xl border border-black/10 bg-white px-5 py-4 text-sm text-black shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg">
+              <li className="flex items-center gap-3 rounded-xl border border-white/40 bg-navy/30 px-5 py-4 text-sm text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-lg">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-black">
                   <ShieldCheck size={18} />
                 </span>
@@ -773,7 +775,7 @@ export function AboutSection() {
             {pillars.map((p) => (
               <li
                 key={p}
-                className="rounded-full border border-black/10 bg-white px-4 py-1.5 text-xs text-black shadow-sm transition-all duration-300 hover:border-black/20 hover:shadow-md"
+                className="rounded-full border border-black/40 bg-primary px-4 py-1.5 text-xs text-black font-bold shadow-sm transition-all duration-300 hover:border-black/20 hover:shadow-md"
               >
                 {p}
               </li>
@@ -1088,19 +1090,19 @@ export function FAQ() {
           <SectionHeading eyebrow="Good to know" title="Frequently Asked Questions" />
         </Reveal>
 
-        <div className="mt-12 overflow-hidden rounded-2xl border border-black/10 bg-white text-black shadow-sm">
+        <div className="mt-12 overflow-hidden rounded-2xl border border-white/40 bg-navy/40 text-white shadow-sm">
           {faqs.map((f, i) => {
             const isOpen = open === i;
 
             return (
-              <div key={f.q} className="border-b border-black/10 last:border-b-0">
+              <div key={f.q} className="border-b border-white/40 last:border-b-0">
                 <button
                   type="button"
                   onClick={() => setOpen(isOpen ? -1 : i)}
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-4 px-5 py-5 text-left transition-colors duration-300 hover:bg-black/[0.02] sm:px-6"
                 >
-                  <span className="font-display text-lg text-black">{f.q}</span>
+                  <span className="font-display text-lg text-white">{f.q}</span>
 
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-black">
                     {isOpen ? <Minus size={16} /> : <Plus size={16} />}
@@ -1108,7 +1110,7 @@ export function FAQ() {
                 </button>
 
                 {isOpen ? (
-                  <p className="px-5 pb-5 text-sm leading-relaxed text-black/70 sm:px-6">{f.a}</p>
+                  <p className="px-5 pb-5 text-sm leading-relaxed text-white/70 sm:px-6">{f.a}</p>
                 ) : null}
               </div>
             );
@@ -1156,7 +1158,7 @@ export function FinalCTA({ onBook }) {
             href={waLink(`Hello ${business.name}, I would like to book an experience.`)}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto bg-[#25D366] border-[#128C7E] text-black hover:bg-[#128C7E] hover:text-black"
+            className="w-full sm:w-auto bg-[#25D366] border-[#128C7E] text-white hover:bg-[#128C7E] hover:text-white"
           >
             <MessageCircle size={15} /> Chat on WhatsApp
           </GhostButton>
@@ -1182,16 +1184,16 @@ export function ContactSection() {
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           <Reveal>
-            <div className="flex h-full flex-col gap-6 rounded-2xl border border-black/10 bg-white p-7 text-black shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-black/20 hover:shadow-lg">
+            <div className="flex h-full flex-col gap-6 rounded-2xl border border-white/40 bg-navy/40 p-7 text-white shadow-sm transition-all duration-300 hover:-translate-y-1  hover:shadow-lg">
               <div>
                 <h3 className="font-display text-2xl text-primary">{business.name}</h3>
 
-                <p className="mt-4 flex items-start gap-3 text-sm text-black/70">
+                <p className="mt-4 flex items-start gap-3 text-sm text-white/70">
                   <MapPin size={18} className="mt-0.5 shrink-0 text-primary" />
                   {business.address}
                 </p>
 
-                <p className="mt-3 flex items-center gap-3 text-sm text-black/70">
+                <p className="mt-3 flex items-center gap-3 text-sm text-white/70">
                   <Phone size={18} className="shrink-0 text-primary" />
 
                   <a
@@ -1217,7 +1219,7 @@ export function ContactSection() {
                   href={waLink(`Hello ${business.name}, I have a question.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-2.5 text-xs bg-[#25D366] border-[#128C7E] text-black hover:bg-[#128C7E] hover:text-black"
+                  className="px-5 py-2.5 text-xs bg-[#25D366] border-[#128C7E] text-white hover:bg-[#128C7E] hover:text-black"
                 >
                   <MessageCircle size={15} /> WhatsApp
                 </GhostButton>
