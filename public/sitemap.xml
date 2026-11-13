@@ -1,29 +1,15 @@
 
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://crocodileparknilaveli.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://www.crocodileparknilaveli.com/</loc>
   </url>
-
   <url>
-    <loc>https://crocodileparknilaveli.com/activities</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.crocodileparknilaveli.com/activities</loc>
   </url>
-
   <url>
-    <loc>https://crocodileparknilaveli.com/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.crocodileparknilaveli.com/about</loc>
   </url>
-
   <url>
-    <loc>https://crocodileparknilaveli.com/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.crocodileparknilaveli.com/contact</loc>
   </url>
-
 </urlset>
