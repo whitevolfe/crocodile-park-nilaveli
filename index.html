@@ -1,40 +1,81 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Crocodile Park Nilaveli - Wild Crocodile & Sunset Wildlife Experience in Sri Lanka" />
 
-    <!-- Website Logo - Favicon (Browser Tab Image) -->
+    <meta
+      name="description"
+      content="Crocodile Park Nilaveli - Wild Crocodile & Sunset Wildlife Experience in Sri Lanka"
+    />
+
+    <!-- Website Logo - Favicon -->
     <link rel="icon" type="image/png" href="/crocodile-parklogo.png" />
     <link rel="apple-touch-icon" href="/crocodile-parklogo.png" />
 
-    <!-- Open Graph / Social Browser Image -->
-    <meta property="og:title" content="Crocodile Park Nilaveli | Wild Crocodile & Sunset Wildlife Experience" />
-    <meta property="og:description" content="Experience wild crocodiles, bird watching, and beautiful sunsets at Crocodile Park Nilaveli, Sri Lanka." />
-    <meta property="og:image" content="/crocodile-parklogo.png" />
+    <!-- Open Graph / Social Sharing -->
+    <meta
+      property="og:title"
+      content="Crocodile Park Nilaveli | Wild Crocodile & Sunset Wildlife Experience"
+    />
+    <meta
+      property="og:description"
+      content="Experience wild crocodiles, bird watching, and beautiful sunsets at Crocodile Park Nilaveli, Sri Lanka."
+    />
+    <meta
+      property="og:image"
+      content="https://crocodileparknilaveli.com/crocodile-parklogo.png"
+    />
     <meta property="og:image:alt" content="Crocodile Park Nilaveli Logo" />
-    <meta property="og:url" content="https://crocodileparknilaveli.com" />
+    <meta
+      property="og:url"
+      content="https://crocodileparknilaveli.com"
+    />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Crocodile Park Nilaveli | Wild Crocodile & Sunset Wildlife Experience" />
-    <meta name="twitter:description" content="Experience wild crocodiles, bird watching, and beautiful sunsets at Crocodile Park Nilaveli, Sri Lanka." />
-    <meta name="twitter:image" content="/crocodile-parklogo.png" />
+    <meta
+      name="twitter:title"
+      content="Crocodile Park Nilaveli | Wild Crocodile & Sunset Wildlife Experience"
+    />
+    <meta
+      name="twitter:description"
+      content="Experience wild crocodiles, bird watching, and beautiful sunsets at Crocodile Park Nilaveli, Sri Lanka."
+    />
+    <meta
+      name="twitter:image"
+      content="https://crocodileparknilaveli.com/crocodile-parklogo.png"
+    />
 
-    <title>Crocodile Park Nilaveli | Wild Crocodile & Sunset Wildlife Experience</title>
-  </head>
+    <title>
+      Crocodile Park Nilaveli | Wild Crocodile & Sunset Wildlife Experience
+    </title>
 
-  <body>
-    <div id="root"></div>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
 
-    <!-- Google Translate hidden container -->
-    <div
-      id="google_translate_element"
-      style="position: absolute; width: 1px; height: 1px; overflow: hidden"
-    ></div>
+        var f = d.getElementsByTagName(s)[0];
+        var j = d.createElement(s);
+        var dl = l !== "dataLayer" ? "&l=" + l : "";
 
+        j.async = true;
+        j.src =
+          "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WKM42BFK");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Translate Initialization -->
     <script>
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
@@ -43,13 +84,37 @@
             includedLanguages: "en,de,fr,es,ru,nl,it,cs,hr,be",
             autoDisplay: false,
           },
-          "google_translate_element",
+          "google_translate_element"
         );
       }
     </script>
 
+    <!-- Google Translate Script -->
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </head>
 
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WKM42BFK"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- React Application -->
+    <div id="root"></div>
+
+    <!-- Google Translate Hidden Container -->
+    <div
+      id="google_translate_element"
+      style="position: absolute; width: 1px; height: 1px; overflow: hidden"
+    ></div>
+
+    <!-- React + Vite Entry Point -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
